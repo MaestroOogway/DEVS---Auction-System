@@ -1,0 +1,460 @@
+00:00:00:000
+State for model input_reader is next time: 00:00:00:000
+State for model round_result_reader is next time: 00:00:00:000
+State for model final_result_reader is next time: 00:00:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:00:00:000
+State for model input_reader is next time: 00:00:01:000
+State for model round_result_reader is next time: 00:00:10:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:00:01:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:10:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:00:02:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:10:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:00:10:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:00:11:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:00:30:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:00:31:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:00:50:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:00:51:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:00:55:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:00:55:000
+State for model input_reader is next time: 00:00:59:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:01:00:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:01:01:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:01:10:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:01:11:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:01:30:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:01:31:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:01:50:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:01:51:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:01:55:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:02:00:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:02:01:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:02:10:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:02:11:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:02:30:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:02:31:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:02:50:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:02:51:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:02:55:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:03:00:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:03:01:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:03:10:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:03:11:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:03:30:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:03:31:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:03:50:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:03:51:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:03:55:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:04:00:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:04:01:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:04:10:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:04:11:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:04:30:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:04:31:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:04:50:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:04:51:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 1 | TotalBudget: 98680 | MoneySpent: 1320 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:04:55:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:05:00:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:05:01:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:05:10:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:05:11:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:05:30:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:05:31:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:05:50:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:05:51:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 2 | TotalBudget: 97295 | MoneySpent: 2705 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:05:55:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:06:00:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:06:01:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:06:10:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:06:11:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:06:30:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:06:31:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:06:50:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:06:51:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 3 | TotalBudget: 95895 | MoneySpent: 4105 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:06:55:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:07:00:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:07:01:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:07:10:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:07:11:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:07:30:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:07:31:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:07:50:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:07:51:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:07:55:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:08:00:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:08:01:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:08:10:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:08:11:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:08:30:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:08:31:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:08:50:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:08:51:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:08:55:000
+State for model input_reader is next time: 00:01:00:000
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:09:00:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:09:01:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:09:10:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:09:11:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:09:30:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:09:31:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: 00:00:20:000
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:09:50:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: inf
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: true
+00:09:51:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: inf
+State for model final_result_reader is next time: 00:01:00:000
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
+00:09:55:000
+State for model input_reader is next time: inf
+State for model round_result_reader is next time: inf
+State for model final_result_reader is next time: inf
+State for model rational_model is  IdAgent: 2 | PurchasedProducts: 4 | TotalBudget: 94555 | MoneySpent: 5445 | Utility: 0 | ReservePrice: 0 | ModelActive: false
