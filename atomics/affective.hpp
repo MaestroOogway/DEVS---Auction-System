@@ -13,38 +13,31 @@
 using namespace cadmium;
 using namespace std;
 
-/***** (0) *****/
-// Funciones de decision
-
-bool makeDecision(Message_roundResult_t roundResult, int agentID)
+// Funciones de decisión
+vector<float> generateRandomAlphas()
 {
-    if (roundResult.winnerID == agentID)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_real_distribution<float> dis(0.1, 1.0);
+
+    vector<float> alpha(4);
+    for (float &a : alpha)
+        a = dis(gen);
+
+    // Normalizar en una sola línea
+    float sum = accumulate(alpha.begin(), alpha.end(), 0.0f);
+    for (float &a : alpha)
+        a /= sum;
+
+    return alpha;
 }
 
-Message_bidOffer_t getPriceProposal(int productID, float bestPrice, float ranking, float totalBudget)
+float reservePrice(std::vector<float>& level, float totalbudget)
 {
-    Message_bidOffer_t bid;
-    bid.productID = productID;
-    if (totalBudget >= bestPrice)
-    {
-        // Calcular la oferta considerando ranking como peso
-        bid.priceProposal = bestPrice + ranking * 20;
-    }
-    else
-    {
-        bid.priceProposal = 0; // No puja
-    }
-    return bid;
+    float sumLevel = std::accumulate(vec.begin(), vec.end(), 0);
+    float reservePrice = (state.alpha / sumLevel) * state.totalBudget;
+    return reservePrice;
 }
-
-/***** (1) *****/
 // Port definition
 
 struct Affective_defs
@@ -74,11 +67,6 @@ public:
     // state definition
     struct state_type
     {
-        Message_initialIP_t informationProduct;
-        Message_finalResults_t finalResult;
-        Message_bidOffer_t bidOffer;
-        Message_bidOffer_t lastBid;
-        Message_roundResult_t roundResult;
         int idAgent;
         int purchasedProducts;
         float totalBudget;
@@ -88,9 +76,9 @@ public:
         float frustration;
         float reservePrice;
         bool modelActive;
+        vector<float> alpha;
     };
     state_type state;
-
     // constructor del modelo
     Affective()
     {
@@ -103,8 +91,8 @@ public:
         state.frustration = 0;
         state.reservePrice = 0;
         state.modelActive = false;
+        state.alpha = generateRandomAlphas();            // Inicialización del vector alpha en el constructor
     }
-
     // funcion de transición interna
     void internal_transition()
     {
@@ -117,45 +105,23 @@ public:
         // Verificar si hay mensajes en el puerto 'in_initialIP'
         if (!get_messages<typename Affective_defs::in_initialIP>(mbs).empty())
         {
-            auto messages = get_messages<typename Affective_defs::in_initialIP>(mbs);
-            auto productInfo = messages[0]; // Procesar el primer mensaje recibido
-            state.informationProduct = productInfo;
             state.modelActive = true;
-            // Decidir si realizar una oferta
-            state.bidOffer = getPriceProposal(productInfo.productID, productInfo.bestPrice, productInfo.ranking, state.totalBudget);
-            state.lastBid = state.bidOffer;
+            auto messages = get_messages<typename Affective_defs::in_initialIP>(mbs);
+            auto productInfo = messages[0];
         }
 
-        // Verificar si hay mensajes en el puerto 'in_roundResult'
-        if (!get_messages<typename Affective_defs::in_roundResult>(mbs).empty())
+        if (!get_messages<typename Affective_defs::in_finalResult>(mbs).empty()) // Verificar mensajes en el puerto 'finalResult'
         {
-            auto roundResultMessages = get_messages<typename Affective_defs::in_roundResult>(mbs);
-            auto roundResult = roundResultMessages[0]; // Procesar el mensaje de roundResult
-            bool decision;
             state.modelActive = true;
-            // Decidir si realizar una oferta
-            decision = makeDecision(roundResult, state.idAgent);
-            if (decision == true)
-            {
-                state.bidOffer = state.lastBid;
-            }
-            else
-            {
-                state.bidOffer = getPriceProposal(roundResult.productID, roundResult.bestPrice, state.informationProduct.ranking, state.totalBudget);
-                state.lastBid = state.bidOffer;
-            }
-        }
-        // Verificar mensajes en el puerto 'finalResult'
-        if (!get_messages<typename Affective_defs::in_finalResult>(mbs).empty())
-        {
             auto finalResultMessages = get_messages<typename Affective_defs::in_finalResult>(mbs);
             auto finalResult = finalResultMessages[0];
-            state.finalResult = finalResult;
-            if(state.finalResult.clientID == state.idAgent){
-                state.totalBudget = state.totalBudget - state.finalResult.bestPrice;
-                state.moneySpent = state.moneySpent + state.finalResult.bestPrice;
-                state.purchasedProducts = state.purchasedProducts + 1;
-            }
+        }
+
+        else if (!get_messages<typename Affective_defs::in_roundResult>(mbs).empty()) // Verificar si hay mensajes en el puerto 'in_roundResult'
+        {
+            state.modelActive = true;
+            auto roundResultMessages = get_messages<typename Affective_defs::in_roundResult>(mbs);
+            auto roundResult = roundResultMessages[0];
         }
     }
 
@@ -170,19 +136,15 @@ public:
     // funcion de salida
     typename make_message_bags<output_ports>::type output() const
     {
-        typename make_message_bags<output_ports>::type bags;
+        typename make_message_bags<output_ports>::type bags; // Crear un mensaje para enviar, basado en el estado del modelo
         vector<Message_bidOffer_t> bag_port_out;
-
-        // Crear un mensaje para enviar, basado en el estado del modelo
-        Message_bidOffer_t outgoingMessage;
+        Message_bidOffer_t outgoingMessage; // Asociar el mensaje al puerto de salida
         outgoingMessage.clientID = state.idAgent;
         outgoingMessage.productID = state.bidOffer.productID;
         outgoingMessage.priceProposal = state.bidOffer.priceProposal;
-
         bag_port_out.push_back(outgoingMessage);
-
-        // Asociar el mensaje al puerto de salida
         get_messages<typename Affective_defs::out_bidOffer>(bags) = bag_port_out;
+
         return bags;
     }
 

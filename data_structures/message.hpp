@@ -40,10 +40,10 @@ struct Message_roundResult_t
 {
 
   Message_roundResult_t() {}
-  Message_roundResult_t(int o_productID, int o_winner, float o_bestPrice, int o_round)
-      : productID(o_productID), winnerID(o_winner), bestPrice(o_bestPrice), round(o_round) {}
+  Message_roundResult_t(int o_productID, int o_client, float o_bestPrice, int o_round)
+      : productID(o_productID), clientID(o_client), bestPrice(o_bestPrice), round(o_round) {}
   int productID;
-  int winnerID;
+  int clientID;
   float bestPrice;
   int round;
 };
@@ -77,9 +77,9 @@ ostream &operator<<(ostream &os, const Message_bidOffer_t &msg);
 struct Message_finalResults_t
 {
   Message_finalResults_t() {}
-  Message_finalResults_t(int o_clientID, int o_productID, float o_bestPrice, float o_initalPrice, int o_round)
-      : clientID(o_clientID), productID(o_productID), bestPrice(o_bestPrice), initialPrice(o_initalPrice), numberRound(o_round) {}
-  int clientID;
+  Message_finalResults_t(int o_winnerID, int o_productID, float o_bestPrice, float o_initalPrice, int o_round)
+      : winnerID(o_winnerID), productID(o_productID), bestPrice(o_bestPrice), initialPrice(o_initalPrice), numberRound(o_round) {}
+  int winnerID;
   int productID;
   float bestPrice;
   float initialPrice;
@@ -89,4 +89,4 @@ struct Message_finalResults_t
 istream &operator>>(istream &is, Message_finalResults_t &msg);
 ostream &operator<<(ostream &os, const Message_finalResults_t &msg);
 
-#endif // BOOST_SIMULATION_MESSAGE_HPP
+#endif //BOOST_SIMULATION_MESSAGE_HPP

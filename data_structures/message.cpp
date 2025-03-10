@@ -11,7 +11,15 @@
 /***************************************************/
 
 ostream& operator<<(ostream& os, const Message_initialIP_t& msg) {
-  os << msg.productID << " " << msg.name << " " << msg.category << " " << msg.subcategory << " " << msg.initialPrice << " "  << msg.bestPrice << " " << msg.ranking << " " <<  msg.status << " " <<  msg.sold;
+  os << msg.productID << " "
+     << msg.name << " "
+     << msg.category << " "
+     << msg.subcategory << " "
+     << msg.initialPrice << " "
+     << msg.bestPrice << " "
+     << msg.ranking << " " 
+     << msg.status << " "
+     << msg.sold;
   return os;
 }
 
@@ -40,7 +48,9 @@ istream& operator>> (istream& is, Message_initialIP_t& msg) {
 
 
 ostream& operator<<(ostream& os, const Message_bidOffer_t&msg){
-  os << " ClientID: " << msg.clientID << " ProductID: " << msg.productID << " Price Proposal: " << msg.priceProposal;
+  os << " ClientID: " << msg.clientID 
+     << " ProductID: " << msg.productID 
+     << " Price Proposal: " << msg.priceProposal;
   return os;
 }
 
@@ -64,7 +74,7 @@ istream& operator>> (istream& is, Message_bidOffer_t&msg){
 
 ostream& operator<<(ostream& os, const Message_roundResult_t& msg) {
   os << " ProductID: " << msg.productID
-     << " WinnerID: " << msg.winnerID 
+     << " ClientID: " << msg.clientID 
      << " Best Price: " << msg.bestPrice
      << " N° Round: " << msg.round;
   return os;
@@ -76,7 +86,7 @@ ostream& operator<<(ostream& os, const Message_roundResult_t& msg) {
 
 istream& operator>>(istream& is, Message_roundResult_t& msg) {
   is >> msg.productID;
-  is >> msg.winnerID;
+  is >> msg.clientID;
   is >> msg.bestPrice;
   is >> msg.round;
   return is;
@@ -88,7 +98,7 @@ istream& operator>>(istream& is, Message_roundResult_t& msg) {
 
 ostream& operator<<(ostream& os, const Message_finalResults_t& msg) {
   os << " ProductID: " << msg.productID
-     << " WinnerID: " << msg.clientID 
+     << " WinnerID: " << msg.winnerID 
      << " Best Price: " << msg.bestPrice
      << " Initial Price: " << msg.initialPrice
      << " N° Round: " << msg.numberRound;
@@ -101,7 +111,7 @@ ostream& operator<<(ostream& os, const Message_finalResults_t& msg) {
 
 istream& operator>>(istream& is, Message_finalResults_t& msg) {
   is >> msg.productID;
-  is >> msg.clientID;
+  is >> msg.winnerID;
   is >> msg.bestPrice;
   is >> msg.initialPrice;
   is >> msg.numberRound;

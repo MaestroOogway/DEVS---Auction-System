@@ -13,36 +13,9 @@
 using namespace cadmium;
 using namespace std;
 
-/***** (0) *****/
+
 // Funciones de decision
 
-bool makeDecision(Message_roundResult_t roundResult, int agentID)
-{
-    if (roundResult.winnerID == agentID)
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-
-Message_bidOffer_t getPriceProposal(int productID, float bestPrice, float ranking, float totalBudget)
-{
-    Message_bidOffer_t bid;
-    bid.productID = productID;
-    if (totalBudget >= bestPrice)
-    {
-        // Calcular la oferta considerando ranking como peso
-        bid.priceProposal = bestPrice + ranking * 30;
-    }
-    else
-    {
-        bid.priceProposal = 0; // No puja
-    }
-    return bid;
-}
 
 /***** (1) *****/
 // Port definition
@@ -74,11 +47,6 @@ public:
     // state definition
     struct state_type
     {
-        Message_initialIP_t informationProduct;
-        Message_finalResults_t finalResult;
-        Message_bidOffer_t bidOffer;
-        Message_bidOffer_t lastBid;
-        Message_roundResult_t roundResult;
         int idAgent;
         int purchasedProducts;
         float totalBudget;
@@ -147,7 +115,7 @@ public:
             auto finalResultMessages = get_messages<typename Rational_defs::in_finalResult>(mbs);
             auto finalResult = finalResultMessages[0];
             state.finalResult = finalResult;
-            if(state.finalResult.clientID == state.idAgent){
+            if(state.finalResult.winnerID == state.idAgent){
                 state.totalBudget = state.totalBudget - state.finalResult.bestPrice;
                 state.moneySpent = state.moneySpent + state.finalResult.bestPrice;
                 state.purchasedProducts = state.purchasedProducts + 1;

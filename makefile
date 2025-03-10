@@ -1,4 +1,4 @@
-CC = g++
+ CC = g++
 CFLAGS = -std=c++17
 INCLUDECADMIUM = -I ../../cadmium/include
 INCLUDEDESTIMES = -I ../../DESTimes/include
@@ -22,8 +22,6 @@ main_affective_test.o: test/main_affective_test.cpp
 affective: main_affective_test.o message.o
 	$(CC) -g -o bin/AFFECTIVE_TEST build/main_affective_test.o build/message.o
 
-
-
 # Compilar main_rational_test.cpp
 main_rational_test.o: test/main_rational_test.cpp
 	$(CC) -g -c $(CFLAGS) $(INCLUDECADMIUM) $(INCLUDEDESTIMES) \
@@ -32,7 +30,6 @@ main_rational_test.o: test/main_rational_test.cpp
 # Enlazar los archivos para crear el ejecutable
 rational: main_rational_test.o message.o
 	$(CC) -g -o bin/RATIONAL_TEST build/main_rational_test.o build/message.o
-
 
 # Compilar main_auctioneer_test.cpp
 main_auctioneer_test.o: test/main_auctioneer_test.cpp
@@ -44,7 +41,7 @@ auctioneer: main_auctioneer_test.o message.o
 	$(CC) -g -o bin/AUCTIONEER_TEST build/main_auctioneer_test.o build/message.o
 
 # Compilar todo
-all: auctioneer affective rational
+all: auctioneer
 
 # Limpiar archivos compilados
 clean:
