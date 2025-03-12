@@ -41,7 +41,7 @@ auctioneer: main_auctioneer_test.o message.o
 	$(CC) -g -o bin/AUCTIONEER_TEST build/main_auctioneer_test.o build/message.o
 
 # Compilar todo
-all: auctioneer
+all: affective
 
 # Limpiar archivos compilados
 clean:

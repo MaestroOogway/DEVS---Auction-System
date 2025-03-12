@@ -9,9 +9,9 @@ make all
 
 # Ejecutar el binario
 cd bin
-./AUCTIONEER_TEST.exe
+./AFFECTIVE_TEST.exe
 
 # Mostrar los resultados
 cd ../simulation_results
-cat auctioneer_test_output_messages.txt
-cat auctioneer_test_output_state.txt
+cat affective_test_output_messages.txt
+cat affective_test_output_state.txt

@@ -82,12 +82,8 @@ public:
                 state.stageState = false;               // No quedan más productos, se termina el escenario.
             }    
         }
-        else
-        {
-            state.roundState = false;
-            state.auctionState = true;
-        }
-
+        state.roundState = false;
+        state.auctionState = true;
         state.modelActive = false; // Apaga el modelo después de procesar la ronda
     }
 
