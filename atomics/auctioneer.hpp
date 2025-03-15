@@ -112,10 +112,12 @@ public:
             {
                 state.offerList.push_back(message);
             }
-
             if (state.offerList.size() > 1)
             {
                 state.products[0].bestPrice = state.products[0].bestPrice*1.1;
+            }
+            else if (state.offerList.size()==0){
+
             }
         }
     }
@@ -157,6 +159,24 @@ public:
             }
         }
 
+        else if(state.auctionState == true && state.offerList.size() == 0){
+            vector<Message_finalResults_t> bag_port_out;
+            Message_finalResults_t finalResultMessage;
+            finalResultMessage.productID = state.offerList[0].productID;
+            finalResultMessage.winnerID = 0;
+            finalResultMessage.bestPrice = state.offerList[0].priceProposal;
+            finalResultMessage.initialPrice = state.products[0].initialPrice;
+            finalResultMessage.numberRound = state.numberRound;
+            bag_port_out.push_back(finalResultMessage);
+            get_messages<typename Auctioneer_defs::out_finalResult>(bags) = bag_port_out;
+            
+            if (state.products.size() > 1) {                               // Emitir el siguiente producto si hay más en la lista
+                vector<Message_initialIP_t> bag_port_initial_out;
+                bag_port_initial_out.push_back(state.products[1]);          // El siguiente producto
+                get_messages<typename Auctioneer_defs::out_initialIP>(bags) = bag_port_initial_out;
+            }
+        }
+
         else 
         {
             vector<Message_roundResult_t> bag_port_out;
@@ -174,7 +194,10 @@ public:
     // Time advance
     TIME time_advance() const
     {
-        return state.modelActive ? TIME("00:00:01:000") : numeric_limits<TIME>::infinity();
+        if(state.stageState==false && state.products.empty()){
+            return std::numeric_limits<TIME>::infinity();
+        }
+        return state.modelActive ? TIME("00:00:05:000") : numeric_limits<TIME>::infinity();
     }
 
     // Debug information

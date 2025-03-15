@@ -18,7 +18,7 @@ using namespace cadmium::basic_models::pdevs;
 using TIME = NDTime;
 
 // Definición de puertos para el modelo acoplado
-struct top_out : public out_port<Message_roundResult_t>
+struct in_uploadProducts : public in_port<Message_initialIP_t>
 {
 };
 

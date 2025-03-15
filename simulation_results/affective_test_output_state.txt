@@ -2,179 +2,179 @@
 State for model input_reader is next time: 00:00:00:000
 State for model round_result_reader is next time: 00:00:00:000
 State for model final_result_reader is next time: 00:00:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: 
 00:00:00:000
 State for model input_reader is next time: 00:00:00:000
 State for model round_result_reader is next time: 00:00:10:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: 
 00:00:00:000
-State for model input_reader is next time: 00:00:55:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:10:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 34645.5 ID Product:°[1] 11445.6 ID Product:°[2] 19962.1 ID Product:°[3] 33946.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:01:000
-State for model input_reader is next time: 00:00:55:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:10:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 34645.5 ID Product:°[1] 11445.6 ID Product:°[2] 19962.1 ID Product:°[3] 33946.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:10:000
-State for model input_reader is next time: 00:00:55:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 34645.5 ID Product:°[1] 11445.6 ID Product:°[2] 19962.1 ID Product:°[3] 33946.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:11:000
-State for model input_reader is next time: 00:00:55:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 34645.5 ID Product:°[1] 11445.6 ID Product:°[2] 19962.1 ID Product:°[3] 33946.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:30:000
-State for model input_reader is next time: 00:00:55:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 34645.5 ID Product:°[1] 11445.6 ID Product:°[2] 19962.1 ID Product:°[3] 33946.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:31:000
-State for model input_reader is next time: 00:00:55:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 34645.5 ID Product:°[1] 11445.6 ID Product:°[2] 19962.1 ID Product:°[3] 33946.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:50:000
-State for model input_reader is next time: 00:00:55:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 34645.5 ID Product:°[1] 11445.6 ID Product:°[2] 19962.1 ID Product:°[3] 33946.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:51:000
-State for model input_reader is next time: 00:00:55:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:00:55:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 100000 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 34645.5 ID Product:°[1] 11445.6 ID Product:°[2] 19962.1 ID Product:°[3] 33946.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:55:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 45304.1 ID Product:°[2] 19753.6 ID Product:°[3] 33592.3 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:00:56:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 45304.1 ID Product:°[2] 19753.6 ID Product:°[3] 33592.3 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:01:10:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 45304.1 ID Product:°[2] 19753.6 ID Product:°[3] 33592.3 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:01:11:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 45304.1 ID Product:°[2] 19753.6 ID Product:°[3] 33592.3 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:01:30:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 45304.1 ID Product:°[2] 19753.6 ID Product:°[3] 33592.3 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:01:31:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 45304.1 ID Product:°[2] 19753.6 ID Product:°[3] 33592.3 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:01:50:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 45304.1 ID Product:°[2] 19753.6 ID Product:°[3] 33592.3 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:01:51:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 45304.1 ID Product:°[2] 19753.6 ID Product:°[3] 33592.3 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:01:55:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 0 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 73613.1 ID Product:°[3] 25036.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:01:56:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 0 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 73613.1 ID Product:°[3] 25036.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:02:10:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 1 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 73613.1 ID Product:°[3] 25036.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:02:11:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 1 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 73613.1 ID Product:°[3] 25036.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:02:30:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 2 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 73613.1 ID Product:°[3] 25036.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:02:31:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 2 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 73613.1 ID Product:°[3] 25036.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:02:50:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 73613.1 ID Product:°[3] 25036.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 9 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:02:51:000
-State for model input_reader is next time: 00:01:00:000
+State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 98650 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 73613.1 ID Product:°[3] 25036.9 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3650 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 9 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:02:55:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 97280 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2280 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 9 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:02:56:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 97280 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2280 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 9 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:03:10:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 97280 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2280 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 10 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:03:11:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 97280 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2280 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 10 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:03:30:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 97280 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2280 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 11 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:03:31:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: 00:00:20:000
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 97280 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2280 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 11 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:03:50:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: inf
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 97280 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2280 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 12 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:03:51:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: inf
 State for model final_result_reader is next time: 00:01:00:000
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 97280 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2280 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 12 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:03:55:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: inf
 State for model final_result_reader is next time: inf
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 95945 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 945 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 12 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 
 00:03:56:000
 State for model input_reader is next time: inf
 State for model round_result_reader is next time: inf
 State for model final_result_reader is next time: inf
-State for model affective_model is  IdAgent: 1 | PurchasedProducts: 0 | TotalBudget: 95945 | MoneySpent: 0 | Utility: 0 | Decision1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product:°[0] 0 ID Product:°[1] 0 ID Product:°[2] 0 ID Product:°[3] 97280 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 945 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 12 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 2048.87 - ID Product N°2 : 1874.6 - ID Product N°3 : 460.242 - ID Product N°4 : 616.284 - 

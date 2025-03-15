@@ -1,4 +1,4 @@
- CC = g++
+CC = g++
 CFLAGS = -std=c++17
 INCLUDECADMIUM = -I ../../cadmium/include
 INCLUDEDESTIMES = -I ../../DESTimes/include
@@ -40,8 +40,16 @@ main_auctioneer_test.o: test/main_auctioneer_test.cpp
 auctioneer: main_auctioneer_test.o message.o
 	$(CC) -g -o bin/AUCTIONEER_TEST build/main_auctioneer_test.o build/message.o
 
+# Compilar main_top.cpp (ABP SIMULATOR)
+main_top.o: top_model/main.cpp
+	$(CC) -g -c $(CFLAGS) $(INCLUDECADMIUM) $(INCLUDEDESTIMES) top_model/main.cpp -o build/main_top.o
+
+# Enlazar los archivos para crear el ejecutable ABP SIMULATOR
+simulator: main_top.o message.o
+	$(CC) -g -o bin/ABP build/main_top.o build/message.o
+
 # Compilar todo
-all: affective
+all: simulator
 
 # Limpiar archivos compilados
 clean:

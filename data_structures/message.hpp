@@ -52,25 +52,6 @@ istream &operator>>(istream &is, Message_roundResult_t &msg);
 ostream &operator<<(ostream &os, const Message_roundResult_t &msg);
 
 /*******************************************/
-/********** Message_bidOffer_t ***********/
-/*******************************************/
-
-struct Message_bidOffer_t
-{
-  Message_bidOffer_t() {}
-  Message_bidOffer_t(int o_clientID, int o_productID, float o_price_proposal)
-      : clientID(o_clientID), productID(o_productID), priceProposal(o_price_proposal) {}
-
-  int clientID;
-  int productID;
-  float priceProposal;
-};
-
-istream &operator>>(istream &is, Message_bidOffer_t &msg);
-ostream &operator<<(ostream &os, const Message_bidOffer_t &msg);
-
-
-/*******************************************/
 /********* Message_finalResults_t **********/
 /*******************************************/
 
@@ -88,5 +69,24 @@ struct Message_finalResults_t
 
 istream &operator>>(istream &is, Message_finalResults_t &msg);
 ostream &operator<<(ostream &os, const Message_finalResults_t &msg);
+
+
+/*******************************************/
+/********** Message_bidOffer_t ***********/
+/*******************************************/
+
+struct Message_bidOffer_t
+{
+  Message_bidOffer_t() {}
+  Message_bidOffer_t(int o_clientID, int o_productID, float o_price_proposal)
+      : clientID(o_clientID), productID(o_productID), priceProposal(o_price_proposal) {}
+
+  int clientID;
+  int productID;
+  float priceProposal;
+};
+
+istream &operator>>(istream &is, Message_bidOffer_t &msg);
+ostream &operator<<(ostream &os, const Message_bidOffer_t &msg);
 
 #endif //BOOST_SIMULATION_MESSAGE_HPP
