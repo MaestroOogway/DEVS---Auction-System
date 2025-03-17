@@ -108,7 +108,7 @@ public:
         state.modelActive = false;
         state.decision = false;
         state.alphas = generateRandomAlphasAffective(); // Inicialización del vector alpha en el constructor
-        state.reservePrices.clear();
+        state.reservePrices = updateReservePrice(state.alphas, state.totalBudget, state.anxiety, state.frustration, 0);
     }
     // funcion de transición interna
     void internal_transition()
@@ -128,10 +128,6 @@ public:
             if (finalResult.winnerID == state.idAgent)
             {
                 state.totalBudget = updateTotalBudgetAffective(finalResult.bestPrice, state.totalBudget);
-            }
-            else
-            {
-                state.totalBudget = state.totalBudget;
             }
             state.modelActive = false;
         }
@@ -173,7 +169,6 @@ public:
 
         if (state.decision == true)
         {
-
             outgoingMessage.clientID = state.idAgent;
             outgoingMessage.productID = state.currentProductID + 1;
             outgoingMessage.priceProposal = state.currentBestPrice;

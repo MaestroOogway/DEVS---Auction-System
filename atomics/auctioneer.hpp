@@ -14,6 +14,12 @@
 using namespace cadmium;
 using namespace std;
 
+//funciones
+
+void updateBestPrice(){
+    
+}
+
 // Port definition
 struct Auctioneer_defs
 {
@@ -70,7 +76,7 @@ public:
     // Internal transition
     void internal_transition()
     {
-        if (state.auctionState && state.offerList.size() == 1) 
+        if (state.auctionState && (state.offerList.size() == 1 || state.offerList.size() == 0)) 
         {
             state.numberRound = 0;
             state.products.erase(state.products.begin());
@@ -117,7 +123,7 @@ public:
                 state.products[0].bestPrice = state.products[0].bestPrice*1.1;
             }
             else if (state.offerList.size()==0){
-
+                state.products[0].bestPrice = state.products[0].bestPrice;
             }
         }
     }
@@ -140,40 +146,24 @@ public:
             get_messages<typename Auctioneer_defs::out_initialIP>(bags) = bag_port_initial_out;
         }
 
-        else if (state.auctionState == true && state.offerList.size() == 1)      // Solo queda un postor, se declara ganador.
+        else if (state.auctionState==true && (state.offerList.size() == 1 || state.offerList.size() == 0))  
         {
             vector<Message_finalResults_t> bag_port_out;
             Message_finalResults_t finalResultMessage;
-            finalResultMessage.productID = state.offerList[0].productID;
-            finalResultMessage.winnerID = state.offerList[0].clientID;
+    
+            finalResultMessage.productID = state.products[0].productID;
+            finalResultMessage.winnerID = state.offerList.empty() ? 0 : state.offerList[0].clientID;
             finalResultMessage.bestPrice = state.offerList[0].priceProposal;
             finalResultMessage.initialPrice = state.products[0].initialPrice;
             finalResultMessage.numberRound = state.numberRound;
+    
             bag_port_out.push_back(finalResultMessage);
             get_messages<typename Auctioneer_defs::out_finalResult>(bags) = bag_port_out;
-            
-            if (state.products.size() > 1) {                               // Emitir el siguiente producto si hay más en la lista
-                vector<Message_initialIP_t> bag_port_initial_out;
-                bag_port_initial_out.push_back(state.products[1]);          // El siguiente producto
-                get_messages<typename Auctioneer_defs::out_initialIP>(bags) = bag_port_initial_out;
-            }
-        }
-
-        else if(state.auctionState == true && state.offerList.size() == 0){
-            vector<Message_finalResults_t> bag_port_out;
-            Message_finalResults_t finalResultMessage;
-            finalResultMessage.productID = state.offerList[0].productID;
-            finalResultMessage.winnerID = 0;
-            finalResultMessage.bestPrice = state.offerList[0].priceProposal;
-            finalResultMessage.initialPrice = state.products[0].initialPrice;
-            finalResultMessage.numberRound = state.numberRound;
-            bag_port_out.push_back(finalResultMessage);
-            get_messages<typename Auctioneer_defs::out_finalResult>(bags) = bag_port_out;
-            
-            if (state.products.size() > 1) {                               // Emitir el siguiente producto si hay más en la lista
-                vector<Message_initialIP_t> bag_port_initial_out;
-                bag_port_initial_out.push_back(state.products[1]);          // El siguiente producto
-                get_messages<typename Auctioneer_defs::out_initialIP>(bags) = bag_port_initial_out;
+    
+            // Emitir el siguiente producto si hay más en la lista
+            if (state.products.size() > 1) 
+            {
+                get_messages<typename Auctioneer_defs::out_initialIP>(bags).push_back(state.products[1]);
             }
         }
 

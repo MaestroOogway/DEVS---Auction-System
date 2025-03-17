@@ -1,440 +1,460 @@
 00:00:00:000
 State for model auctioneer_model is  | No products available. | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 0 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: 00:00:00:000
 00:00:00:000
 State for model auctioneer_model is  | No products available. | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 0 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: 00:00:00:000
 00:00:00:000
 State for model auctioneer_model is  | ProductID: 1 | BestPrice: 300 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:05:000
 State for model auctioneer_model is  | ProductID: 1 | BestPrice: 300 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 273.888 - ID Product N°2 : 1565.53 - ID Product N°3 : 2245.26 - ID Product N°4 : 915.329 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:10:000
-State for model auctioneer_model is  | ProductID: 1 | BestPrice: 300 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 273.888 - ID Product N°2 : 1565.53 - ID Product N°3 : 2245.26 - ID Product N°4 : 915.329 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 330 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:15:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 620 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 330 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:20:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 682 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 363 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:25:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 682 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 363 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:30:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 750.2 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 399.3 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:35:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 750.2 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 399.3 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:40:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 825.22 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 439.23 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:45:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 825.22 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 439.23 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:50:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 907.742 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 483.153 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:00:55:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 907.742 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 483.153 | numberRound: 5 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 5 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:00:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 998.516 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 1 | BestPrice: 483.153 | numberRound: 6 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 0 | Anxiety: 5 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 449.331 - ID Product N°2 : 1154.13 - ID Product N°3 : 1246.36 - ID Product N°4 : 2150.19 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:05:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 998.516 | numberRound: 5 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 620 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:10:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1098.37 | numberRound: 6 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 682 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:15:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1098.37 | numberRound: 6 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 682 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:20:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1208.2 | numberRound: 7 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 750.2 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:25:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1208.2 | numberRound: 7 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 750.2 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:30:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1329.03 | numberRound: 8 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 825.22 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:35:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1329.03 | numberRound: 8 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 825.22 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:40:000
-State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1329.03 | numberRound: 9 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 2488.27 - ID Product N°3 : 1784.32 - ID Product N°4 : 727.417 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 907.742 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:45:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 765 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 907.742 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:50:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 841.5 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 998.516 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:01:55:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 841.5 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 998.516 | numberRound: 5 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:00:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 925.65 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1098.37 | numberRound: 6 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:05:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 925.65 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1098.37 | numberRound: 6 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:10:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1018.22 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1208.2 | numberRound: 7 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:15:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1018.22 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1208.2 | numberRound: 7 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:20:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1120.04 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 2 | BestPrice: 1208.2 | numberRound: 8 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 5000 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 3520.08 - ID Product N°3 : 543.055 - ID Product N°4 : 936.866 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:25:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1120.04 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 3 | BestPrice: 765 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3791.8 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3119.16 - ID Product N°4 : 672.637 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:30:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1232.04 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 3 | BestPrice: 841.5 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3791.8 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3119.16 - ID Product N°4 : 672.637 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:35:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1232.04 | numberRound: 5 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 3 | BestPrice: 841.5 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3791.8 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3119.16 - ID Product N°4 : 672.637 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:40:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1355.24 | numberRound: 6 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 3 | BestPrice: 925.65 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3791.8 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3119.16 - ID Product N°4 : 672.637 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:45:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1355.24 | numberRound: 6 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 3 | BestPrice: 925.65 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3791.8 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3119.16 - ID Product N°4 : 672.637 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:50:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1490.77 | numberRound: 7 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1018.22 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3791.8 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3119.16 - ID Product N°4 : 672.637 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:02:55:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1490.77 | numberRound: 7 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1018.22 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3791.8 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3119.16 - ID Product N°4 : 672.637 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:00:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1639.85 | numberRound: 8 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1018.22 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 3791.8 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3119.16 - ID Product N°4 : 672.637 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:05:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1639.85 | numberRound: 8 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 120 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:10:000
-State for model auctioneer_model is  | ProductID: 3 | BestPrice: 1639.85 | numberRound: 9 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 3670.97 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 3511.9 - ID Product N°4 : 159.078 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 132 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:15:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 120 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 132 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:20:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 132 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 0 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 145.2 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:25:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 132 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 145.2 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:30:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 145.2 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 1 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 159.72 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:35:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 145.2 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 159.72 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:40:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 159.72 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 2 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 175.692 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:45:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 159.72 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 175.692 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:50:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 175.692 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 3 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 193.261 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:03:55:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 175.692 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 193.261 | numberRound: 5 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:00:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 193.261 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 4 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 212.587 | numberRound: 6 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:05:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 193.261 | numberRound: 5 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 212.587 | numberRound: 6 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:10:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 212.587 | numberRound: 6 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 5 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 233.846 | numberRound: 7 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:15:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 212.587 | numberRound: 6 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 233.846 | numberRound: 7 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:20:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 233.846 | numberRound: 7 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 6 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 257.231 | numberRound: 8 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:25:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 233.846 | numberRound: 7 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 257.231 | numberRound: 8 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:30:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 257.231 | numberRound: 8 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 7 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 282.954 | numberRound: 9 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:35:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 257.231 | numberRound: 8 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 282.954 | numberRound: 9 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 9 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:40:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 282.954 | numberRound: 9 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 8 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 311.249 | numberRound: 10 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 9 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:45:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 282.954 | numberRound: 9 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 9 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 311.249 | numberRound: 10 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 10 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:50:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 311.249 | numberRound: 10 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 9 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 342.374 | numberRound: 11 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 10 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:04:55:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 311.249 | numberRound: 10 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 10 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 342.374 | numberRound: 11 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 11 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:00:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 342.374 | numberRound: 11 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 10 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 376.611 | numberRound: 12 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 11 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:05:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 342.374 | numberRound: 11 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 11 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 376.611 | numberRound: 12 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 12 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:10:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 376.611 | numberRound: 12 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 11 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 414.273 | numberRound: 13 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 12 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:15:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 376.611 | numberRound: 12 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 12 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 414.273 | numberRound: 13 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 13 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:20:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 414.273 | numberRound: 13 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 12 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 455.7 | numberRound: 14 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 13 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:25:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 414.273 | numberRound: 13 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 13 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 455.7 | numberRound: 14 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 14 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:30:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 455.7 | numberRound: 14 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 13 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 501.27 | numberRound: 15 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 14 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:35:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 455.7 | numberRound: 14 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 14 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 501.27 | numberRound: 15 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 15 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:40:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 501.27 | numberRound: 15 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 14 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 551.397 | numberRound: 16 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 15 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:45:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 501.27 | numberRound: 15 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 15 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 551.397 | numberRound: 16 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 16 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:50:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 551.397 | numberRound: 16 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 15 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 606.536 | numberRound: 17 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 16 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:05:55:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 551.397 | numberRound: 16 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 16 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 606.536 | numberRound: 17 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 17 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:00:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 606.536 | numberRound: 17 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 16 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 667.19 | numberRound: 18 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 17 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:05:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 606.536 | numberRound: 17 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 17 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 667.19 | numberRound: 18 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 18 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:10:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 667.19 | numberRound: 18 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 17 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 733.909 | numberRound: 19 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 18 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:15:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 667.19 | numberRound: 18 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 18 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 733.909 | numberRound: 19 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 19 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:20:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 733.909 | numberRound: 19 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 18 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 807.3 | numberRound: 20 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 19 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:25:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 733.909 | numberRound: 19 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 19 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 807.3 | numberRound: 20 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 20 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:30:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 807.3 | numberRound: 20 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 19 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 888.03 | numberRound: 21 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 20 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:35:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 807.3 | numberRound: 20 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 20 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 888.03 | numberRound: 21 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 21 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:40:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 888.03 | numberRound: 21 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 20 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 976.833 | numberRound: 22 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 21 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:45:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 888.03 | numberRound: 21 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 21 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 976.833 | numberRound: 22 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 22 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:50:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 976.833 | numberRound: 22 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 21 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 1074.52 | numberRound: 23 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 22 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:06:55:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 976.833 | numberRound: 22 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 22 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 1074.52 | numberRound: 23 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 23 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:07:00:000
-State for model auctioneer_model is  | ProductID: 4 | BestPrice: 976.833 | numberRound: 23 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
-State for model affective_model is  IdAgent: 1 | TotalBudget: 2031.13 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 22 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 1181.97 | numberRound: 24 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 23 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
 00:07:05:000
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 1181.97 | numberRound: 24 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 24 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
+State for model input_reader is next time: inf
+00:07:10:000
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 1300.16 | numberRound: 25 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 24 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 1 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
+State for model input_reader is next time: inf
+00:07:15:000
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 1300.16 | numberRound: 25 | roundState: 0 | auctionState: 1 | stageState: 1 | modelState: 0
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 25 | Frustration: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: true | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
+State for model input_reader is next time: inf
+00:07:20:000
+State for model auctioneer_model is  | ProductID: 4 | BestPrice: 1300.16 | numberRound: 26 | roundState: 1 | auctionState: 1 | stageState: 1 | modelState: 1
+State for model affective_model is  IdAgent: 1 | TotalBudget: 2773.58 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 25 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
+State for model input_reader is next time: inf
+00:07:25:000
 State for model auctioneer_model is  | No products available. | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 0 | modelState: 0
-State for model affective_model is  IdAgent: 1 | TotalBudget: 1054.3 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 22 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2031.13 - 
-State for model rational_model is  IdAgent: 2 | TotalBudget: 4700 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1248.16 - ID Product N°2 : 1275.53 - ID Product N°3 : 1585.89 - ID Product N°4 : 890.413 - 
+State for model affective_model is  IdAgent: 1 | TotalBudget: 1473.42 | MoneySpent: 0 | Utility: 0 | Decision: 1 | Anxiety: 25 | Frustration: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 0 - ID Product N°2 : 0 - ID Product N°3 : 0 - ID Product N°4 : 2773.58 - 
+State for model rational_model is  IdAgent: 2 | TotalBudget: 4516.85 | MoneySpent: 0 | Utility: 0 | Decision: 0 | ModelActive: false | ReservePrices: ID Product N°1 : 1612.3 - ID Product N°2 : 1169.13 - ID Product N°3 : 966.718 - ID Product N°4 : 1251.86 - 
 State for model input_reader is next time: inf
