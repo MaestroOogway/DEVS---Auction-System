@@ -4,6 +4,7 @@
 #include <cadmium/modeling/ports.hpp>
 #include <cadmium/modeling/message_bag.hpp>
 
+#include "functions.hpp" // Incluir funciones compartidas
 #include <limits>
 #include <assert.h>
 #include <string>
@@ -14,12 +15,12 @@ using namespace cadmium;
 using namespace std;
 
 // Generar alphas aleatorios
-vector<float> generateRandomAlphasAffective()
+vector<float> generateRandomAlphasA()
 {
     random_device rd;
     mt19937 gen(rd());
-    uniform_real_distribution<float> dis(0.1, 1.0);
-    vector<float> alpha(4);
+    uniform_real_distribution<float> dis(0.0, 1.0);
+    vector<float> alpha(10);
 
     for (float &a : alpha)
         a = dis(gen);
@@ -30,7 +31,6 @@ vector<float> generateRandomAlphasAffective()
 
     return alpha;
 }
-
 // Calcular precios de reserva
 vector<float> updateReservePrice(const vector<float> &alphas, float totalBudget, float anxiety, float frustration, int currentProduct) {
     vector<float> reservePrices(alphas.size(), 0.0f);
@@ -44,22 +44,21 @@ vector<float> updateReservePrice(const vector<float> &alphas, float totalBudget,
 
     return reservePrices;
 }
-
-// Determinar si la oferta es aceptable
-bool getDecisionAffective(float bestPrice, float reservePrice) {
-    return reservePrice >= bestPrice;
-}
-
 // Actualizar frustración del agente
 float updateFrustration(float winner, int clientID, float frustration) {
     return (winner == clientID) ? max(0.0f, frustration - 1) : frustration + 1;
 }
 
-float updateTotalBudgetAffective(float salePrice, float totalBudget)
-{
-    return totalBudget - salePrice;
+float updateAnxiety(float anxiety, float sum){
+    if(sum>0){
+        anxiety = anxiety + 1;
+        return anxiety;
+    }
+    else{
+        anxiety = 0;
+        return anxiety;
+    }
 }
-
 // Port definition
 struct Affective_defs
 {
@@ -91,7 +90,7 @@ public:
         int idAgent, currentProductID;
         float totalBudget, moneySpent, currentBestPrice;
         float utility, anxiety, frustration;
-        bool modelActive, decision;
+        bool modelActive, decision, waitingNextProduct;
         vector<float> alphas, reservePrices;
         vector<Message_initialIP_t> purschasedProducts;
     };
@@ -107,12 +106,16 @@ public:
         state.frustration = 0;
         state.modelActive = false;
         state.decision = false;
-        state.alphas = generateRandomAlphasAffective(); // Inicialización del vector alpha en el constructor
+        state.waitingNextProduct = false;
+        state.alphas = generateRandomAlphasA(); // Inicialización del vector alpha en el constructor
         state.reservePrices = updateReservePrice(state.alphas, state.totalBudget, state.anxiety, state.frustration, 0);
     }
     // funcion de transición interna
     void internal_transition()
     {
+        if(state.waitingNextProduct){
+            state.waitingNextProduct = false;
+        }
         state.modelActive = false;
     }
 
@@ -122,14 +125,16 @@ public:
 
         if (!get_messages<typename Affective_defs::in_finalResult>(mbs).empty()) // Verificar mensajes en el puerto 'finalResult'
         {
+            state.modelActive = true;
             auto finalResultMessages = get_messages<typename Affective_defs::in_finalResult>(mbs);
             auto finalResult = finalResultMessages[0];
             state.frustration = updateFrustration(finalResult.winnerID, state.idAgent, state.frustration);
             if (finalResult.winnerID == state.idAgent)
             {
-                state.totalBudget = updateTotalBudgetAffective(finalResult.bestPrice, state.totalBudget);
+                state.totalBudget = updateTotalBudget(finalResult.bestPrice, state.totalBudget);
             }
-            state.modelActive = false;
+            state.waitingNextProduct = waitingNextProduct();
+            state.decision = false;
         }
 
         else if (!get_messages<typename Affective_defs::in_roundResult>(mbs).empty()) // Verificar si hay mensajes en el puerto 'in_roundResult'
@@ -138,11 +143,11 @@ public:
             auto roundResultMessages = get_messages<typename Affective_defs::in_roundResult>(mbs);
             auto roundResult = roundResultMessages[0];
             state.currentBestPrice = roundResult.bestPrice;
-            state.decision = getDecisionAffective(state.currentBestPrice, state.reservePrices[state.currentProductID]);
-            state.anxiety = state.anxiety + 1;
+            state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
+            state.anxiety = updateAnxiety(state.anxiety, 1);
         }
 
-        if (!get_messages<typename Affective_defs::in_initialIP>(mbs).empty()) // Verificar si hay mensajes en el puerto 'in_initialIP'
+        else if (!get_messages<typename Affective_defs::in_initialIP>(mbs).empty()) // Verificar si hay mensajes en el puerto 'in_initialIP'
         {
             state.modelActive = true;
             auto initialProductInfoMessages = get_messages<typename Affective_defs::in_initialIP>(mbs);
@@ -150,8 +155,8 @@ public:
             state.currentProductID = productInfo.productID - 1;
             state.currentBestPrice = productInfo.bestPrice;
             state.reservePrices = updateReservePrice(state.alphas, state.totalBudget, state.anxiety, state.frustration, state.currentProductID);
-            state.decision = getDecisionAffective(state.currentBestPrice, state.reservePrices[state.currentProductID]);
-            state.anxiety = 0;
+            state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
+            state.anxiety = updateAnxiety(state.anxiety, 0);
         }
     }
     // funcion de transiscion de confluencia, ejecuta la interna y luego la externa.
@@ -166,12 +171,28 @@ public:
         typename make_message_bags<output_ports>::type bags; // Crear un mensaje para enviar, basado en el estado del modelo
         vector<Message_bidOffer_t> bag_port_out;
         Message_bidOffer_t outgoingMessage; // Asociar el mensaje al puerto de salida
-
         if (state.decision == true)
         {
             outgoingMessage.clientID = state.idAgent;
             outgoingMessage.productID = state.currentProductID + 1;
             outgoingMessage.priceProposal = state.currentBestPrice;
+            outgoingMessage.decision = state.decision;
+            bag_port_out.push_back(outgoingMessage);
+            get_messages<typename Affective_defs::out_bidOffer>(bags) = bag_port_out;
+        }
+        else if (state.waitingNextProduct){
+            outgoingMessage.clientID = state.idAgent;
+            outgoingMessage.productID = 0;
+            outgoingMessage.priceProposal = 0;
+            outgoingMessage.decision = 1;
+            bag_port_out.push_back(outgoingMessage);
+            get_messages<typename Affective_defs::out_bidOffer>(bags) = bag_port_out;
+        }
+        else if(state.decision == false){
+            outgoingMessage.clientID = state.idAgent;
+            outgoingMessage.productID = state.currentProductID + 1;
+            outgoingMessage.priceProposal = state.reservePrices[state.currentProductID];
+            outgoingMessage.decision = state.decision;
             bag_port_out.push_back(outgoingMessage);
             get_messages<typename Affective_defs::out_bidOffer>(bags) = bag_port_out;
         }
@@ -196,6 +217,7 @@ public:
            << " | Anxiety: " << i.anxiety
            << " | Frustration: " << i.frustration
            << " | ModelActive: " << (i.modelActive ? "true" : "false")
+           << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false")
            << " | ReservePrices: ";
         for (size_t idx = 0; idx < i.reservePrices.size(); ++idx)
         {

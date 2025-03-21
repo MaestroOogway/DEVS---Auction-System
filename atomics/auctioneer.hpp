@@ -14,12 +14,6 @@
 using namespace cadmium;
 using namespace std;
 
-//funciones
-
-void updateBestPrice(){
-    
-}
-
 // Port definition
 struct Auctioneer_defs
 {
@@ -51,10 +45,10 @@ public:
     // state definition
     struct state_type
     {
-        bool roundState;                      // Estado de la ronda
-        bool auctionState;                    // Estado de la subasta
-        bool stageState;                      // Estado del escenario experimental
-        bool modelActive;                     // Estado del modelo
+        bool roundState;   // Estado de la ronda
+        bool auctionState; // Estado de la subasta
+        bool stageState;   // Estado del escenario experimental
+        bool modelActive;  // Estado del modelo
         int numberRound;                      // numero de ronda en curso
         vector<Message_initialIP_t> products; // Lista de productos recibidos
         vector<Message_bidOffer_t> offerList; // Lista de ofertas recibidas
@@ -76,20 +70,27 @@ public:
     // Internal transition
     void internal_transition()
     {
-        if (state.auctionState && (state.offerList.size() == 1 || state.offerList.size() == 0)) 
+        if (state.auctionState == true && state.offerList.size() <= 1)
         {
             state.numberRound = 0;
-            state.products.erase(state.products.begin());
             state.roundState = false;
-            state.auctionState = false;    
-            if (state.products.empty() == false) {      // Si quedan productos, reactivar el modelo para emitir el siguiente producto
+            state.auctionState = false;
+            state.products.erase(state.products.begin());
+
+            if (!state.products.empty())
+            { // Si quedan productos, reactivar el modelo
                 state.stageState = true;
-            } else {
-                state.stageState = false;               // No quedan más productos, se termina el escenario.
-            }    
+            }
+            else
+            {
+                state.stageState = false; // No quedan más productos, se termina el escenario.
+            }
+        }
+        else if (state.auctionState == false)
+        {
+            state.auctionState = true;
         }
         state.roundState = false;
-        state.auctionState = true;
         state.modelActive = false; // Apaga el modelo después de procesar la ronda
     }
 
@@ -100,35 +101,49 @@ public:
         {
             state.modelActive = true;
             state.stageState = true;
-            auto messages = get_messages<typename Auctioneer_defs::in_initialIP>(mbs); // Procesar los productos y almacenarlos.
-            for (const auto &message : messages)
-            {
-                state.products.push_back(message);
-            }
+            auto messages = get_messages<typename Auctioneer_defs::in_initialIP>(mbs);
+            state.products.insert(state.products.end(), messages.begin(), messages.end());
         }
 
         else if (!get_messages<typename Auctioneer_defs::in_bidOffer>(mbs).empty())
         {
             state.modelActive = true;
             state.roundState = true;
-            state.numberRound = state.numberRound + 1;
-            state.offerList.clear();                                                 //Vaciar lista de ofertas actuales para recivir las nuevas.
+            state.offerList.clear();
             auto messages = get_messages<typename Auctioneer_defs::in_bidOffer>(mbs);
-            for (const auto &message : messages)
-            {
-                state.offerList.push_back(message);
-            }
+            state.offerList.insert(state.offerList.end(), messages.begin(), messages.end());
+
+            // Filtrar elementos con decision = 0
+            state.offerList.erase(
+                std::remove_if(state.offerList.begin(), state.offerList.end(),
+                               [](const auto &offer)
+                               { return offer.decision == 0; }),
+                state.offerList.end());
+
             if (state.offerList.size() > 1)
             {
-                state.products[0].bestPrice = state.products[0].bestPrice*1.1;
+                if (state.offerList[0].productID != 0)
+                {
+                    state.products[0].bestPrice *= 1.1; // Aumentar el precio en un 10%
+                    state.numberRound++;
+                }
+                else
+                {
+                    state.numberRound = 0;
+                }
             }
-            else if (state.offerList.size()==0){
-                state.products[0].bestPrice = state.products[0].bestPrice;
+            else if (state.offerList.size() == 1)
+            {
+                state.numberRound++;
             }
+            else if (state.offerList.size() == 0){
+                state.numberRound++;
+            } 
         }
     }
 
     // Confluence transition
+
     void confluence_transition(TIME e, typename make_message_bags<input_ports>::type mbs)
     {
         internal_transition();
@@ -139,55 +154,49 @@ public:
     typename make_message_bags<output_ports>::type output() const
     {
         typename make_message_bags<output_ports>::type bags;
-        if (!state.products.empty() && state.numberRound == 0)              // Iniciar la subasta por un producto.
-        { 
+
+        if (!state.products.empty() && !state.auctionState)
+        {
             vector<Message_initialIP_t> bag_port_initial_out;
             bag_port_initial_out.push_back(state.products[0]);
             get_messages<typename Auctioneer_defs::out_initialIP>(bags) = bag_port_initial_out;
         }
 
-        else if (state.auctionState==true && (state.offerList.size() == 1 || state.offerList.size() == 0))  
+        else if (state.auctionState == true && (state.offerList.size() <= 1)) // Equivalente a (state.offerList.size() == 1 || state.offerList.empty())
         {
             vector<Message_finalResults_t> bag_port_out;
             Message_finalResults_t finalResultMessage;
-    
             finalResultMessage.productID = state.products[0].productID;
             finalResultMessage.winnerID = state.offerList.empty() ? 0 : state.offerList[0].clientID;
-            finalResultMessage.bestPrice = state.offerList[0].priceProposal;
+            finalResultMessage.bestPrice = state.offerList.empty() ? state.products[0].bestPrice : state.offerList[0].priceProposal;
             finalResultMessage.initialPrice = state.products[0].initialPrice;
             finalResultMessage.numberRound = state.numberRound;
-    
             bag_port_out.push_back(finalResultMessage);
             get_messages<typename Auctioneer_defs::out_finalResult>(bags) = bag_port_out;
-    
-            // Emitir el siguiente producto si hay más en la lista
-            if (state.products.size() > 1) 
-            {
-                get_messages<typename Auctioneer_defs::out_initialIP>(bags).push_back(state.products[1]);
-            }
         }
 
-        else 
+        else
         {
             vector<Message_roundResult_t> bag_port_out;
             Message_roundResult_t roundResultMessage;
-            roundResultMessage.clientID = 0;                                // Corregir esto que va a contener esta variable del mensaje.
-            roundResultMessage.bestPrice = state.products[0].bestPrice;
             roundResultMessage.productID = state.products[0].productID;
+            roundResultMessage.bestPrice = state.products[0].bestPrice;
             roundResultMessage.round = state.numberRound;
             bag_port_out.push_back(roundResultMessage);
             get_messages<typename Auctioneer_defs::out_roundResult>(bags) = bag_port_out;
         }
+
         return bags;
     }
 
     // Time advance
     TIME time_advance() const
     {
-        if(state.stageState==false && state.products.empty()){
+        if (!state.stageState && state.products.empty())
+        {
             return std::numeric_limits<TIME>::infinity();
         }
-        return state.modelActive ? TIME("00:00:05:000") : numeric_limits<TIME>::infinity();
+        return state.modelActive ? TIME("00:00:05:000") : std::numeric_limits<TIME>::infinity();
     }
 
     // Debug information
@@ -195,12 +204,21 @@ public:
     {
         if (!i.products.empty()) // Verificar que haya al menos un producto en la lista
         {
-            os << " | ProductID: " << i.products[0].productID
-               << " | BestPrice: " << i.products[0].bestPrice;
+            os << " | Current ProductID: " << i.products[0].productID
+               << " | Current BestPrice: " << i.products[0].bestPrice;
         }
         else
         {
             os << " | No products available.";
+        }
+        if (!i.offerList.empty())
+        {
+            os << " | size bid vector: " << i.offerList.size()
+               << " | price proposal: " << i.offerList[0].priceProposal;
+        }
+        else
+        {
+            os << " | No offer available.";
         }
         os << " | numberRound: " << i.numberRound
            << " | roundState: " << i.roundState

@@ -41,9 +41,8 @@ struct Message_roundResult_t
 
   Message_roundResult_t() {}
   Message_roundResult_t(int o_productID, int o_client, float o_bestPrice, int o_round)
-      : productID(o_productID), clientID(o_client), bestPrice(o_bestPrice), round(o_round) {}
+      : productID(o_productID), bestPrice(o_bestPrice), round(o_round) {}
   int productID;
-  int clientID;
   float bestPrice;
   int round;
 };
@@ -78,12 +77,13 @@ ostream &operator<<(ostream &os, const Message_finalResults_t &msg);
 struct Message_bidOffer_t
 {
   Message_bidOffer_t() {}
-  Message_bidOffer_t(int o_clientID, int o_productID, float o_price_proposal)
-      : clientID(o_clientID), productID(o_productID), priceProposal(o_price_proposal) {}
+  Message_bidOffer_t(int o_clientID, int o_productID, float o_price_proposal, bool o_decision)
+      : clientID(o_clientID), productID(o_productID), priceProposal(o_price_proposal), decision(o_decision) {}
 
   int clientID;
   int productID;
   float priceProposal;
+  bool decision;
 };
 
 istream &operator>>(istream &is, Message_bidOffer_t &msg);

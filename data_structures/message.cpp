@@ -50,7 +50,8 @@ istream& operator>> (istream& is, Message_initialIP_t& msg) {
 ostream& operator<<(ostream& os, const Message_bidOffer_t&msg){
   os << " ClientID: " << msg.clientID 
      << " ProductID: " << msg.productID 
-     << " Price Proposal: " << msg.priceProposal;
+     << " Price Proposal: " << msg.priceProposal
+     << " Decision:" << msg.decision;
   return os;
 }
 
@@ -64,6 +65,7 @@ istream& operator>> (istream& is, Message_bidOffer_t&msg){
   is >> msg.clientID;
   is >> msg.productID;
   is >> msg.priceProposal; 
+  is >> msg.decision;
   return is;
 }
 
@@ -74,7 +76,6 @@ istream& operator>> (istream& is, Message_bidOffer_t&msg){
 
 ostream& operator<<(ostream& os, const Message_roundResult_t& msg) {
   os << " ProductID: " << msg.productID
-     << " ClientID: " << msg.clientID 
      << " Best Price: " << msg.bestPrice
      << " N° Round: " << msg.round;
   return os;
@@ -86,7 +87,6 @@ ostream& operator<<(ostream& os, const Message_roundResult_t& msg) {
 
 istream& operator>>(istream& is, Message_roundResult_t& msg) {
   is >> msg.productID;
-  is >> msg.clientID;
   is >> msg.bestPrice;
   is >> msg.round;
   return is;

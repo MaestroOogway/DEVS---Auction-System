@@ -59,12 +59,11 @@ int main()
 
     /******* Modelo Acoplado TOP ********/
     dynamic::modeling::Ports iports_TOP = {};
-    dynamic::modeling::Ports oports_TOP = {typeid(top_out)};
+    dynamic::modeling::Ports oports_TOP = {};
     dynamic::modeling::Models submodels_TOP = {initialPI_reader, bidOffer_reader, auctioneer_model};
 
     dynamic::modeling::EICs eics_TOP = {};
-    dynamic::modeling::EOCs eocs_TOP = {
-        dynamic::translate::make_EOC<Auctioneer_defs::out_roundResult, top_out>("auctioneer_model")};
+    dynamic::modeling::EOCs eocs_TOP = {};
     dynamic::modeling::ICs ics_TOP = {
         dynamic::translate::make_IC<iestream_input_defs<Message_bidOffer_t>::out, Auctioneer_defs::in_bidOffer>(
             "bidOffer_reader", "auctioneer_model"),

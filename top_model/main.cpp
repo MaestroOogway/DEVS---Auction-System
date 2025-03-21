@@ -52,16 +52,19 @@ public:
     InputReader_initialPI_t() = default;
     InputReader_initialPI_t(const char *file_path) : iestream_input<Message_initialIP_t, T>(file_path) {}
 };
-
 int main(int argc, char **argv)
 {
-
     if (argc < 2)
     {
         cout << "Program used with wrong parameters. The program must be invoked as follow:";
         cout << argv[0] << " path to the input file " << endl;
         return 1;
     }
+
+    // Parámetros configurables: cantidad de clientes afectivos y racionales
+    int num_affective_clients = 10; // Puedes cambiar este valor
+    int num_rational_clients = 10;  // Puedes cambiar este valor
+
     /****** Input Reader atomic model instantiation *******************/
     string input = argv[1];
     const char *i_input = input.c_str();
@@ -71,42 +74,79 @@ int main(int argc, char **argv)
     shared_ptr<dynamic::modeling::model> auctioneer_model;
     auctioneer_model = dynamic::translate::make_dynamic_atomic_model<Auctioneer, TIME>("auctioneer_model");
 
-    /****** Instanciacion del Cliente Afectivo *******************/
-    shared_ptr<dynamic::modeling::model> affective_model;
-    affective_model = dynamic::translate::make_dynamic_atomic_model<Affective, TIME>("affective_model");
+    /****** Instanciación dinámica de Clientes Afectivos y Racionales *******************/
+    vector<shared_ptr<dynamic::modeling::model>> affective_clients;
+    vector<shared_ptr<dynamic::modeling::model>> rational_clients;
 
-    /****** Instanciacion del Cliente Racional *******************/
-    shared_ptr<dynamic::modeling::model> rational_model;
-    rational_model = dynamic::translate::make_dynamic_atomic_model<Rational, TIME>("rational_model");
+    for (int i = 0; i < num_affective_clients; i++)
+    {
+        affective_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Affective, TIME>("affective " + to_string(i)));
+    }
+
+    for (int i = 0; i < num_rational_clients; i++)
+    {
+        rational_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Rational, TIME>("rational " + to_string(i)));
+    }
 
     /******* ABP SIMULATOR COUPLED MODEL ********/
     dynamic::modeling::Ports iports_ABP = {typeid(in_initialIP_ABP)};
     dynamic::modeling::Ports oports_ABP = {typeid(out_roundResult_ABP), typeid(out_finalResult_ABP)};
-    dynamic::modeling::Models submodels_ABP = {auctioneer_model, affective_model, rational_model};
-    // Conexion entre entrada externa del modelo Acoplado con entrada interna del subastador
+
+    dynamic::modeling::Models submodels_ABP = {auctioneer_model};
+    submodels_ABP.insert(submodels_ABP.end(), affective_clients.begin(), affective_clients.end());
+    submodels_ABP.insert(submodels_ABP.end(), rational_clients.begin(), rational_clients.end());
+
+    // EICs (External Input Couplings)
     dynamic::modeling::EICs eics_ABP = {
         cadmium::dynamic::translate::make_EIC<in_initialIP_ABP, Auctioneer_defs::in_initialIP>("auctioneer_model")};
-    // Conexion entre salida del subastador y salida del modelo Acoppplado
+
+    // EOCs (External Output Couplings)
     dynamic::modeling::EOCs eocs_ABP = {
         dynamic::translate::make_EOC<Auctioneer_defs::out_roundResult, out_roundResult_ABP>("auctioneer_model"),
         dynamic::translate::make_EOC<Auctioneer_defs::out_finalResult, out_finalResult_ABP>("auctioneer_model")};
 
-    dynamic::modeling::ICs ics_ABP = {
-        // Subastador manda productos a los clientes
-        dynamic::translate::make_IC<Auctioneer_defs::out_initialIP, Affective_defs::in_initialIP>("auctioneer_model", "affective_model"),
-        dynamic::translate::make_IC<Auctioneer_defs::out_initialIP, Rational_defs::in_initialIP>("auctioneer_model", "rational_model"),
+    // ICs (Internal Couplings)
+    dynamic::modeling::ICs ics_ABP;
 
-        // Clientes envían ofertas al subastador
-        dynamic::translate::make_IC<Affective_defs::out_bidOffer, Auctioneer_defs::in_bidOffer>("affective_model", "auctioneer_model"),
-        dynamic::translate::make_IC<Rational_defs::out_bidOffer, Auctioneer_defs::in_bidOffer>("rational_model", "auctioneer_model"),
+    // Subastador envía productos a los clientes
+    for (const auto &affective : affective_clients)
+    {
+        ics_ABP.push_back(dynamic::translate::make_IC<Auctioneer_defs::out_initialIP, Affective_defs::in_initialIP>("auctioneer_model", affective->get_id()));
+    }
+    for (const auto &rational : rational_clients)
+    {
+        ics_ABP.push_back(dynamic::translate::make_IC<Auctioneer_defs::out_initialIP, Rational_defs::in_initialIP>("auctioneer_model", rational->get_id()));
+    }
 
-        // Subastador manda resultado de cada ronda a los clientes
-        dynamic::translate::make_IC<Auctioneer_defs::out_roundResult, Affective_defs::in_roundResult>("auctioneer_model", "affective_model"),
-        dynamic::translate::make_IC<Auctioneer_defs::out_roundResult, Rational_defs::in_roundResult>("auctioneer_model", "rational_model"),
+    // Clientes envían ofertas al subastador
+    for (const auto &affective : affective_clients)
+    {
+        ics_ABP.push_back(dynamic::translate::make_IC<Affective_defs::out_bidOffer, Auctioneer_defs::in_bidOffer>(affective->get_id(), "auctioneer_model"));
+    }
+    for (const auto &rational : rational_clients)
+    {
+        ics_ABP.push_back(dynamic::translate::make_IC<Rational_defs::out_bidOffer, Auctioneer_defs::in_bidOffer>(rational->get_id(), "auctioneer_model"));
+    }
 
-        // Subastador manda resultado final a los clientes
-        dynamic::translate::make_IC<Auctioneer_defs::out_finalResult, Affective_defs::in_finalResult>("auctioneer_model", "affective_model"),
-        dynamic::translate::make_IC<Auctioneer_defs::out_finalResult, Rational_defs::in_finalResult>("auctioneer_model", "rational_model")};
+    // Subastador manda resultado de cada ronda a los clientes
+    for (const auto &affective : affective_clients)
+    {
+        ics_ABP.push_back(dynamic::translate::make_IC<Auctioneer_defs::out_roundResult, Affective_defs::in_roundResult>("auctioneer_model", affective->get_id()));
+    }
+    for (const auto &rational : rational_clients)
+    {
+        ics_ABP.push_back(dynamic::translate::make_IC<Auctioneer_defs::out_roundResult, Rational_defs::in_roundResult>("auctioneer_model", rational->get_id()));
+    }
+
+    // Subastador manda resultado final a los clientes
+    for (const auto &affective : affective_clients)
+    {
+        ics_ABP.push_back(dynamic::translate::make_IC<Auctioneer_defs::out_finalResult, Affective_defs::in_finalResult>("auctioneer_model", affective->get_id()));
+    }
+    for (const auto &rational : rational_clients)
+    {
+        ics_ABP.push_back(dynamic::translate::make_IC<Auctioneer_defs::out_finalResult, Rational_defs::in_finalResult>("auctioneer_model", rational->get_id()));
+    }
 
     shared_ptr<dynamic::modeling::coupled<TIME>> ABP_SIMULATOR;
     ABP_SIMULATOR = make_shared<dynamic::modeling::coupled<TIME>>(
@@ -119,7 +159,6 @@ int main(int argc, char **argv)
     dynamic::modeling::Models submodels_TOP = {ABP_SIMULATOR, input_reader};
 
     dynamic::modeling::EICs eics_TOP = {};
-
     dynamic::modeling::EOCs eocs_TOP = {
         dynamic::translate::make_EOC<out_roundResult_ABP, out_roundResult_ABP>("ABP_SIMULATOR"),
         dynamic::translate::make_EOC<out_finalResult_ABP, out_finalResult_ABP>("ABP_SIMULATOR")};
