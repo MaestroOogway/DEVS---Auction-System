@@ -86,10 +86,10 @@ public:
     };
     state_type state;
     // constructor del modelo
-    Rational()
-    {
-        state.idAgent = 2;
-        state.totalBudget = 5000;
+    Rational() = default;
+    Rational(int id, float budget) noexcept{
+        state.idAgent = id;
+        state.totalBudget = budget;
         state.moneySpent = 0;
         state.utility = 0;
         state.modelActive = false;

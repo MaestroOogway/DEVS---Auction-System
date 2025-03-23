@@ -96,10 +96,10 @@ public:
     };
     state_type state;
     // constructor del modelo
-    Affective()
-    {
-        state.idAgent = 1;
-        state.totalBudget = 5000;
+    Affective() = default; 
+    Affective(int id, float budget) noexcept{
+        state.idAgent = id;
+        state.totalBudget = budget;
         state.moneySpent = 0;
         state.utility = 0;
         state.anxiety = 0;
@@ -144,7 +144,9 @@ public:
             auto roundResult = roundResultMessages[0];
             state.currentBestPrice = roundResult.bestPrice;
             state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
-            state.anxiety = updateAnxiety(state.anxiety, 1);
+            if (state.decision){
+                state.anxiety = updateAnxiety(state.anxiety, 1);
+            }
         }
 
         else if (!get_messages<typename Affective_defs::in_initialIP>(mbs).empty()) // Verificar si hay mensajes en el puerto 'in_initialIP'
@@ -157,6 +159,9 @@ public:
             state.reservePrices = updateReservePrice(state.alphas, state.totalBudget, state.anxiety, state.frustration, state.currentProductID);
             state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
             state.anxiety = updateAnxiety(state.anxiety, 0);
+            if (state.decision){
+                state.anxiety = updateAnxiety(state.anxiety, 1);
+            }
         }
     }
     // funcion de transiscion de confluencia, ejecuta la interna y luego la externa.

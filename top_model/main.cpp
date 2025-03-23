@@ -22,12 +22,37 @@
 #include <chrono>
 #include <algorithm>
 #include <string>
+#include <unordered_set>
+#include <random>
 
 using namespace std;
 using namespace cadmium;
 using namespace cadmium::basic_models::pdevs;
 
 using TIME = NDTime;
+
+// Función para generar un IDs agentes
+int generateUniqueID(std::unordered_set<int>& usedIDs) {
+    static std::mt19937 rng(std::random_device{}());  // Generador de números aleatorios
+    static std::uniform_int_distribution<int> dist(1000, 9999); // Rango de IDs
+
+    int id;
+    do {
+        id = dist(rng);  // Generar un nuevo ID
+    } while (usedIDs.find(id) != usedIDs.end());  // Evitar duplicados
+
+    usedIDs.insert(id);  // Marcar el ID como usado
+    return id;
+}
+
+float generateBudget(){
+    srand(time(NULL));
+    int inf = 5000;
+    int sup = 10000;
+    float random;
+    random = inf + static_cast<float>(rand()) / RAND_MAX * (sup - inf);
+    return random;
+}
 
 /***** Define input port for coupled models *****/
 struct in_initialIP_ABP : public in_port<Message_initialIP_t> // Informacion inicial del producto
@@ -62,30 +87,33 @@ int main(int argc, char **argv)
     }
 
     // Parámetros configurables: cantidad de clientes afectivos y racionales
-    int num_affective_clients = 10; // Puedes cambiar este valor
-    int num_rational_clients = 10;  // Puedes cambiar este valor
+    int num_affective_clients = 10; 
+    int num_rational_clients = 10;
 
     /****** Input Reader atomic model instantiation *******************/
     string input = argv[1];
     const char *i_input = input.c_str();
     shared_ptr<dynamic::modeling::model> input_reader = dynamic::translate::make_dynamic_atomic_model<InputReader_initialPI_t, TIME, const char *>("input_reader", move(i_input));
-
+    //shared_ptr<dynamic::modeling::model> employee_1 = dynamic::translate::make_dynamic_atomic_model<Employee, TIME, int, double>("employee_1", 1, 20);
     /****** Instanciacion del Subastador *******************/
-    shared_ptr<dynamic::modeling::model> auctioneer_model;
-    auctioneer_model = dynamic::translate::make_dynamic_atomic_model<Auctioneer, TIME>("auctioneer_model");
-
+    shared_ptr<dynamic::modeling::model> auctioneer_model = dynamic::translate::make_dynamic_atomic_model<Auctioneer,TIME>("auctioneer_model");
     /****** Instanciación dinámica de Clientes Afectivos y Racionales *******************/
     vector<shared_ptr<dynamic::modeling::model>> affective_clients;
     vector<shared_ptr<dynamic::modeling::model>> rational_clients;
+    std::unordered_set<int> usedIDs;        // Almacena los IDs ya usados para evitar repetidos
 
-    for (int i = 0; i < num_affective_clients; i++)
+    for (int i = 1; i < num_affective_clients; i++)
     {
-        affective_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Affective, TIME>("affective " + to_string(i)));
+        int idA = generateUniqueID(usedIDs);
+        float randomBudget = generateBudget();
+        affective_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Affective, TIME, int, float>("affective_"+to_string(idA), move(idA), move(randomBudget)));
     }
 
     for (int i = 0; i < num_rational_clients; i++)
     {
-        rational_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Rational, TIME>("rational " + to_string(i)));
+        int idR = generateUniqueID(usedIDs);
+        float randomBudget = generateBudget();
+        rational_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Rational, TIME, int, float>("rational_"+to_string(idR), move(idR), move(randomBudget)));
     }
 
     /******* ABP SIMULATOR COUPLED MODEL ********/

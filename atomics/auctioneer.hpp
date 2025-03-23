@@ -56,8 +56,7 @@ public:
     state_type state;
 
     // constructor
-    Auctioneer()
-    {
+    Auctioneer(){
         state.roundState = false;
         state.auctionState = false;
         state.stageState = false;
@@ -112,7 +111,6 @@ public:
             state.offerList.clear();
             auto messages = get_messages<typename Auctioneer_defs::in_bidOffer>(mbs);
             state.offerList.insert(state.offerList.end(), messages.begin(), messages.end());
-
             // Filtrar elementos con decision = 0
             state.offerList.erase(
                 std::remove_if(state.offerList.begin(), state.offerList.end(),
@@ -132,13 +130,10 @@ public:
                     state.numberRound = 0;
                 }
             }
-            else if (state.offerList.size() == 1)
+            else if (state.offerList.size() <= 1)
             {
                 state.numberRound++;
             }
-            else if (state.offerList.size() == 0){
-                state.numberRound++;
-            } 
         }
     }
 
@@ -162,7 +157,7 @@ public:
             get_messages<typename Auctioneer_defs::out_initialIP>(bags) = bag_port_initial_out;
         }
 
-        else if (state.auctionState == true && (state.offerList.size() <= 1)) // Equivalente a (state.offerList.size() == 1 || state.offerList.empty())
+        else if (state.auctionState && (state.offerList.size() <= 1)) // Equivalente a (state.offerList.size() == 1 || state.offerList.empty())
         {
             vector<Message_finalResults_t> bag_port_out;
             Message_finalResults_t finalResultMessage;
