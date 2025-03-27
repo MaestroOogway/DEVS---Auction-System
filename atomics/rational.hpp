@@ -9,6 +9,7 @@
 #include <string>
 #include <random>
 #include "../data_structures/message.hpp"
+#include <unordered_map>
 
 using namespace cadmium;
 using namespace std;
@@ -23,16 +24,12 @@ vector<float> generateRandomAlphasR()
 
     for (float &a : alpha)
         a = dis(gen);
-
-    float sum = accumulate(alpha.begin(), alpha.end(), 0.0f);       // Normalizar en una sola línea
-    for (float &a : alpha)
-        a /= sum;
-
+        
     return alpha;
 }
 
 // Calcular precios de reserva
-vector<float> generateReservePrices(const vector<float>& level, float totalbudget)
+vector<float> generateReservePrices(const vector<float> &level, float totalbudget)
 {
     float sumLevel = accumulate(level.begin(), level.end(), 0.0f);
     vector<float> prices(level.size());
@@ -44,13 +41,8 @@ vector<float> generateReservePrices(const vector<float>& level, float totalbudge
 
     return prices;
 }
-// Determinar si la oferta es aceptable
-bool getDecisionRational(float bestPrice, float reservePrice) {
-    return reservePrice >= bestPrice;
-}
 
 // Port definition
-
 struct Rational_defs
 {
     struct in_initialIP : public in_port<Message_initialIP_t>
@@ -74,7 +66,6 @@ public:
     // ports definition
     using input_ports = tuple<typename Rational_defs::in_initialIP, typename Rational_defs::in_roundResult, typename Rational_defs::in_finalResult>;
     using output_ports = tuple<typename Rational_defs::out_bidOffer>;
-
     // state definition
     struct state_type
     {
@@ -83,11 +74,13 @@ public:
         float utility;
         bool modelActive, decision, waitingNextProduct;
         vector<float> alphas, reservePrices;
+        vector<Message_finalResults_t> purschasedProducts;
     };
     state_type state;
     // constructor del modelo
     Rational() = default;
-    Rational(int id, float budget) noexcept{
+    Rational(int id, float budget) noexcept
+    {
         state.idAgent = id;
         state.totalBudget = budget;
         state.moneySpent = 0;
@@ -95,13 +88,15 @@ public:
         state.modelActive = false;
         state.decision = false;
         state.waitingNextProduct = false;
+        state.purschasedProducts.clear();
         state.alphas = generateRandomAlphasR(); // Inicialización del vector alpha en el constructor
         state.reservePrices = generateReservePrices(state.alphas, state.totalBudget);
     }
     // funcion de transición interna
     void internal_transition()
     {
-        if(state.waitingNextProduct){
+        if (state.waitingNextProduct)
+        {
             state.waitingNextProduct = false;
         }
         state.modelActive = false;
@@ -119,11 +114,12 @@ public:
             if (finalResult.winnerID == state.idAgent)
             {
                 state.totalBudget = updateTotalBudget(finalResult.bestPrice, state.totalBudget);
+                state.moneySpent = updateMoneySpent(finalResult.bestPrice, state.moneySpent);
+                state.purschasedProducts.push_back(finalResult);
             }
             state.waitingNextProduct = waitingNextProduct();
             state.decision = false;
         }
-
         else if (!get_messages<typename Rational_defs::in_roundResult>(mbs).empty()) // Verificar si hay mensajes en el puerto 'in_roundResult'
         {
             state.modelActive = true;
@@ -132,7 +128,6 @@ public:
             state.currentBestPrice = roundResult.bestPrice;
             state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
         }
-
         else if (!get_messages<typename Rational_defs::in_initialIP>(mbs).empty()) // Verificar si hay mensajes en el puerto 'in_initialIP'
         {
             state.modelActive = true;
@@ -164,27 +159,22 @@ public:
             bag_port_out.push_back(outgoingMessage);
             get_messages<typename Rational_defs::out_bidOffer>(bags) = bag_port_out;
         }
-        else if (state.waitingNextProduct){
+        else if (state.decision == false)
+        {
             outgoingMessage.clientID = state.idAgent;
-            outgoingMessage.productID = 0;
-            outgoingMessage.priceProposal = 0;
-            outgoingMessage.decision = 1;
-            bag_port_out.push_back(outgoingMessage);
-            get_messages<typename Rational_defs::out_bidOffer>(bags) = bag_port_out;
-        }
-        else if(state.decision == false){
-            outgoingMessage.clientID = state.idAgent;
-            outgoingMessage.productID = state.currentProductID + 1;
-            outgoingMessage.priceProposal = state.reservePrices[state.currentProductID];
-            outgoingMessage.decision = state.decision;
+            outgoingMessage.productID = state.waitingNextProduct ? 0 : state.currentProductID + 1;
+            outgoingMessage.priceProposal = state.waitingNextProduct ? 0 : state.reservePrices[state.currentProductID];
+            outgoingMessage.decision = state.waitingNextProduct ? 1 : state.decision;
             bag_port_out.push_back(outgoingMessage);
             get_messages<typename Rational_defs::out_bidOffer>(bags) = bag_port_out;
         }
         return bags;
     }
     // Tiempo de avance
-    TIME time_advance() const {
-        if(state.modelActive == false){
+    TIME time_advance() const
+    {
+        if (state.modelActive == false)
+        {
             return std::numeric_limits<TIME>::infinity();
         }
         return state.modelActive ? TIME("00:00:05:000") : numeric_limits<TIME>::infinity();
@@ -202,7 +192,21 @@ public:
            << " | ReservePrices: ";
         for (size_t idx = 0; idx < i.reservePrices.size(); ++idx)
         {
-            os << "ID Product N°" << idx+1 << " : " << i.reservePrices[idx] << " - "; // Muestra el índice y el precio de reserva
+            os << "ID Product N°" << idx + 1 << " : " << i.reservePrices[idx] << " - "; // Muestra el índice y el precio de reserva
+        }
+
+        // Mostrar los productos comprados
+        os << " | Purchased Products: ";
+        if (i.purschasedProducts.empty())
+        {
+            os << "None"; // Si no ha comprado nada
+        }
+        else
+        {
+            for (const auto &product : i.purschasedProducts)
+            {
+                os << "[Product ID: " << product.productID << "] "; // Ajusta según la estructura de Message_finalResults_t
+            }
         }
         return os;
     }

@@ -3,12 +3,14 @@
 
 #include <cadmium/modeling/ports.hpp>
 #include <cadmium/modeling/message_bag.hpp>
+#include "functions.hpp" // Incluir funciones compartidas
 
 #include <limits>
 #include <string>
 #include <vector>
 #include <cassert>
 #include <iostream>
+
 #include "../data_structures/message.hpp"
 
 using namespace cadmium;
@@ -45,16 +47,13 @@ public:
     // state definition
     struct state_type
     {
-        bool roundState;   // Estado de la ronda
-        bool auctionState; // Estado de la subasta
-        bool stageState;   // Estado del escenario experimental
-        bool modelActive;  // Estado del modelo
-        int numberRound;                      // numero de ronda en curso
-        vector<Message_initialIP_t> products; // Lista de productos recibidos
+        bool roundState, auctionState, stageState;   // Estado de la ronda
+        bool modelActive;                           // Estado del modelo
+        int numberRound;                            // numero de ronda en curso
+        vector<Message_initialIP_t> recivedProducts, soldProducts, products; // Productos totales recibidos
         vector<Message_bidOffer_t> offerList; // Lista de ofertas recibidas
     };
     state_type state;
-
     // constructor
     Auctioneer(){
         state.roundState = false;
@@ -62,10 +61,11 @@ public:
         state.stageState = false;
         state.modelActive = false;
         state.numberRound = 0;
+        state.recivedProducts.clear();
         state.products.clear();
+        state.soldProducts.clear();
         state.offerList.clear();
     }
-
     // Internal transition
     void internal_transition()
     {
@@ -101,13 +101,11 @@ public:
             state.modelActive = true;
             state.stageState = true;
             auto messages = get_messages<typename Auctioneer_defs::in_initialIP>(mbs);
-            state.products.insert(state.products.end(), messages.begin(), messages.end());
+            state.products.insert(state.products.end(), messages.begin(), messages.end());  // Insertar productos recibidos
         }
-
         else if (!get_messages<typename Auctioneer_defs::in_bidOffer>(mbs).empty())
         {
             state.modelActive = true;
-            state.roundState = true;
             state.offerList.clear();
             auto messages = get_messages<typename Auctioneer_defs::in_bidOffer>(mbs);
             state.offerList.insert(state.offerList.end(), messages.begin(), messages.end());
@@ -118,47 +116,40 @@ public:
                                { return offer.decision == 0; }),
                 state.offerList.end());
 
-            if (state.offerList.size() > 1)
-            {
-                if (state.offerList[0].productID != 0)
-                {
+            if (state.offerList.size() > 1){
+                if (state.offerList[0].productID != 0) {
+                    state.roundState = true;
                     state.products[0].bestPrice *= 1.1; // Aumentar el precio en un 10%
                     state.numberRound++;
                 }
-                else
-                {
+                else {
+                    state.roundState = false;
                     state.numberRound = 0;
                 }
             }
-            else if (state.offerList.size() <= 1)
-            {
+            else if (state.offerList.size() <= 1){
+                state.roundState = true;
                 state.numberRound++;
             }
         }
     }
-
     // Confluence transition
-
     void confluence_transition(TIME e, typename make_message_bags<input_ports>::type mbs)
     {
         internal_transition();
         external_transition(e, move(mbs));
     }
-
     // Output function
     typename make_message_bags<output_ports>::type output() const
     {
         typename make_message_bags<output_ports>::type bags;
 
-        if (!state.products.empty() && !state.auctionState)
-        {
+        if (!state.products.empty() && !state.auctionState) {
             vector<Message_initialIP_t> bag_port_initial_out;
             bag_port_initial_out.push_back(state.products[0]);
             get_messages<typename Auctioneer_defs::out_initialIP>(bags) = bag_port_initial_out;
         }
-
-        else if (state.auctionState && (state.offerList.size() <= 1)) // Equivalente a (state.offerList.size() == 1 || state.offerList.empty())
-        {
+        else if (state.auctionState && (state.offerList.size() <= 1)) {// Equivalente a (state.offerList.size() == 1 || state.offerList.empty())
             vector<Message_finalResults_t> bag_port_out;
             Message_finalResults_t finalResultMessage;
             finalResultMessage.productID = state.products[0].productID;
@@ -169,9 +160,7 @@ public:
             bag_port_out.push_back(finalResultMessage);
             get_messages<typename Auctioneer_defs::out_finalResult>(bags) = bag_port_out;
         }
-
-        else
-        {
+        else {
             vector<Message_roundResult_t> bag_port_out;
             Message_roundResult_t roundResultMessage;
             roundResultMessage.productID = state.products[0].productID;
@@ -183,17 +172,14 @@ public:
 
         return bags;
     }
-
     // Time advance
     TIME time_advance() const
     {
-        if (!state.stageState && state.products.empty())
-        {
+        if (!state.stageState && state.products.empty()){
             return std::numeric_limits<TIME>::infinity();
         }
         return state.modelActive ? TIME("00:00:05:000") : std::numeric_limits<TIME>::infinity();
     }
-
     // Debug information
     friend ostringstream &operator<<(ostringstream &os, const typename Auctioneer<TIME>::state_type &i)
     {
@@ -208,8 +194,7 @@ public:
         }
         if (!i.offerList.empty())
         {
-            os << " | size bid vector: " << i.offerList.size()
-               << " | price proposal: " << i.offerList[0].priceProposal;
+            os << " | size bid vector: " << i.offerList.size();
         }
         else
         {
