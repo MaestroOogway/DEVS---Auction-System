@@ -4,36 +4,23 @@
 #include <cadmium/modeling/ports.hpp>
 #include <cadmium/modeling/message_bag.hpp>
 #include "functions.hpp" // Incluir funciones compartidas
-
 #include <limits>
 #include <string>
 #include <vector>
 #include <cassert>
 #include <iostream>
-
 #include "../data_structures/message.hpp"
 
 using namespace cadmium;
 using namespace std;
 
 // Port definition
-struct Auctioneer_defs
-{
-    struct out_initialIP : public out_port<Message_initialIP_t> // Informacion inicial del producto
-    {
-    };
-    struct out_roundResult : public out_port<Message_roundResult_t> // Resultado de la ronda
-    {
-    };
-    struct out_finalResult : public out_port<Message_finalResults_t> // Resultado de la subasta
-    {
-    };
-    struct in_bidOffer : public in_port<Message_bidOffer_t> // Ofertas de los clientes
-    {
-    };
-    struct in_initialIP : public in_port<Message_initialIP_t> // Informacion inicial del producto
-    {
-    };
+struct Auctioneer_defs {
+    struct out_initialIP : public out_port<Message_initialIP_t> {}; // Informacion inicial del producto
+    struct out_roundResult : public out_port<Message_roundResult_t> {}; // Resultado de la ronda
+    struct out_finalResult : public out_port<Message_finalResults_t> {}; // Resultado de la subasta
+    struct in_bidOffer : public in_port<Message_bidOffer_t> {}; // Ofertas de los clientes
+    struct in_initialIP : public in_port<Message_initialIP_t> {}; // Informacion inicial del producto
 };
 
 template <typename TIME>
@@ -55,17 +42,7 @@ public:
     };
     state_type state;
     // constructor
-    Auctioneer(){
-        state.roundState = false;
-        state.auctionState = false;
-        state.stageState = false;
-        state.modelActive = false;
-        state.numberRound = 0;
-        state.recivedProducts.clear();
-        state.products.clear();
-        state.soldProducts.clear();
-        state.offerList.clear();
-    }
+    Auctioneer() { state = {false, false, false, false, 0, {}, {}, {}, {}}; } // Constructor
     // Internal transition
     void internal_transition()
     {
@@ -75,7 +52,6 @@ public:
             state.roundState = false;
             state.auctionState = false;
             state.products.erase(state.products.begin());
-
             if (!state.products.empty())
             { // Si quedan productos, reactivar el modelo
                 state.stageState = true;
@@ -102,6 +78,19 @@ public:
             state.stageState = true;
             auto messages = get_messages<typename Auctioneer_defs::in_initialIP>(mbs);
             state.products.insert(state.products.end(), messages.begin(), messages.end());  // Insertar productos recibidos
+            // Filtrar los 10 productos seleccionados aleatoriamente
+            std::vector<int> selectedProductIDs = getRandomProducts();
+            std::vector<Message_initialIP_t> selectedProducts;
+            // Filtrar productos según los IDs seleccionados
+            for (const auto& product : state.products)
+            {
+                if (std::find(selectedProductIDs.begin(), selectedProductIDs.end(), product.productID) != selectedProductIDs.end())
+                {
+                    selectedProducts.push_back(product);  // Agregar el producto a la lista seleccionada
+                }
+            }
+            // Asignar los productos seleccionados a la subasta
+            state.products = selectedProducts; 
         }
         else if (!get_messages<typename Auctioneer_defs::in_bidOffer>(mbs).empty())
         {
@@ -181,26 +170,10 @@ public:
         return state.modelActive ? TIME("00:00:05:000") : std::numeric_limits<TIME>::infinity();
     }
     // Debug information
-    friend ostringstream &operator<<(ostringstream &os, const typename Auctioneer<TIME>::state_type &i)
-    {
-        if (!i.products.empty()) // Verificar que haya al menos un producto en la lista
-        {
-            os << " | Current ProductID: " << i.products[0].productID
-               << " | Current BestPrice: " << i.products[0].bestPrice;
-        }
-        else
-        {
-            os << " | No products available.";
-        }
-        if (!i.offerList.empty())
-        {
-            os << " | size bid vector: " << i.offerList.size();
-        }
-        else
-        {
-            os << " | No offer available.";
-        }
-        os << " | numberRound: " << i.numberRound
+    friend ostringstream &operator<<(ostringstream &os, const typename Auctioneer<TIME>::state_type &i) {
+        os << (i.products.empty() ? " | No products available." : " | Current ProductID: " + to_string(i.products[0].productID) + " | Current BestPrice: " + to_string(i.products[0].bestPrice))
+           << (i.offerList.empty() ? " | No offer available." : " | size bid vector: " + to_string(i.offerList.size()))
+           << " | numberRound: " << i.numberRound
            << " | roundState: " << i.roundState
            << " | auctionState: " << i.auctionState
            << " | stageState: " << i.stageState

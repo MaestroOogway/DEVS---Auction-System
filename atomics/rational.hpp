@@ -11,76 +11,65 @@
 #include "../data_structures/message.hpp"
 #include <unordered_map>
 
-using namespace cadmium;
-using namespace std;
+using namespace cadmium; using namespace std;
 
 // Generar alphas aleatorios
-vector<float> generateRandomAlphasR()
-{
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_real_distribution<float> dis(0.0, 1.0);
-    vector<float> alpha(10);
-
-    for (float &a : alpha)
-        a = dis(gen);
-        
-    return alpha;
+std::vector<Alphas> generateRandomAlphasR() {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<float> dis(0.0, 1.0);
+    std::vector<Alphas> alphas(100); // Crear un vector de 100 elementos
+    for (int i = 0; i < 100; ++i) {
+        alphas[i].id = i + 1; // ID del 1 al 100
+        alphas[i].alpha = dis(gen); // Número aleatorio entre 0 y 1
+    }
+    return alphas; // Retornar el vector
 }
 
-// Calcular precios de reserva
-vector<float> generateReservePrices(const vector<float> &level, float totalbudget)
-{
-    float sumLevel = accumulate(level.begin(), level.end(), 0.0f);
-    vector<float> prices(level.size());
-
-    for (size_t i = 0; i < level.size(); i++)
-    {
-        prices[i] = (level[i] / sumLevel) * totalbudget;
+vector<ReservePrice> generateReservePrices(const std::vector<Alphas>& alphas, const std::vector<int>& ids, float totalBudget) {
+    std::vector<ReservePrice> reservePrices;//Estructura con ids y precios de reserva de productos que se subastan
+    std::vector<float> selectedAlphas;      //alphas de productos que se subastan
+    for (int id : ids) {
+        for (const auto& alpha : alphas) {  //Encuentra los alphas de los productos que se subastan.
+            if (alpha.id == id) {
+                selectedAlphas.push_back(alpha.alpha);
+            break;
+            }
+        }
     }
 
-    return prices;
+    float sumAlphas = std::accumulate(selectedAlphas.begin(), selectedAlphas.end(), 0.0f); // Suma total denominador
+    for (size_t i = 0; i < ids.size(); ++i) {     // Calcular los precios de reserva
+        ReservePrice rp;
+        rp.id = ids[i];
+        rp.price = (selectedAlphas[i] / sumAlphas) * totalBudget; // Fórmula de precios de reserva
+        reservePrices.push_back(rp);
+    }
+    return reservePrices;
 }
 
-// Port definition
-struct Rational_defs
-{
-    struct in_initialIP : public in_port<Message_initialIP_t>
-    {
-    };
-    struct in_roundResult : public in_port<Message_roundResult_t>
-    {
-    };
-    struct in_finalResult : public in_port<Message_finalResults_t>
-    {
-    };
-    struct out_bidOffer : public out_port<Message_bidOffer_t>
-    {
-    };
+struct Rational_defs { // Port definition
+    struct in_initialIP : public in_port<Message_initialIP_t> {};
+    struct in_roundResult : public in_port<Message_roundResult_t> {};
+    struct in_finalResult : public in_port<Message_finalResults_t> {};
+    struct out_bidOffer : public out_port<Message_bidOffer_t> {};
 };
 
 template <typename TIME>
-class Rational
-{
+class Rational {
 public:
-    // ports definition
     using input_ports = tuple<typename Rational_defs::in_initialIP, typename Rational_defs::in_roundResult, typename Rational_defs::in_finalResult>;
     using output_ports = tuple<typename Rational_defs::out_bidOffer>;
-    // state definition
-    struct state_type
-    {
+    struct state_type { // Estado del agente
         int idAgent, currentProductID;
-        float totalBudget, moneySpent, currentBestPrice;
-        float utility;
+        float totalBudget, moneySpent, currentBestPrice, utility;
         bool modelActive, decision, waitingNextProduct;
-        vector<float> alphas, reservePrices;
+        vector<Alphas> alphas;
+        vector<ReservePrice> reservePrices;
         vector<Message_finalResults_t> purschasedProducts;
-    };
-    state_type state;
-    // constructor del modelo
+    } state;
     Rational() = default;
-    Rational(int id, float budget) noexcept
-    {
+    Rational(int id, float budget) noexcept{
         state.idAgent = id;
         state.totalBudget = budget;
         state.moneySpent = 0;
@@ -90,18 +79,16 @@ public:
         state.waitingNextProduct = false;
         state.purschasedProducts.clear();
         state.alphas = generateRandomAlphasR(); // Inicialización del vector alpha en el constructor
-        state.reservePrices = generateReservePrices(state.alphas, state.totalBudget);
+        state.reservePrices = generateReservePrices(state.alphas, getRandomProducts() ,state.totalBudget);
     }
     // funcion de transición interna
     void internal_transition()
     {
-        if (state.waitingNextProduct)
-        {
+        if (state.waitingNextProduct){
             state.waitingNextProduct = false;
         }
         state.modelActive = false;
     }
-
     // función de transición externa
     void external_transition(TIME e, typename make_message_bags<input_ports>::type mbs)
     {
@@ -126,16 +113,16 @@ public:
             auto roundResultMessages = get_messages<typename Rational_defs::in_roundResult>(mbs);
             auto roundResult = roundResultMessages[0];
             state.currentBestPrice = roundResult.bestPrice;
-            state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
+            state.decision = getDecision(state.currentBestPrice, state.reservePrices, state.currentProductID);
         }
         else if (!get_messages<typename Rational_defs::in_initialIP>(mbs).empty()) // Verificar si hay mensajes en el puerto 'in_initialIP'
         {
             state.modelActive = true;
             auto initialProductInfoMessages = get_messages<typename Rational_defs::in_initialIP>(mbs);
             auto productInfo = initialProductInfoMessages[0];
-            state.currentProductID = productInfo.productID - 1;
+            state.currentProductID = productInfo.productID;
             state.currentBestPrice = productInfo.bestPrice;
-            state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
+            state.decision = getDecision(state.currentBestPrice, state.reservePrices, state.currentProductID);
         }
     }
     // funcion de transiscion de confluencia, ejecuta la interna y luego la externa.
@@ -153,7 +140,7 @@ public:
         if (state.decision == true)
         {
             outgoingMessage.clientID = state.idAgent;
-            outgoingMessage.productID = state.currentProductID + 1;
+            outgoingMessage.productID = state.currentProductID;
             outgoingMessage.priceProposal = state.currentBestPrice;
             outgoingMessage.decision = state.decision;
             bag_port_out.push_back(outgoingMessage);
@@ -162,8 +149,8 @@ public:
         else if (state.decision == false)
         {
             outgoingMessage.clientID = state.idAgent;
-            outgoingMessage.productID = state.waitingNextProduct ? 0 : state.currentProductID + 1;
-            outgoingMessage.priceProposal = state.waitingNextProduct ? 0 : state.reservePrices[state.currentProductID];
+            outgoingMessage.productID = state.waitingNextProduct ? 0 : state.currentProductID;
+            outgoingMessage.priceProposal = 0;
             outgoingMessage.decision = state.waitingNextProduct ? 1 : state.decision;
             bag_port_out.push_back(outgoingMessage);
             get_messages<typename Rational_defs::out_bidOffer>(bags) = bag_port_out;
@@ -180,34 +167,15 @@ public:
         return state.modelActive ? TIME("00:00:05:000") : numeric_limits<TIME>::infinity();
     }
 
-    friend ostringstream &operator<<(ostringstream &os, const typename Rational<TIME>::state_type &i)
-    {
-        os << " IdAgent: " << i.idAgent
-           << " | TotalBudget: " << i.totalBudget
-           << " | MoneySpent: " << i.moneySpent
-           << " | Utility: " << i.utility
-           << " | Decision: " << i.decision
-           << " | ModelActive: " << (i.modelActive ? "true" : "false")
-           << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false")
-           << " | ReservePrices: ";
+    friend ostringstream &operator<<(ostringstream &os, const typename Rational<TIME>::state_type &i) {
+        os << " IdAgent: " << i.idAgent << " | TotalBudget: " << i.totalBudget << " | MoneySpent: " << i.moneySpent
+           << " | Utility: " << i.utility << " | Decision: " << i.decision << " | ModelActive: " << (i.modelActive ? "true" : "false")
+           << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false") << " | ReservePrices: ";
         for (size_t idx = 0; idx < i.reservePrices.size(); ++idx)
-        {
-            os << "ID Product N°" << idx + 1 << " : " << i.reservePrices[idx] << " - "; // Muestra el índice y el precio de reserva
-        }
-
-        // Mostrar los productos comprados
+            os << "ID Product N°" << i.reservePrices[idx].id << " : " << i.reservePrices[idx].price << " - ";
         os << " | Purchased Products: ";
-        if (i.purschasedProducts.empty())
-        {
-            os << "None"; // Si no ha comprado nada
-        }
-        else
-        {
-            for (const auto &product : i.purschasedProducts)
-            {
-                os << "[Product ID: " << product.productID << "] "; // Ajusta según la estructura de Message_finalResults_t
-            }
-        }
+        if (i.purschasedProducts.empty()) os << "None";
+        else for (const auto &product : i.purschasedProducts) os << "[Product ID: " << product.productID << "] ";
         return os;
     }
 };

@@ -32,8 +32,8 @@ using namespace cadmium::basic_models::pdevs;
 using TIME = NDTime;
 
 float generateBudget(){
-    int inf = 500;
-    int sup = 1000;
+    int inf = 150;
+    int sup = 500;
     float random;
     random = inf + static_cast<float>(rand()) / RAND_MAX * (sup - inf);
     return random;
@@ -71,8 +71,8 @@ int main(int argc, char **argv)
         return 1;
     }
     // Parámetros configurables
-    int num_affective_clients = 5;
-    int num_rational_clients = 5;
+    int num_affective_clients = 1;
+    int num_rational_clients = 1;
     // Semilla para aleatoriedad
     srand(time(NULL));
     /****** Input Reader atomic model instantiation *******************/
@@ -91,7 +91,7 @@ int main(int argc, char **argv)
         affective_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Affective, TIME, int, float>("affective_"+to_string(i), move(i), move(randomBudget)));
     }
 
-    for (int i = 1; i <= num_rational_clients; i++)
+    for (int i = num_affective_clients+1; i <= num_rational_clients+num_affective_clients; i++)
     {
         float randomBudget = generateBudget();
         rational_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Rational, TIME, int, float>("rational_"+to_string(i), move(i), move(randomBudget)));
@@ -180,7 +180,7 @@ int main(int argc, char **argv)
         "TOP", submodels_TOP, iports_TOP, oports_TOP, eics_TOP, eocs_TOP, ics_TOP);
 
     /*************** Loggers *******************/
-    static ofstream out_messages("../simulation_results/ABP_output_messages.txt");
+    static ofstream out_messages("../simulation_results/ABP_output_messages.csv");
     struct oss_sink_messages
     {
         static ostream &sink()
@@ -188,7 +188,7 @@ int main(int argc, char **argv)
             return out_messages;
         }
     };
-    static ofstream out_state("../simulation_results/ABP_output_state.txt");
+    static ofstream out_state("../simulation_results/ABP_output_state.csv");
     struct oss_sink_state
     {
         static ostream &sink()

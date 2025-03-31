@@ -10,28 +10,36 @@
 #include <numeric>
 
 // Función para seleccionar 10 números aleatorios de un total de 100
-std::vector<int> getRandomNumbers() {
+std::vector<int> getRandomProducts() {
     static std::vector<int> sharedNumbers;  // Solo se inicializa una vez
     if (sharedNumbers.empty()) {
-        // Generar 100 números
-        std::vector<int> numbers(100);
-        std::iota(numbers.begin(), numbers.end(), 1);  // Llenar con {0, 1, 2, ..., 99}
-        // Mezclar los números de manera aleatoria
+        std::vector<int> numbers(100);         // Generar 100 números
+        std::iota(numbers.begin(), numbers.end(), 1);  // Llenar con {, 1, 2, ..., 99,100}
         std::random_device rd;
         std::mt19937 gen(rd());
         std::shuffle(numbers.begin(), numbers.end(), gen);
-        // Seleccionar los primeros 10 números
-        sharedNumbers.assign(numbers.begin(), numbers.begin() + 10);
+        sharedNumbers.assign(numbers.begin(), numbers.begin() + 10);        // Seleccionar los primeros 10 números
     }
     return sharedNumbers;
 }
 
+struct Alphas {
+    int id;
+    float alpha;
+};
+
+struct ReservePrice {
+    int id;
+    float price;
+};
+
 bool waitingNextProduct() {
     return true;
 }
-bool getDecision(float bestPrice, float reservePrice) {
+
+/*bool getDecision(float bestPrice, float reservePrice) {
     return reservePrice >= bestPrice;
-}
+}*/
 
 float updateTotalBudget(float salePrice, float totalBudget) {
     return totalBudget - salePrice;
@@ -55,6 +63,15 @@ float updateAnxiety(float anxiety, float sum) {
         anxiety = 0;
         return anxiety;
     }
+}
+
+bool getDecision(float bestPrice, const std::vector<ReservePrice>& reservePrices, int productID) {
+    for (const auto& entry : reservePrices) {
+        if (entry.id == productID) {  // Encuentra en id del producto que se esta subastando.
+            return entry.price >= bestPrice;  // Devuelve si el precio de reserva es mayor o menor que el best price.
+        }
+    }
+    return false;  // Si el ID no está en la lista, retornar falso
 }
 
 #endif // COMMON_HPP

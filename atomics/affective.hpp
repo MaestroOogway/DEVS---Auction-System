@@ -14,84 +14,111 @@
 using namespace cadmium;
 using namespace std;
 
-// Generar alphas aleatorios
-vector<float> generateRandomAlphasA(){
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_real_distribution<float> dis(0.0, 1.0);
-    vector<float> alpha(10);
-    for (float &a : alpha)
-        a = dis(gen);
+std::set<int> subastados;
 
-    return alpha;
-}
-// Calcular precios de reserva
-vector<float> updateReservePrice(const vector<float> &alphas, float totalBudget, float anxiety, float frustration, int currentProduct){
-    vector<float> reservePrices(alphas.size(), 0.0f);
-    vector<float> adjustedAlphas = alphas;
-    // Ajustar por ansiedad y frustración SOLO para el producto actual
-    adjustedAlphas[currentProduct] *= (1 + anxiety + frustration);
-    // Calcular el denominador completo (incluyendo el valor ajustado del producto actual)
-    float adjustedSum = 0.0f;
-    for (int i = currentProduct; i < alphas.size(); ++i) {
-        if (i == currentProduct) {
-            // Producto actual ajustado por ansiedad y frustración
-            adjustedSum += alphas[i] * (1 + anxiety + frustration);
-        } else {
-            // Productos restantes sin ajuste
-            adjustedSum += alphas[i];
-        }
+std::vector<Alphas> generateRandomAlphasA() {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<float> dis(0.0, 1.0);
+    std::vector<Alphas> alphas(100); // Crear un vector de 100 elementos
+    for (int i = 0; i < 100; ++i) {
+        alphas[i].id = i + 1; // ID del 1 al 100
+        alphas[i].alpha = dis(gen); // Número aleatorio entre 0 y 1
     }
-    // Si hay valores en el denominador, calcular los precios de reserva
-    if (adjustedSum > 0) {
-        for (int i = currentProduct; i < alphas.size(); ++i) {
-            if (i == currentProduct) {
-                // Producto actual afectado por ansiedad y frustración
-                reservePrices[i] = (alphas[i] * (1 + anxiety + frustration) / adjustedSum) * totalBudget;
-            } else {
-                // Productos restantes sin efecto de ansiedad y frustración
-                reservePrices[i] = (alphas[i] / adjustedSum) * totalBudget;
+    return alphas; // Retornar el vector
+}
+
+std::vector<ReservePrice> generateReservePricesA(const std::vector<Alphas>& alphas, const std::vector<int>& ids, float totalBudget) {
+    std::vector<ReservePrice> reservePrices;
+    std::vector<float> selectedAlphas;
+    // Extraer los alphas correspondientes a los productos seleccionados
+    for (int id : ids) {
+        for (const auto& alpha : alphas) {
+            if (alpha.id == id) {
+                selectedAlphas.push_back(alpha.alpha);
+            break;
             }
         }
     }
-
+    // Calcular la suma total de los alphas seleccionados
+    float sumAlphas = std::accumulate(selectedAlphas.begin(), selectedAlphas.end(), 0.0f);
+    // Calcular los precios de reserva
+    for (size_t i = 0; i < ids.size(); ++i) {
+        ReservePrice rp;
+        rp.id = ids[i];
+        rp.price = (selectedAlphas[i] / sumAlphas) * totalBudget; // Fórmula de precios de reserva
+        reservePrices.push_back(rp);
+    }
     return reservePrices;
 }
 
+void updateReservePrices(std::vector<ReservePrice>& reservePrices, std::vector<Alphas>& alphas,
+                         const std::vector<int>& productIDs, float totalBudget,
+                         int subastadoID, float ansiedad, float frustracion) {
+    // Encuentra el alpha del producto subastado y ajústalo
+    for (auto& alpha : alphas) {
+        if (alpha.id == subastadoID) {
+            alpha.alpha += ansiedad + frustracion;
+            break;
+        }
+    }
+    // Filtrar productos restantes (excluyendo TODOS los productos ya subastados)
+    std::vector<int> remainingProductIDs;
+    for (int id : productIDs) {
+        if (subastados.find(id) == subastados.end()) { // Si el producto NO ha sido subastado
+            remainingProductIDs.push_back(id);
+        }
+    }
+    // Calcular la nueva suma total de los alphas de productos restantes
+    float totalAlpha = 0.0f;
+    for (int id : remainingProductIDs) {
+        auto it = std::find_if(alphas.begin(), alphas.end(), [id](const Alphas& a) {
+            return a.id == id;
+        });
+        if (it != alphas.end()) {
+            totalAlpha += it->alpha;
+        }
+    }
+    // Actualizar precios de reserva solo para los productos restantes
+    for (auto& rp : reservePrices) {
+        if (subastados.find(rp.id) != subastados.end()) {
+            rp.price = 0.0f; // El producto subastado ya no tiene precio de reserva
+        } else {
+            auto it = std::find_if(alphas.begin(), alphas.end(), [rp](const Alphas& a) {
+                return a.id == rp.id;
+            });
+            if (it != alphas.end()) {
+                rp.price = (it->alpha / totalAlpha) * totalBudget;
+            }
+        }
+    }
+}
+
 // Port definition
-struct Affective_defs{
-    struct in_initialIP : public in_port<Message_initialIP_t>
-    {
-    };
-    struct in_roundResult : public in_port<Message_roundResult_t>
-    {
-    };
-    struct in_finalResult : public in_port<Message_finalResults_t>
-    {
-    };
-    struct out_bidOffer : public out_port<Message_bidOffer_t>
-    {
-    };
+struct Affective_defs {
+    struct in_initialIP : public in_port<Message_initialIP_t> {};
+    struct in_roundResult : public in_port<Message_roundResult_t> {};
+    struct in_finalResult : public in_port<Message_finalResults_t> {};
+    struct out_bidOffer : public out_port<Message_bidOffer_t> {};
 };
 
 template <typename TIME>
-class Affective{
+class Affective {
 public:
-    // ports definition
     using input_ports = tuple<typename Affective_defs::in_initialIP, typename Affective_defs::in_roundResult, typename Affective_defs::in_finalResult>;
     using output_ports = tuple<typename Affective_defs::out_bidOffer>;
 
-    // state definition
-    struct state_type{
+    struct state_type {
         int idAgent, currentProductID;
         float totalBudget, moneySpent, currentBestPrice;
         float utility, anxiety, frustration;
         bool modelActive, decision, waitingNextProduct;
-        vector<float> alphas, reservePrices;
+        vector<Alphas> alphas;
+        vector<ReservePrice> reservePrices;
         vector<Message_finalResults_t> purschasedProducts;
     };
     state_type state;
-    // constructor del modelo
+
     Affective() = default;
     Affective(int id, float budget) noexcept{
         state.idAgent = id;
@@ -105,11 +132,12 @@ public:
         state.waitingNextProduct = false;
         state.purschasedProducts.clear();
         state.alphas = generateRandomAlphasA(); // Inicialización del vector alpha en el constructor
-        state.reservePrices = updateReservePrice(state.alphas, state.totalBudget, state.anxiety, state.frustration, 0);
+        state.reservePrices = generateReservePricesA(state.alphas, getRandomProducts(), state.totalBudget);
     }
     // funcion de transición interna
     void internal_transition(){
         if (state.waitingNextProduct){
+            subastados.insert(state.currentProductID);
             state.waitingNextProduct = false;
         }
         state.modelActive = false;
@@ -138,7 +166,7 @@ public:
             auto roundResultMessages = get_messages<typename Affective_defs::in_roundResult>(mbs);
             auto roundResult = roundResultMessages[0];
             state.currentBestPrice = roundResult.bestPrice;
-            state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
+            state.decision = getDecision(state.currentBestPrice, state.reservePrices, state.currentProductID);
             if (state.decision)
             {
                 state.anxiety = updateAnxiety(state.anxiety, 1);
@@ -150,10 +178,10 @@ public:
             state.modelActive = true;
             auto initialProductInfoMessages = get_messages<typename Affective_defs::in_initialIP>(mbs);
             auto productInfo = initialProductInfoMessages[0];
-            state.currentProductID = productInfo.productID - 1;
+            state.currentProductID = productInfo.productID;
             state.currentBestPrice = productInfo.bestPrice;
-            state.reservePrices = updateReservePrice(state.alphas, state.totalBudget, state.anxiety, state.frustration, state.currentProductID);
-            state.decision = getDecision(state.currentBestPrice, state.reservePrices[state.currentProductID]);
+            updateReservePrices(state.reservePrices, state.alphas, getRandomProducts(), state.totalBudget, state.currentProductID, state.anxiety, state.frustration);
+            state.decision = getDecision(state.currentBestPrice, state.reservePrices, state.currentProductID);
             state.anxiety = updateAnxiety(state.anxiety, 0);
             if (state.decision)
             {
@@ -176,7 +204,7 @@ public:
         if (state.decision == true)
         {
             outgoingMessage.clientID = state.idAgent;
-            outgoingMessage.productID = state.currentProductID + 1;
+            outgoingMessage.productID = state.currentProductID;
             outgoingMessage.priceProposal = state.currentBestPrice;
             outgoingMessage.decision = state.decision;
             bag_port_out.push_back(outgoingMessage);
@@ -185,8 +213,8 @@ public:
         else if (state.decision == false)
         {
             outgoingMessage.clientID = state.idAgent;
-            outgoingMessage.productID = state.waitingNextProduct ? 0 : state.currentProductID + 1;
-            outgoingMessage.priceProposal = state.waitingNextProduct ? 0 : state.reservePrices[state.currentProductID];
+            outgoingMessage.productID = state.waitingNextProduct ? 0 : state.currentProductID;
+            outgoingMessage.priceProposal = 0;
             outgoingMessage.decision = state.waitingNextProduct ? 1 : state.decision;
             bag_port_out.push_back(outgoingMessage);
             get_messages<typename Affective_defs::out_bidOffer>(bags) = bag_port_out;
@@ -204,8 +232,7 @@ public:
         return state.modelActive ? TIME("00:00:05:000") : numeric_limits<TIME>::infinity();
     }
 
-    friend ostringstream &operator<<(ostringstream &os, const typename Affective<TIME>::state_type &i)
-    {
+    friend ostringstream &operator<<(ostringstream &os, const typename Affective<TIME>::state_type &i) {
         os << " IdAgent: " << i.idAgent
            << " | TotalBudget: " << i.totalBudget
            << " | MoneySpent: " << i.moneySpent
@@ -216,23 +243,10 @@ public:
            << " | ModelActive: " << (i.modelActive ? "true" : "false")
            << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false")
            << " | ReservePrices: ";
-        for (size_t idx = 0; idx < i.reservePrices.size(); ++idx)
-        {
-            os << "ID Product N°" << idx + 1 << " : " << i.reservePrices[idx] << " - "; // Muestra el índice y el precio de reserva
-        }
-        // Mostrar los productos comprados
-        os << " | Purchased Products: ";
-        if (i.purschasedProducts.empty())
-        {
-            os << "None"; // Si no ha comprado nada
-        }
-        else
-        {
-            for (const auto &product : i.purschasedProducts)
-            {
-                os << "[Product ID: " << product.productID << "] "; // Ajusta según la estructura de Message_finalResults_t
-            }
-        }
+           for (size_t idx = 0; idx < i.reservePrices.size(); ++idx)
+           os << "ID Product N°" << i.reservePrices[idx].id << " : " << i.reservePrices[idx].price << " - ";
+        os << " | Purchased Products: " << (i.purschasedProducts.empty() ? "None" : "");
+        for (const auto &product : i.purschasedProducts) os << "[Product ID: " << product.productID << "] ";
         return os;
     }
 };
