@@ -1,0 +1,435 @@
+00:00:00:000
+State for model auctioneer_model is  | No products available. | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 0
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 36.4882 ] [ ID Product N°28 : 31.9064 ] [ ID Product N°70 : 21.5419 ] [ ID Product N°44 : 33.6864 ] [ ID Product N°90 : 21.5804 ] [ ID Product N°100 : 84.2368 ] [ ID Product N°8 : 74.8087 ] [ ID Product N°68 : 59.9193 ] [ ID Product N°77 : 61.8197 ] [ ID Product N°26 : 45.2578 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: 00:00:00:000
+00:00:00:000
+State for model auctioneer_model is  | No products available. | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 0
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 36.4882 ] [ ID Product N°28 : 31.9064 ] [ ID Product N°70 : 21.5419 ] [ ID Product N°44 : 33.6864 ] [ ID Product N°90 : 21.5804 ] [ ID Product N°100 : 84.2368 ] [ ID Product N°8 : 74.8087 ] [ ID Product N°68 : 59.9193 ] [ ID Product N°77 : 61.8197 ] [ ID Product N°26 : 45.2578 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: 00:00:00:000
+00:00:00:000
+State for model auctioneer_model is  | Current ProductID: 8 | Current BestPrice: 23.030001 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 36.4882 ] [ ID Product N°28 : 31.9064 ] [ ID Product N°70 : 21.5419 ] [ ID Product N°44 : 33.6864 ] [ ID Product N°90 : 21.5804 ] [ ID Product N°100 : 84.2368 ] [ ID Product N°8 : 74.8087 ] [ ID Product N°68 : 59.9193 ] [ ID Product N°77 : 61.8197 ] [ ID Product N°26 : 45.2578 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:05:000
+State for model auctioneer_model is  | Current ProductID: 8 | Current BestPrice: 23.030001 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 36.4882 ] [ ID Product N°28 : 31.9064 ] [ ID Product N°70 : 21.5419 ] [ ID Product N°44 : 33.6864 ] [ ID Product N°90 : 21.5804 ] [ ID Product N°100 : 84.2368 ] [ ID Product N°8 : 74.8087 ] [ ID Product N°68 : 59.9193 ] [ ID Product N°77 : 61.8197 ] [ ID Product N°26 : 45.2578 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:10:000
+State for model auctioneer_model is  | Current ProductID: 8 | Current BestPrice: 23.030001 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 36.4882 ] [ ID Product N°28 : 31.9064 ] [ ID Product N°70 : 21.5419 ] [ ID Product N°44 : 33.6864 ] [ ID Product N°90 : 21.5804 ] [ ID Product N°100 : 84.2368 ] [ ID Product N°8 : 74.8087 ] [ ID Product N°68 : 59.9193 ] [ ID Product N°77 : 61.8197 ] [ ID Product N°26 : 45.2578 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:15:000
+State for model auctioneer_model is  | Current ProductID: 26 | Current BestPrice: 26.389999 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 36.4882 ] [ ID Product N°28 : 31.9064 ] [ ID Product N°70 : 21.5419 ] [ ID Product N°44 : 33.6864 ] [ ID Product N°90 : 21.5804 ] [ ID Product N°100 : 84.2368 ] [ ID Product N°8 : 74.8087 ] [ ID Product N°68 : 59.9193 ] [ ID Product N°77 : 61.8197 ] [ ID Product N°26 : 45.2578 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:20:000
+State for model auctioneer_model is  | Current ProductID: 26 | Current BestPrice: 26.389999 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 36.4882 ] [ ID Product N°28 : 31.9064 ] [ ID Product N°70 : 21.5419 ] [ ID Product N°44 : 33.6864 ] [ ID Product N°90 : 21.5804 ] [ ID Product N°100 : 84.2368 ] [ ID Product N°8 : 74.8087 ] [ ID Product N°68 : 59.9193 ] [ ID Product N°77 : 61.8197 ] [ ID Product N°26 : 45.2578 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:25:000
+State for model auctioneer_model is  | Current ProductID: 26 | Current BestPrice: 26.389999 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 33.8605 ] [ ID Product N°28 : 29.6086 ] [ ID Product N°70 : 19.9906 ] [ ID Product N°44 : 31.2605 ] [ ID Product N°90 : 20.0263 ] [ ID Product N°100 : 78.1706 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.6043 ] [ ID Product N°77 : 57.3678 ] [ ID Product N°26 : 122.327 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:30:000
+State for model auctioneer_model is  | Current ProductID: 26 | Current BestPrice: 26.389999 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 33.8605 ] [ ID Product N°28 : 29.6086 ] [ ID Product N°70 : 19.9906 ] [ ID Product N°44 : 31.2605 ] [ ID Product N°90 : 20.0263 ] [ ID Product N°100 : 78.1706 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.6043 ] [ ID Product N°77 : 57.3678 ] [ ID Product N°26 : 122.327 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:35:000
+State for model auctioneer_model is  | Current ProductID: 28 | Current BestPrice: 69.589996 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 33.8605 ] [ ID Product N°28 : 29.6086 ] [ ID Product N°70 : 19.9906 ] [ ID Product N°44 : 31.2605 ] [ ID Product N°90 : 20.0263 ] [ ID Product N°100 : 78.1706 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.6043 ] [ ID Product N°77 : 57.3678 ] [ ID Product N°26 : 122.327 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:40:000
+State for model auctioneer_model is  | Current ProductID: 28 | Current BestPrice: 69.589996 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 33.8605 ] [ ID Product N°28 : 29.6086 ] [ ID Product N°70 : 19.9906 ] [ ID Product N°44 : 31.2605 ] [ ID Product N°90 : 20.0263 ] [ ID Product N°100 : 78.1706 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.6043 ] [ ID Product N°77 : 57.3678 ] [ ID Product N°26 : 122.327 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:45:000
+State for model auctioneer_model is  | Current ProductID: 28 | Current BestPrice: 69.589996 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 35.1616 ] [ ID Product N°28 : 114.161 ] [ ID Product N°70 : 20.7587 ] [ ID Product N°44 : 32.4616 ] [ ID Product N°90 : 20.7958 ] [ ID Product N°100 : 81.1742 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 57.7408 ] [ ID Product N°77 : 59.5721 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:50:000
+State for model auctioneer_model is  | Current ProductID: 28 | Current BestPrice: 69.589996 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 35.1616 ] [ ID Product N°28 : 114.161 ] [ ID Product N°70 : 20.7587 ] [ ID Product N°44 : 32.4616 ] [ ID Product N°90 : 20.7958 ] [ ID Product N°100 : 81.1742 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 57.7408 ] [ ID Product N°77 : 59.5721 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:00:55:000
+State for model auctioneer_model is  | Current ProductID: 37 | Current BestPrice: 9.950000 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 35.1616 ] [ ID Product N°28 : 114.161 ] [ ID Product N°70 : 20.7587 ] [ ID Product N°44 : 32.4616 ] [ ID Product N°90 : 20.7958 ] [ ID Product N°100 : 81.1742 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 57.7408 ] [ ID Product N°77 : 59.5721 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:00:000
+State for model auctioneer_model is  | Current ProductID: 37 | Current BestPrice: 9.950000 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 35.1616 ] [ ID Product N°28 : 114.161 ] [ ID Product N°70 : 20.7587 ] [ ID Product N°44 : 32.4616 ] [ ID Product N°90 : 20.7958 ] [ ID Product N°100 : 81.1742 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 57.7408 ] [ ID Product N°77 : 59.5721 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:05:000
+State for model auctioneer_model is  | Current ProductID: 37 | Current BestPrice: 9.950000 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 106.799 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 18.6969 ] [ ID Product N°44 : 29.2374 ] [ ID Product N°90 : 18.7303 ] [ ID Product N°100 : 73.1116 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 52.0058 ] [ ID Product N°77 : 53.6551 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:10:000
+State for model auctioneer_model is  | Current ProductID: 37 | Current BestPrice: 9.950000 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 106.799 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 18.6969 ] [ ID Product N°44 : 29.2374 ] [ ID Product N°90 : 18.7303 ] [ ID Product N°100 : 73.1116 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 52.0058 ] [ ID Product N°77 : 53.6551 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:15:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 25.200001 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 106.799 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 18.6969 ] [ ID Product N°44 : 29.2374 ] [ ID Product N°90 : 18.7303 ] [ ID Product N°100 : 73.1116 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 52.0058 ] [ ID Product N°77 : 53.6551 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:20:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 25.200001 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 106.799 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 18.6969 ] [ ID Product N°44 : 29.2374 ] [ ID Product N°90 : 18.7303 ] [ ID Product N°100 : 73.1116 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 52.0058 ] [ ID Product N°77 : 53.6551 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:25:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 25.200001 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:30:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 27.720001 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:35:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 27.720001 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:40:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 30.492001 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:45:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 30.492001 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:50:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 33.541199 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:01:55:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 33.541199 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:00:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 36.895317 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:05:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 36.895317 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:10:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 40.584850 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:15:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 40.584850 | numberRound: 5 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:20:000
+State for model auctioneer_model is  | Current ProductID: 44 | Current BestPrice: 40.584850 | numberRound: 6 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:25:000
+State for model auctioneer_model is  | Current ProductID: 68 | Current BestPrice: 22.059999 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:30:000
+State for model auctioneer_model is  | Current ProductID: 68 | Current BestPrice: 22.059999 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 19.9636 ] [ ID Product N°44 : 111.438 ] [ ID Product N°90 : 19.9993 ] [ ID Product N°100 : 78.0652 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 55.5293 ] [ ID Product N°77 : 57.2904 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:35:000
+State for model auctioneer_model is  | Current ProductID: 68 | Current BestPrice: 22.059999 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 8.45736 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 8.47248 ] [ ID Product N°100 : 33.0714 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 227.429 ] [ ID Product N°77 : 24.2704 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:40:000
+State for model auctioneer_model is  | Current ProductID: 68 | Current BestPrice: 22.059999 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 8.45736 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 8.47248 ] [ ID Product N°100 : 33.0714 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 227.429 ] [ ID Product N°77 : 24.2704 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:45:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 14.400000 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 8.45736 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 8.47248 ] [ ID Product N°100 : 33.0714 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 227.429 ] [ ID Product N°77 : 24.2704 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:50:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 14.400000 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 8.45736 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 8.47248 ] [ ID Product N°100 : 33.0714 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 227.429 ] [ ID Product N°77 : 24.2704 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:02:55:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 14.400000 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:00:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 15.839999 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:05:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 15.839999 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:10:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 17.424000 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:15:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 17.424000 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:20:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 19.166399 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:25:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 19.166399 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:30:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 21.083038 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:35:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 21.083038 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:40:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 23.191341 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:45:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 23.191341 | numberRound: 5 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:50:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 25.510475 | numberRound: 6 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:03:55:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 25.510475 | numberRound: 6 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:00:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 28.061523 | numberRound: 7 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:05:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 28.061523 | numberRound: 7 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:10:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 30.867676 | numberRound: 8 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:15:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 30.867676 | numberRound: 8 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:20:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 33.954445 | numberRound: 9 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:25:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 33.954445 | numberRound: 9 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:30:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 37.349888 | numberRound: 10 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:35:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 37.349888 | numberRound: 10 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:40:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 41.084877 | numberRound: 11 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:45:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 41.084877 | numberRound: 11 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:50:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 45.193363 | numberRound: 12 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:04:55:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 45.193363 | numberRound: 12 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:00:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 49.712700 | numberRound: 13 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:05:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 49.712700 | numberRound: 13 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:10:000
+State for model auctioneer_model is  | Current ProductID: 70 | Current BestPrice: 49.712700 | numberRound: 14 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:15:000
+State for model auctioneer_model is  | Current ProductID: 77 | Current BestPrice: 17.990000 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:20:000
+State for model auctioneer_model is  | Current ProductID: 77 | Current BestPrice: 17.990000 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 109.633 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 21.8857 ] [ ID Product N°100 : 85.4284 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 62.6941 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:25:000
+State for model auctioneer_model is  | Current ProductID: 77 | Current BestPrice: 17.990000 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 3.59692 ] [ ID Product N°100 : 14.0402 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 212.291 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:30:000
+State for model auctioneer_model is  | Current ProductID: 77 | Current BestPrice: 17.990000 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 3.59692 ] [ ID Product N°100 : 14.0402 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 212.291 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:35:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 6.360000 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 3.59692 ] [ ID Product N°100 : 14.0402 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 212.291 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:40:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 6.360000 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 3.59692 ] [ ID Product N°100 : 14.0402 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 212.291 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:45:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 6.360000 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:50:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 6.996000 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:05:55:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 6.996000 | numberRound: 1 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:00:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 7.695601 | numberRound: 2 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:05:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 7.695601 | numberRound: 2 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:10:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 8.465160 | numberRound: 3 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:15:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 8.465160 | numberRound: 3 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:20:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 9.311676 | numberRound: 4 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:25:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 9.311676 | numberRound: 4 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:30:000
+State for model auctioneer_model is  | Current ProductID: 90 | Current BestPrice: 9.311676 | numberRound: 5 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:35:000
+State for model auctioneer_model is  | Current ProductID: 100 | Current BestPrice: 129.570007 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:40:000
+State for model auctioneer_model is  | Current ProductID: 100 | Current BestPrice: 129.570007 | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 119.137 ] [ ID Product N°100 : 92.8012 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:45:000
+State for model auctioneer_model is  | Current ProductID: 100 | Current BestPrice: 129.570007 | numberRound: 0 | roundState: 0 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 0 ] [ ID Product N°100 : 202.626 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:50:000
+State for model auctioneer_model is  | Current ProductID: 100 | Current BestPrice: 129.570007 | numberRound: 1 | roundState: 1 | auctionState: 1 | stageState: 1
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 0 ] [ ID Product N°100 : 202.626 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:06:55:000
+State for model auctioneer_model is  | No products available. | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 0
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 0 ] [ ID Product N°100 : 202.626 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: true | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf
+00:07:00:000
+State for model auctioneer_model is  | No products available. | numberRound: 0 | roundState: 0 | auctionState: 0 | stageState: 0
+State for model affective_1 is  IdAgent: 1 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 0 ] [ ID Product N°28 : 0 ] [ ID Product N°70 : 0 ] [ ID Product N°44 : 0 ] [ ID Product N°90 : 0 ] [ ID Product N°100 : 202.626 ] [ ID Product N°8 : 0 ] [ ID Product N°68 : 0 ] [ ID Product N°77 : 0 ] [ ID Product N°26 : 0 ] 
+State for model rational_2 is  IdAgent: 2 | Wait Next Product: false | ReservePrices: [ ID Product N°37 : 4.19433 ] [ ID Product N°28 : 57.848 ] [ ID Product N°70 : 46.9793 ] [ ID Product N°44 : 40.0399 ] [ ID Product N°90 : 8.53834 ] [ ID Product N°100 : 45.68 ] [ ID Product N°8 : 11.284 ] [ ID Product N°68 : 7.3842 ] [ ID Product N°77 : 8.05481 ] [ ID Product N°26 : 24.7414 ] 
+State for model input_reader is next time: inf

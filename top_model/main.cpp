@@ -31,7 +31,8 @@ using namespace cadmium::basic_models::pdevs;
 
 using TIME = NDTime;
 
-float generateBudget(){
+float generateBudget()
+{
     int inf = 150;
     int sup = 500;
     float random;
@@ -64,12 +65,18 @@ public:
 };
 int main(int argc, char **argv)
 {
-    if (argc < 2)
+    if (argc < 3)
     {
         cout << "Program used with wrong parameters. The program must be invoked as follow:";
         cout << argv[0] << " path to the input file " << endl;
         return 1;
     }
+
+    std::string run_id = argv[2]; // Número de ejecución
+
+    string messages_filename = "../caso_de_estudio_1/ABP_output_messages_" + run_id + ".csv";
+    string state_filename = "../caso_de_estudio_1/ABP_output_state_" + run_id + ".csv";
+
     // Parámetros configurables
     int num_affective_clients = 1;
     int num_rational_clients = 1;
@@ -78,9 +85,10 @@ int main(int argc, char **argv)
     /****** Input Reader atomic model instantiation *******************/
     string input = argv[1];
     const char *i_input = input.c_str();
+
     shared_ptr<dynamic::modeling::model> input_reader = dynamic::translate::make_dynamic_atomic_model<InputReader_initialPI_t, TIME, const char *>("input_reader", move(i_input));
     /****** Instanciacion del Subastador *******************/
-    shared_ptr<dynamic::modeling::model> auctioneer_model = dynamic::translate::make_dynamic_atomic_model<Auctioneer,TIME>("auctioneer_model");
+    shared_ptr<dynamic::modeling::model> auctioneer_model = dynamic::translate::make_dynamic_atomic_model<Auctioneer, TIME>("auctioneer_model");
     /****** Instanciación dinámica de Clientes Afectivos y Racionales *******************/
     vector<shared_ptr<dynamic::modeling::model>> affective_clients;
     vector<shared_ptr<dynamic::modeling::model>> rational_clients;
@@ -88,13 +96,13 @@ int main(int argc, char **argv)
     for (int i = 1; i <= num_affective_clients; i++)
     {
         float randomBudget = generateBudget();
-        affective_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Affective, TIME, int, float>("affective_"+to_string(i), move(i), move(randomBudget)));
+        affective_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Affective, TIME, int, float>("affective_" + to_string(i), move(i), move(randomBudget)));
     }
 
-    for (int i = num_affective_clients+1; i <= num_rational_clients+num_affective_clients; i++)
+    for (int i = num_affective_clients + 1; i <= num_rational_clients + num_affective_clients; i++)
     {
         float randomBudget = generateBudget();
-        rational_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Rational, TIME, int, float>("rational_"+to_string(i), move(i), move(randomBudget)));
+        rational_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Rational, TIME, int, float>("rational_" + to_string(i), move(i), move(randomBudget)));
     }
 
     /******* ABP SIMULATOR COUPLED MODEL ********/
@@ -180,7 +188,7 @@ int main(int argc, char **argv)
         "TOP", submodels_TOP, iports_TOP, oports_TOP, eics_TOP, eocs_TOP, ics_TOP);
 
     /*************** Loggers *******************/
-    static ofstream out_messages("../simulation_results/ABP_output_messages.csv");
+    static ofstream out_messages(messages_filename);
     struct oss_sink_messages
     {
         static ostream &sink()
@@ -188,7 +196,7 @@ int main(int argc, char **argv)
             return out_messages;
         }
     };
-    static ofstream out_state("../simulation_results/ABP_output_state.csv");
+    static ofstream out_state(state_filename);
     struct oss_sink_state
     {
         static ostream &sink()
@@ -201,11 +209,11 @@ int main(int argc, char **argv)
     using log_messages = logger::logger<logger::logger_messages, dynamic::logger::formatter<TIME>, oss_sink_messages>;
     using global_time_mes = logger::logger<logger::logger_global_time, dynamic::logger::formatter<TIME>, oss_sink_messages>;
     using global_time_sta = logger::logger<logger::logger_global_time, dynamic::logger::formatter<TIME>, oss_sink_state>;
-
     using logger_top = logger::multilogger<state, log_messages, global_time_mes, global_time_sta>;
 
     /************** Runner call ************************/
     dynamic::engine::runner<NDTime, logger_top> r(TOP, {0});
     r.run_until_passivate();
+
     return 0;
 }

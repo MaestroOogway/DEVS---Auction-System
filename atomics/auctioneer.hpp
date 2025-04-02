@@ -172,12 +172,10 @@ public:
     // Debug information
     friend ostringstream &operator<<(ostringstream &os, const typename Auctioneer<TIME>::state_type &i) {
         os << (i.products.empty() ? " | No products available." : " | Current ProductID: " + to_string(i.products[0].productID) + " | Current BestPrice: " + to_string(i.products[0].bestPrice))
-           << (i.offerList.empty() ? " | No offer available." : " | size bid vector: " + to_string(i.offerList.size()))
            << " | numberRound: " << i.numberRound
            << " | roundState: " << i.roundState
            << " | auctionState: " << i.auctionState
-           << " | stageState: " << i.stageState
-           << " | modelState: " << i.modelActive;
+           << " | stageState: " << i.stageState;
         return os;
     }
 };

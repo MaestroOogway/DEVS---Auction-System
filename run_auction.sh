@@ -10,12 +10,16 @@ if ! make all; then
     exit 1
 fi
 
-# Ejecutar el programa
-echo "Ejecutando el programa..."
+# Ejecutar el programa 100 veces
+echo "Ejecutando el programa 100 veces..."
 cd bin || { echo "Error: No se encontró el directorio 'bin'"; exit 1; }
 
-if ! ./ABP.exe ../input_data/initial_product_information_test.txt; then
-    echo "Error en la ejecución de ABP.exe"
-    exit 1
-fi
+for i in {1..100}; do
+    echo "Ejecución $i..."
+    if ! ./ABP.exe ../input_data/initial_product_information_test.txt $i; then
+        echo "Error en la ejecución de ABP.exe en la iteración $i"
+        exit 1
+    fi
+done
+
 echo "Script finalizado con éxito."

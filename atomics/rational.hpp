@@ -168,14 +168,17 @@ public:
     }
 
     friend ostringstream &operator<<(ostringstream &os, const typename Rational<TIME>::state_type &i) {
-        os << " IdAgent: " << i.idAgent << " | TotalBudget: " << i.totalBudget << " | MoneySpent: " << i.moneySpent
-           << " | Utility: " << i.utility << " | Decision: " << i.decision << " | ModelActive: " << (i.modelActive ? "true" : "false")
-           << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false") << " | ReservePrices: ";
-        for (size_t idx = 0; idx < i.reservePrices.size(); ++idx)
-            os << "ID Product N°" << i.reservePrices[idx].id << " : " << i.reservePrices[idx].price << " - ";
-        os << " | Purchased Products: ";
-        if (i.purschasedProducts.empty()) os << "None";
-        else for (const auto &product : i.purschasedProducts) os << "[Product ID: " << product.productID << "] ";
+        os << " IdAgent: " << i.idAgent
+        << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false")
+        << " | ReservePrice for Current Product: ";
+ 
+        // Buscar el precio de reserva del producto actual
+        for (const auto &reserve : i.reservePrices) {
+            if (reserve.id == i.currentProductID) {  // Si es el producto actual
+                os << "[ ID Product N°" << reserve.id << " : " << reserve.price << " ] ";
+                break; // Rompemos el bucle para solo mostrar uno
+            }
+        }
         return os;
     }
 };

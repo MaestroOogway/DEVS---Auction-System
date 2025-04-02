@@ -7,6 +7,7 @@ INCLUDEDESTIMES = -I ../../DESTimes/include
 bin_folder := $(shell mkdir -p bin)
 build_folder := $(shell mkdir -p build)
 results_folder := $(shell mkdir -p simulation_results)
+caso_de_estudio_1 := $(shell mkdir -p caso_de_estudio_1)
 
 # Compilar message.cpp
 message.o: data_structures/message.cpp
