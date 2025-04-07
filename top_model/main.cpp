@@ -22,7 +22,6 @@
 #include <chrono>
 #include <algorithm>
 #include <string>
-#include <unordered_set>
 #include <random>
 
 using namespace std;
@@ -33,11 +32,9 @@ using TIME = NDTime;
 
 float generateBudget()
 {
-    int inf = 150;
-    int sup = 500;
-    float random;
-    random = inf + static_cast<float>(rand()) / RAND_MAX * (sup - inf);
-    return random;
+    static std::mt19937 rng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
+    std::uniform_real_distribution<float> dist(250.0f, 800.0f);
+    return dist(rng);
 }
 
 /***** Define input port for coupled models *****/
@@ -74,14 +71,13 @@ int main(int argc, char **argv)
 
     std::string run_id = argv[2]; // Número de ejecución
 
-    string messages_filename = "../caso_de_estudio_1/ABP_output_messages_" + run_id + ".csv";
-    string state_filename = "../caso_de_estudio_1/ABP_output_state_" + run_id + ".csv";
+    string messages_filename = "../casos_de_estudio/caso_de_estudio_2/messages/ABP_output_messages_" + run_id + ".csv";
+    string state_filename = "../casos_de_estudio/caso_de_estudio_2/states/ABP_output_state_" + run_id + ".csv";
 
     // Parámetros configurables
-    int num_affective_clients = 1;
-    int num_rational_clients = 1;
-    // Semilla para aleatoriedad
-    srand(time(NULL));
+    int num_affective_clients = 10;
+    int num_rational_clients = 10;
+
     /****** Input Reader atomic model instantiation *******************/
     string input = argv[1];
     const char *i_input = input.c_str();

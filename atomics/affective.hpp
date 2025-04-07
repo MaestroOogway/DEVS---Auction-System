@@ -11,12 +11,12 @@
 #include <random>
 #include "../data_structures/message.hpp"
 
-using namespace cadmium;
-using namespace std;
+using namespace cadmium; using namespace std;
 
-std::set<int> subastados;
+std::set<int> subastadosA;
+float pastA = 0;
 
-std::vector<Alphas> generateRandomAlphasA() {
+std::vector<Alphas> generateRandomAlphasAffective() {
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<float> dis(0.0, 1.0);
@@ -28,7 +28,39 @@ std::vector<Alphas> generateRandomAlphasA() {
     return alphas; // Retornar el vector
 }
 
-std::vector<ReservePrice> generateReservePricesA(const std::vector<Alphas>& alphas, const std::vector<int>& ids, float totalBudget) {
+void updateUtilityAffective(float &utility, int subastadoID, std::vector<Alphas>& alphas,
+                            const std::vector<int>& productIDs) {
+    std::vector<int> remainingProductIDs;
+    std::vector<float> remainingAlphas;
+
+    // Filtrar productos que aún no han sido subastados
+    for (int id : productIDs) {
+        if (subastadosA.find(id) == subastadosA.end()) {
+            remainingProductIDs.push_back(id);
+        }
+    }
+
+    // Obtener los alphas de los productos restantes (no subastados)
+    for (int id : remainingProductIDs) {
+        for (const auto& alpha : alphas) {
+            if (alpha.id == id) {
+                remainingAlphas.push_back(alpha.alpha);
+                break;
+            }
+        }
+    } 
+    auto it = std::find_if(alphas.begin(), alphas.end(), [subastadoID](const Alphas& a) {     // Buscar el alpha del producto que se está subastando
+        return a.id == subastadoID;
+    });
+
+    if (it != alphas.end()) {
+        float alphaActual = it->alpha;
+        utility *= pow(2.0f, alphaActual); // Actualizar utilidad: (1 + 1)^(alpha * anxiety * frustration)
+    }
+}
+
+
+std::vector<ReservePrice> generateReservePricesAffective(const std::vector<Alphas>& alphas, const std::vector<int>& ids, float totalBudget) {
     std::vector<ReservePrice> reservePrices;
     std::vector<float> selectedAlphas;
     // Extraer los alphas correspondientes a los productos seleccionados
@@ -52,20 +84,19 @@ std::vector<ReservePrice> generateReservePricesA(const std::vector<Alphas>& alph
     return reservePrices;
 }
 
-void updateReservePrices(std::vector<ReservePrice>& reservePrices, std::vector<Alphas>& alphas,
+void updateReservePricesAffective(std::vector<ReservePrice>& reservePrices, std::vector<Alphas>& alphas,
                          const std::vector<int>& productIDs, float totalBudget,
                          int subastadoID, float ansiedad, float frustracion) {
-    // Encuentra el alpha del producto subastado y ajústalo
     for (auto& alpha : alphas) {
         if (alpha.id == subastadoID) {
-            alpha.alpha += ansiedad + frustracion;
+            alpha.alpha = alpha.alpha*(1 + log(1+ansiedad) + log(1+frustracion));
             break;
         }
     }
-    // Filtrar productos restantes (excluyendo TODOS los productos ya subastados)
+    // Filtrar productos restantes (excluyendo TODOS los productos ya subastadosA)
     std::vector<int> remainingProductIDs;
     for (int id : productIDs) {
-        if (subastados.find(id) == subastados.end()) { // Si el producto NO ha sido subastado
+        if (subastadosA.find(id) == subastadosA.end()) { // Si el producto NO ha sido subastado
             remainingProductIDs.push_back(id);
         }
     }
@@ -81,7 +112,7 @@ void updateReservePrices(std::vector<ReservePrice>& reservePrices, std::vector<A
     }
     // Actualizar precios de reserva solo para los productos restantes
     for (auto& rp : reservePrices) {
-        if (subastados.find(rp.id) != subastados.end()) {
+        if (subastadosA.find(rp.id) != subastadosA.end()) {
             rp.price = 0.0f; // El producto subastado ya no tiene precio de reserva
         } else {
             auto it = std::find_if(alphas.begin(), alphas.end(), [rp](const Alphas& a) {
@@ -124,20 +155,20 @@ public:
         state.idAgent = id;
         state.totalBudget = budget;
         state.moneySpent = 0;
-        state.utility = 0;
         state.anxiety = 0;
         state.frustration = 0;
         state.modelActive = false;
         state.decision = false;
         state.waitingNextProduct = false;
         state.purschasedProducts.clear();
-        state.alphas = generateRandomAlphasA(); // Inicialización del vector alpha en el constructor
-        state.reservePrices = generateReservePricesA(state.alphas, getRandomProducts(), state.totalBudget);
+        state.alphas = generateRandomAlphasAffective(); // Inicialización del vector alpha en el constructor
+        state.utility = generateUtilityAffective(state.alphas, getRandomProducts());
+        state.reservePrices = generateReservePricesAffective(state.alphas, getRandomProducts(), state.totalBudget);
     }
     // funcion de transición interna
     void internal_transition(){
         if (state.waitingNextProduct){
-            subastados.insert(state.currentProductID);
+            subastadosA.insert(state.currentProductID);
             state.waitingNextProduct = false;
         }
         state.modelActive = false;
@@ -149,13 +180,15 @@ public:
             state.modelActive = true;
             auto finalResultMessages = get_messages<typename Affective_defs::in_finalResult>(mbs);
             auto finalResult = finalResultMessages[0];
-            state.frustration = updateFrustration(finalResult.winnerID, state.idAgent, state.frustration);
+            state.currentProductID = finalResult.productID;
             if (finalResult.winnerID == state.idAgent)
             {
+                updateUtilityAffective(state.utility, state.currentProductID, state.alphas, getRandomProducts());
                 state.totalBudget = updateTotalBudget(finalResult.bestPrice, state.totalBudget);
                 state.moneySpent = updateMoneySpent(finalResult.bestPrice, state.moneySpent);
                 state.purschasedProducts.push_back(finalResult);
             }
+            state.frustration = updateFrustration(finalResult.winnerID, state.idAgent, state.frustration);
             state.waitingNextProduct = waitingNextProduct();
             state.decision = false;
         }
@@ -180,8 +213,9 @@ public:
             auto productInfo = initialProductInfoMessages[0];
             state.currentProductID = productInfo.productID;
             state.currentBestPrice = productInfo.bestPrice;
-            updateReservePrices(state.reservePrices, state.alphas, getRandomProducts(), state.totalBudget, state.currentProductID, state.anxiety, state.frustration);
+            updateReservePricesAffective(state.reservePrices, state.alphas, getRandomProducts(), state.totalBudget, state.currentProductID, state.anxiety, state.frustration);
             state.decision = getDecision(state.currentBestPrice, state.reservePrices, state.currentProductID);
+            pastA = state.anxiety;
             state.anxiety = updateAnxiety(state.anxiety, 0);
             if (state.decision)
             {
@@ -235,16 +269,17 @@ public:
     friend ostringstream &operator<<(ostringstream &os, const typename Affective<TIME>::state_type &i) {
         os << " IdAgent: " << i.idAgent
         << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false")
+        << " | TotalBudget: " << i.totalBudget
+        << " | Utility: " << i.utility
         << " | ReservePrice for Current Product: ";
- 
-     // Buscar el precio de reserva del producto actual
-     for (const auto &reserve : i.reservePrices) {
-         if (reserve.id == i.currentProductID) {  // Si es el producto actual
-             os << "[ ID Product N°" << reserve.id << " : " << reserve.price << " ] ";
-             break; // Rompemos el bucle para solo mostrar uno
-         }
-     }
-     return os;
+        // Buscar el precio de reserva del producto actual
+        for (const auto &reserve : i.reservePrices) {
+            if (reserve.id == i.currentProductID) {  // Si es el producto actual
+                os << "[ ID Product N°" << reserve.id << " : " << reserve.price << " ] ";
+                break; // Rompemos el bucle para solo mostrar uno
+            }
+        }
+        return os;
     }
 };
 #endif

@@ -3,18 +3,20 @@
 
 #include <cadmium/modeling/ports.hpp>
 #include <cadmium/modeling/message_bag.hpp>
+#include "../data_structures/message.hpp"
+
 #include "functions.hpp"
 #include <limits>
 #include <assert.h>
 #include <string>
 #include <random>
-#include "../data_structures/message.hpp"
-#include <unordered_map>
 
 using namespace cadmium; using namespace std;
 
+std::set<int> subastadosR;
+
 // Generar alphas aleatorios
-std::vector<Alphas> generateRandomAlphasR() {
+std::vector<Alphas> generateRandomAlphasRational() {
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<float> dis(0.0, 1.0);
@@ -26,7 +28,7 @@ std::vector<Alphas> generateRandomAlphasR() {
     return alphas; // Retornar el vector
 }
 
-vector<ReservePrice> generateReservePrices(const std::vector<Alphas>& alphas, const std::vector<int>& ids, float totalBudget) {
+vector<ReservePrice> generateReservePricesRational(const std::vector<Alphas>& alphas, const std::vector<int>& ids, float totalBudget) {
     std::vector<ReservePrice> reservePrices;//Estructura con ids y precios de reserva de productos que se subastan
     std::vector<float> selectedAlphas;      //alphas de productos que se subastan
     for (int id : ids) {
@@ -46,6 +48,68 @@ vector<ReservePrice> generateReservePrices(const std::vector<Alphas>& alphas, co
         reservePrices.push_back(rp);
     }
     return reservePrices;
+}
+
+void updateUtilityRational(float &utility, int subastadoID, std::vector<Alphas>& alphas, const std::vector<int>& productIDs) {
+    std::vector<int> remainingProductIDs;
+    std::vector<float> remainingAlphas;
+    // Filtrar productos que aún no han sido subastados
+    for (int id : productIDs) {
+        if (subastadosR.find(id) == subastadosR.end()) {
+            remainingProductIDs.push_back(id);
+        }
+    }
+    // Obtener los alphas de los productos restantes (no subastados)
+    for (int id : remainingProductIDs) {
+        for (const auto& alpha : alphas) {
+            if (alpha.id == id) {
+                remainingAlphas.push_back(alpha.alpha);
+                break;
+            }
+        }
+    }
+    // Buscar el alpha del producto que se está subastando
+    auto it = std::find_if(alphas.begin(), alphas.end(), [subastadoID](const Alphas& a) {
+        return a.id == subastadoID;
+    });
+    if (it != alphas.end()) {
+        float alphaActual = it->alpha;
+        utility *= pow(2.0f, alphaActual);  // (1+1)^alpha
+    }
+}
+
+void updateReservePricesRational(std::vector<ReservePrice>& reservePrices, std::vector<Alphas>& alphas,
+    const std::vector<int>& productIDs, float totalBudget, int subastadoID){
+    // Filtrar productos restantes (excluyendo TODOS los productos ya subastadosR)
+    std::vector<int> remainingProductIDs;
+    for (int id : productIDs) {
+        if (subastadosR.find(id) == subastadosR.end()) { // Si el producto NO ha sido subastado
+            remainingProductIDs.push_back(id);
+        }
+    }
+    // Calcular la nueva suma total de los alphas de productos restantes
+    float totalAlpha = 0.0f;
+    for (int id : remainingProductIDs) {
+        auto it = std::find_if(alphas.begin(), alphas.end(), [id](const Alphas& a) {
+        return a.id == id;
+        });
+        if (it != alphas.end()) {
+            totalAlpha += it->alpha;
+        }
+    }
+    // Actualizar precios de reserva solo para los productos restantes
+    for (auto& rp : reservePrices) {
+        if (subastadosR.find(rp.id) != subastadosR.end()) {
+            rp.price = 0.0f; // El producto subastado ya no tiene precio de reserva
+        } else {
+            auto it = std::find_if(alphas.begin(), alphas.end(), [rp](const Alphas& a) {
+                return a.id == rp.id;
+            });
+            if (it != alphas.end()) {
+                rp.price = (it->alpha / totalAlpha) * totalBudget;
+            }
+        }
+    }
 }
 
 struct Rational_defs { // Port definition
@@ -73,18 +137,19 @@ public:
         state.idAgent = id;
         state.totalBudget = budget;
         state.moneySpent = 0;
-        state.utility = 0;
         state.modelActive = false;
         state.decision = false;
         state.waitingNextProduct = false;
         state.purschasedProducts.clear();
-        state.alphas = generateRandomAlphasR(); // Inicialización del vector alpha en el constructor
-        state.reservePrices = generateReservePrices(state.alphas, getRandomProducts() ,state.totalBudget);
+        state.alphas = generateRandomAlphasRational(); // Inicialización del vector alpha en el constructor
+        state.utility = generateUtilityRational(state.alphas, getRandomProducts());
+        state.reservePrices = generateReservePricesRational(state.alphas, getRandomProducts() ,state.totalBudget);
     }
     // funcion de transición interna
     void internal_transition()
     {
         if (state.waitingNextProduct){
+            subastadosR.insert(state.currentProductID);
             state.waitingNextProduct = false;
         }
         state.modelActive = false;
@@ -98,8 +163,10 @@ public:
             state.modelActive = true;
             auto finalResultMessages = get_messages<typename Rational_defs::in_finalResult>(mbs);
             auto finalResult = finalResultMessages[0];
+            state.currentProductID = finalResult.productID;
             if (finalResult.winnerID == state.idAgent)
             {
+                updateUtilityRational(state.utility, state.currentProductID, state.alphas, getRandomProducts());
                 state.totalBudget = updateTotalBudget(finalResult.bestPrice, state.totalBudget);
                 state.moneySpent = updateMoneySpent(finalResult.bestPrice, state.moneySpent);
                 state.purschasedProducts.push_back(finalResult);
@@ -122,6 +189,7 @@ public:
             auto productInfo = initialProductInfoMessages[0];
             state.currentProductID = productInfo.productID;
             state.currentBestPrice = productInfo.bestPrice;
+            updateReservePricesRational(state.reservePrices, state.alphas, getRandomProducts(), state.totalBudget, state.currentProductID);
             state.decision = getDecision(state.currentBestPrice, state.reservePrices, state.currentProductID);
         }
     }
@@ -170,8 +238,9 @@ public:
     friend ostringstream &operator<<(ostringstream &os, const typename Rational<TIME>::state_type &i) {
         os << " IdAgent: " << i.idAgent
         << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false")
+        << " | TotalBudget: " << i.totalBudget
+        << " | Utility: " << i.utility
         << " | ReservePrice for Current Product: ";
- 
         // Buscar el precio de reserva del producto actual
         for (const auto &reserve : i.reservePrices) {
             if (reserve.id == i.currentProductID) {  // Si es el producto actual

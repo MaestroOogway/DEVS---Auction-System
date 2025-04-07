@@ -95,6 +95,6 @@
 00:00:00:000 95 Woscher-_8702_Single_Cylinder_Portable_Foot_Pump_Air_Tyre_Inflator_with_Pressure_Gauge_for_Car_Tyres,_Bicycle_Tyres,_Bike_... car_&_motorbike Car_Accessories 22.78 22.78 4.7 comun 0
 00:00:00:000 96 King's_Closset_Plus_Size_Men_Spread_Collar_Blue_Full_Sleeves_Denim_Shirt men's_clothing Shirts 35.99 35.99 5.0 legendario 0
 00:00:00:000 97 Lucky_Brand_Womens_Erin_Leather_Closed_Toe_Ballet_Flats,_Black,_Size_8.5 stores The_Designer_Boutique 129.57 129.57 5.0 mitico 0
-00:00:00:000 98 Lucky_Brand_Womens_Erin_Leather_Closed_Toe_Ballet_Flats,_Black,_Size_8.5 stores The_Designer_Boutique 129.57 129.57 5.0 mitico 0
-00:00:00:000 99 Lucky_Brand_Womens_Erin_Leather_Closed_Toe_Ballet_Flats,_Black,_Size_8.5 stores The_Designer_Boutique 129.57 129.57 5.0 mitico 0
-00:00:00:000 100 Lucky_Brand_Womens_Erin_Leather_Closed_Toe_Ballet_Flats,_Black,_Size_8.5 stores The_Designer_Boutique 129.57 129.57 5.0 mitico 0
+00:00:00:000 98 Samsung_Galaxy_Buds_Live_True_Wireless_Earbuds,_Mystic_Black electronics Samsung_Official_Store 149.99 149.99 4.5 clasico 0
+00:00:00:000 99 Levi's_Men's_501_Original_Fit_Jeans,_Stonewash,_Size_32 clothing Levis_Store 59.50 59.50 4.7 autentico 0
+00:00:00:000 100 Instant_Pot_Duo_7-in-1_Electric_Pressure_Cooker,_6Qt home Instant_Brands_Outlet 89.00 89.00 4.8 versatil 0

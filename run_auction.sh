@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Limpiar y compilar el proyecto
 echo "Limpiando archivos previos..."
 make clean
