@@ -15,42 +15,7 @@ using namespace cadmium; using namespace std;
 
 std::set<int> subastadosR;
 
-// Generar alphas aleatorios
-std::vector<Alphas> generateRandomAlphasRational() {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<float> dis(0.0, 1.0);
-    std::vector<Alphas> alphas(100); // Crear un vector de 100 elementos
-    for (int i = 0; i < 100; ++i) {
-        alphas[i].id = i + 1; // ID del 1 al 100
-        alphas[i].alpha = dis(gen); // Número aleatorio entre 0 y 1
-    }
-    return alphas; // Retornar el vector
-}
-
-vector<ReservePrice> generateReservePricesRational(const std::vector<Alphas>& alphas, const std::vector<int>& ids, float totalBudget) {
-    std::vector<ReservePrice> reservePrices;//Estructura con ids y precios de reserva de productos que se subastan
-    std::vector<float> selectedAlphas;      //alphas de productos que se subastan
-    for (int id : ids) {
-        for (const auto& alpha : alphas) {  //Encuentra los alphas de los productos que se subastan.
-            if (alpha.id == id) {
-                selectedAlphas.push_back(alpha.alpha);
-            break;
-            }
-        }
-    }
-
-    float sumAlphas = std::accumulate(selectedAlphas.begin(), selectedAlphas.end(), 0.0f); // Suma total denominador
-    for (size_t i = 0; i < ids.size(); ++i) {     // Calcular los precios de reserva
-        ReservePrice rp;
-        rp.id = ids[i];
-        rp.price = (selectedAlphas[i] / sumAlphas) * totalBudget; // Fórmula de precios de reserva
-        reservePrices.push_back(rp);
-    }
-    return reservePrices;
-}
-
-void updateUtilityRational(float &utility, int subastadoID, std::vector<Alphas>& alphas, const std::vector<int>& productIDs) {
+void updateUtilityRational(float &utility, int subastadoID, std::vector<Alphas>& alphas, const std::vector<int>& productIDs, int win) {
     std::vector<int> remainingProductIDs;
     std::vector<float> remainingAlphas;
     // Filtrar productos que aún no han sido subastados
@@ -74,7 +39,7 @@ void updateUtilityRational(float &utility, int subastadoID, std::vector<Alphas>&
     });
     if (it != alphas.end()) {
         float alphaActual = it->alpha;
-        utility *= pow(2.0f, alphaActual);  // (1+1)^alpha
+        utility *= pow(0.1 + win, alphaActual);  // (1+1)^alpha
     }
 }
 
@@ -141,9 +106,9 @@ public:
         state.decision = false;
         state.waitingNextProduct = false;
         state.purschasedProducts.clear();
-        state.alphas = generateRandomAlphasRational(); // Inicialización del vector alpha en el constructor
-        state.utility = generateUtilityRational(state.alphas, getRandomProducts());
-        state.reservePrices = generateReservePricesRational(state.alphas, getRandomProducts() ,state.totalBudget);
+        state.alphas = generateRandomAlphas(); // Inicialización del vector alpha en el constructor
+        state.utility = generateUtility(state.alphas, getRandomProducts());
+        state.reservePrices = generateReservePrices(state.alphas, getRandomProducts() ,state.totalBudget);
     }
     // funcion de transición interna
     void internal_transition()
@@ -164,13 +129,12 @@ public:
             auto finalResultMessages = get_messages<typename Rational_defs::in_finalResult>(mbs);
             auto finalResult = finalResultMessages[0];
             state.currentProductID = finalResult.productID;
-            if (finalResult.winnerID == state.idAgent)
-            {
-                updateUtilityRational(state.utility, state.currentProductID, state.alphas, getRandomProducts());
+            if (finalResult.winnerID == state.idAgent){
                 state.totalBudget = updateTotalBudget(finalResult.bestPrice, state.totalBudget);
                 state.moneySpent = updateMoneySpent(finalResult.bestPrice, state.moneySpent);
                 state.purschasedProducts.push_back(finalResult);
             }
+            updateUtilityRational(state.utility, state.currentProductID, state.alphas, getRandomProducts(), (finalResult.winnerID == state.idAgent ? 1 : 0));
             state.waitingNextProduct = waitingNextProduct();
             state.decision = false;
         }

@@ -121,8 +121,10 @@ plt.grid()
 plt.tight_layout()
 plt.show()
 
-# === Gráfico de utilidad cliente afectivo ===
+# === Gráfico combinado de utilidad: Afectivo vs Racional ===
 plt.figure(figsize=(12, 6))
+
+# Utilidad Afectiva
 sns.lineplot(x=grouped_data['Timestamp'], y=grouped_data[('Affective_Utility', 'mean')],
              label="Affective Utility Mean", color='green')
 plt.fill_between(
@@ -131,17 +133,8 @@ plt.fill_between(
     grouped_data[('Affective_Utility', 'mean')] + grouped_data[('Affective_Utility', 'std')],
     alpha=0.2, color='green'
 )
-plt.xlabel("Time")
-plt.ylabel("Utility")
-plt.title("Affective Utility (Mean & Std Dev)")
-plt.xticks(rotation=45)
-plt.legend()
-plt.grid()
-plt.tight_layout()
-plt.show()
 
-# === Gráfico de utilidad cliente racional ===
-plt.figure(figsize=(12, 6))
+# Utilidad Racional
 sns.lineplot(x=grouped_data['Timestamp'], y=grouped_data[('Rational_Utility', 'mean')],
              label="Rational Utility Mean", color='purple')
 plt.fill_between(
@@ -150,9 +143,10 @@ plt.fill_between(
     grouped_data[('Rational_Utility', 'mean')] + grouped_data[('Rational_Utility', 'std')],
     alpha=0.2, color='purple'
 )
+
 plt.xlabel("Time")
 plt.ylabel("Utility")
-plt.title("Rational Utility (Mean & Std Dev)")
+plt.title("Utility (Mean & Std Dev) - Affective vs Rational")
 plt.xticks(rotation=45)
 plt.legend()
 plt.grid()

@@ -71,12 +71,12 @@ int main(int argc, char **argv)
 
     std::string run_id = argv[2]; // Número de ejecución
 
-    string messages_filename = "../casos_de_estudio/caso_de_estudio_2/messages/ABP_output_messages_" + run_id + ".csv";
-    string state_filename = "../casos_de_estudio/caso_de_estudio_2/states/ABP_output_state_" + run_id + ".csv";
+    string messages_filename = "../casos_de_estudio/caso_de_estudio_1/messages/ABP_output_messages_" + run_id + ".csv";
+    string state_filename = "../casos_de_estudio/caso_de_estudio_1/states/ABP_output_state_" + run_id + ".csv";
 
     // Parámetros configurables
-    int num_affective_clients = 10;
-    int num_rational_clients = 10;
+    int num_affective_clients = 1;
+    int num_rational_clients = 1;
 
     /****** Input Reader atomic model instantiation *******************/
     string input = argv[1];

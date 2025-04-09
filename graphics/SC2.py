@@ -111,49 +111,27 @@ plt.grid()
 plt.tight_layout()
 plt.show()
 
-# === Gráfico de utilidad (afectivo) ===
+# === Gráfico combinado de utilidad (afectivo y racional) ===
 plt.figure(figsize=(12, 6))
+
+# Línea para agentes afectivos
 sns.lineplot(x=all_data["Timestamp"], y=all_data["Affective_Utility_Mean"], label="Affective Utility Mean", color="green")
 plt.fill_between(all_data["Timestamp"],
                  all_data["Affective_Utility_Mean"] - all_data["Affective_Utility_Std"],
                  all_data["Affective_Utility_Mean"] + all_data["Affective_Utility_Std"],
                  alpha=0.2, color="green")
-plt.xlabel("Time")
-plt.ylabel("Utility")
-plt.title("Affective Utility (Mean & Std Dev)")
-plt.xticks(rotation=45)
-plt.legend()
-plt.grid()
-plt.tight_layout()
-plt.show()
 
-# === Gráfico de utilidad (racional) ===
-plt.figure(figsize=(12, 6))
+# Línea para agentes racionales
 sns.lineplot(x=all_data["Timestamp"], y=all_data["Rational_Utility_Mean"], label="Rational Utility Mean", color="purple")
 plt.fill_between(all_data["Timestamp"],
                  all_data["Rational_Utility_Mean"] - all_data["Rational_Utility_Std"],
                  all_data["Rational_Utility_Mean"] + all_data["Rational_Utility_Std"],
                  alpha=0.2, color="purple")
+
+# Detalles del gráfico
 plt.xlabel("Time")
 plt.ylabel("Utility")
-plt.title("Rational Utility (Mean & Std Dev)")
-plt.xticks(rotation=45)
-plt.legend()
-plt.grid()
-plt.tight_layout()
-plt.show()
-
-# === Gráfico independiente de Best Price ===
-plt.figure(figsize=(12, 6))
-sns.lineplot(x=all_data["Timestamp"], y=all_data["Best_Price"], label="Best Price", color="red")
-plt.fill_between(all_data["Timestamp"],
-                 all_data["Best_Price"] - all_data["Best_Price"].std(),
-                 all_data["Best_Price"] + all_data["Best_Price"].std(),
-                 alpha=0.2, color="red")
-
-plt.xlabel("Time")
-plt.ylabel("Best Price")
-plt.title("Best Price (Mean & Std Dev)")
+plt.title("Affective vs Rational Utility (Mean & Std Dev)")
 plt.xticks(rotation=45)
 plt.legend()
 plt.grid()

@@ -14,22 +14,9 @@
 using namespace cadmium; using namespace std;
 
 std::set<int> subastadosA;
-float pastA = 0;
-
-std::vector<Alphas> generateRandomAlphasAffective() {
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<float> dis(0.0, 1.0);
-    std::vector<Alphas> alphas(100); // Crear un vector de 100 elementos
-    for (int i = 0; i < 100; ++i) {
-        alphas[i].id = i + 1; // ID del 1 al 100
-        alphas[i].alpha = dis(gen); // Número aleatorio entre 0 y 1
-    }
-    return alphas; // Retornar el vector
-}
 
 void updateUtilityAffective(float &utility, int subastadoID, std::vector<Alphas>& alphas,
-                            const std::vector<int>& productIDs) {
+                            const std::vector<int>& productIDs, int win) {
     std::vector<int> remainingProductIDs;
     std::vector<float> remainingAlphas;
 
@@ -55,33 +42,8 @@ void updateUtilityAffective(float &utility, int subastadoID, std::vector<Alphas>
 
     if (it != alphas.end()) {
         float alphaActual = it->alpha;
-        utility *= pow(2.0f, alphaActual); // Actualizar utilidad: (1 + 1)^(alpha * anxiety * frustration)
+        utility *= pow(0.1 + win, alphaActual); // Actualizar utilidad: (1 + 1)^(alpha * anxiety * frustration)
     }
-}
-
-
-std::vector<ReservePrice> generateReservePricesAffective(const std::vector<Alphas>& alphas, const std::vector<int>& ids, float totalBudget) {
-    std::vector<ReservePrice> reservePrices;
-    std::vector<float> selectedAlphas;
-    // Extraer los alphas correspondientes a los productos seleccionados
-    for (int id : ids) {
-        for (const auto& alpha : alphas) {
-            if (alpha.id == id) {
-                selectedAlphas.push_back(alpha.alpha);
-            break;
-            }
-        }
-    }
-    // Calcular la suma total de los alphas seleccionados
-    float sumAlphas = std::accumulate(selectedAlphas.begin(), selectedAlphas.end(), 0.0f);
-    // Calcular los precios de reserva
-    for (size_t i = 0; i < ids.size(); ++i) {
-        ReservePrice rp;
-        rp.id = ids[i];
-        rp.price = (selectedAlphas[i] / sumAlphas) * totalBudget; // Fórmula de precios de reserva
-        reservePrices.push_back(rp);
-    }
-    return reservePrices;
 }
 
 void updateReservePricesAffective(std::vector<ReservePrice>& reservePrices, std::vector<Alphas>& alphas,
@@ -161,9 +123,9 @@ public:
         state.decision = false;
         state.waitingNextProduct = false;
         state.purschasedProducts.clear();
-        state.alphas = generateRandomAlphasAffective(); // Inicialización del vector alpha en el constructor
-        state.utility = generateUtilityAffective(state.alphas, getRandomProducts());
-        state.reservePrices = generateReservePricesAffective(state.alphas, getRandomProducts(), state.totalBudget);
+        state.alphas = generateRandomAlphas(); // Inicialización del vector alpha en el constructor
+        state.utility = generateUtility(state.alphas, getRandomProducts());
+        state.reservePrices = generateReservePrices(state.alphas, getRandomProducts(), state.totalBudget);
     }
     // funcion de transición interna
     void internal_transition(){
@@ -183,11 +145,11 @@ public:
             state.currentProductID = finalResult.productID;
             if (finalResult.winnerID == state.idAgent)
             {
-                updateUtilityAffective(state.utility, state.currentProductID, state.alphas, getRandomProducts());
                 state.totalBudget = updateTotalBudget(finalResult.bestPrice, state.totalBudget);
                 state.moneySpent = updateMoneySpent(finalResult.bestPrice, state.moneySpent);
                 state.purschasedProducts.push_back(finalResult);
             }
+            updateUtilityAffective(state.utility, state.currentProductID, state.alphas, getRandomProducts(), (finalResult.winnerID == state.idAgent ? 1 : 0));
             state.frustration = updateFrustration(finalResult.winnerID, state.idAgent, state.frustration);
             state.waitingNextProduct = waitingNextProduct();
             state.decision = false;
@@ -215,7 +177,6 @@ public:
             state.currentBestPrice = productInfo.bestPrice;
             updateReservePricesAffective(state.reservePrices, state.alphas, getRandomProducts(), state.totalBudget, state.currentProductID, state.anxiety, state.frustration);
             state.decision = getDecision(state.currentBestPrice, state.reservePrices, state.currentProductID);
-            pastA = state.anxiety;
             state.anxiety = updateAnxiety(state.anxiety, 0);
             if (state.decision)
             {
