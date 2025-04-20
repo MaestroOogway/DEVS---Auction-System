@@ -37,12 +37,13 @@ public:
         bool roundState, auctionState, stageState;   // Estado de la ronda
         bool modelActive;                           // Estado del modelo
         int numberRound;                            // numero de ronda en curso
+        int SP;
         vector<Message_initialIP_t> recivedProducts, soldProducts, products; // Productos totales recibidos
         vector<Message_bidOffer_t> offerList; // Lista de ofertas recibidas
     };
     state_type state;
     // constructor
-    Auctioneer() { state = {false, false, false, false, 0, {}, {}, {}, {}}; } // Constructor
+    Auctioneer() { state = {false, false, false, false, 0, 1, {}, {}, {}, {}}; } // Constructor
     // Internal transition
     void internal_transition()
     {
@@ -108,12 +109,17 @@ public:
             if (state.offerList.size() > 1){
                 if (state.offerList[0].productID != 0) {
                     state.roundState = true;
-                    state.products[0].bestPrice *= 1.1; // Aumentar el precio en un 10%
+                    state.products[0].bestPrice *= 1.4; // Aumentar el precio en un 10%
                     state.numberRound++;
                 }
                 else {
                     state.roundState = false;
                     state.numberRound = 0;
+                    if(state.SP == 10){
+                        state.SP = 10;
+                    }else{
+                        state.SP++;
+                    }
                 }
             }
             else if (state.offerList.size() <= 1){
@@ -172,10 +178,11 @@ public:
     // Debug information
     friend ostringstream &operator<<(ostringstream &os, const typename Auctioneer<TIME>::state_type &i) {
         os << (i.products.empty() ? " | No products available." : " | Current ProductID: " + to_string(i.products[0].productID) + " | Current BestPrice: " + to_string(i.products[0].bestPrice))
-           << " | numberRound: " << i.numberRound
-           << " | roundState: " << i.roundState
-           << " | auctionState: " << i.auctionState
-           << " | stageState: " << i.stageState;
+            << " | numberRound: " << i.numberRound
+            << " | roundState: " << i.roundState
+            << " | auctionState: " << i.auctionState
+            << " | stageState: " << i.stageState
+            << " | SP: " << i.SP;
         return os;
     }
 };

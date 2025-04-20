@@ -42,7 +42,9 @@ void updateUtilityAffective(float &utility, int subastadoID, std::vector<Alphas>
 
     if (it != alphas.end()) {
         float alphaActual = it->alpha;
-        utility *= pow(0.1 + win, alphaActual); // Actualizar utilidad: (1 + 1)^(alpha * anxiety * frustration)
+        double resultado = pow(0.1 + win, alphaActual);
+        resultado = round(resultado * 1000.0) / 1000.0;
+        utility *= resultado;
     }
 }
 
@@ -51,7 +53,7 @@ void updateReservePricesAffective(std::vector<ReservePrice>& reservePrices, std:
                          int subastadoID, float ansiedad, float frustracion) {
     for (auto& alpha : alphas) {
         if (alpha.id == subastadoID) {
-            alpha.alpha = alpha.alpha*(1 + log(1+ansiedad) + log(1+frustracion));
+            alpha.alpha = alpha.alpha*(1 + log (1+ansiedad) + log (1+frustracion));
             break;
         }
     }
@@ -232,6 +234,8 @@ public:
         << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false")
         << " | TotalBudget: " << i.totalBudget
         << " | Utility: " << i.utility
+        << " | Anxiety:" << i.anxiety
+        << " | Frustration: " << i.frustration
         << " | ReservePrice for Current Product: ";
         // Buscar el precio de reserva del producto actual
         for (const auto &reserve : i.reservePrices) {

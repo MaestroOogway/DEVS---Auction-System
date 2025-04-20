@@ -44,7 +44,7 @@ std::vector<int> getRandomProducts()
 
 std::vector<Alphas> generateRandomAlphas() {
     std::random_device rd;
-    std::mt19937 gen(getSharedSeed());  //cambiar a gen(rd()) para aleatorizar entre instancias 
+    std::mt19937 gen(rd());  //cambiar a gen(rd()) para aleatorizar entre instancias 
     std::uniform_real_distribution<float> dis(0.0, 1.0);
     std::vector<Alphas> alphas(100); // Crear un vector de 100 elementos
     for (int i = 0; i < 100; ++i) {
@@ -144,6 +144,16 @@ bool getDecision(float bestPrice, const std::vector<ReservePrice> &reservePrices
 
 float scaleAlphaForUtility(float alpha, float alphaMax = 10.0f) {
     return std::min(alpha / alphaMax, 1.0f); // Escala entre 0 y 1
+}
+
+void updateBestPrice(float& initialPrice, float& bestPrice) {
+    if (initialPrice < 10.0f) {
+        bestPrice = bestPrice * 1.3f;
+    } else if (initialPrice <= 100.0f) {
+        bestPrice = bestPrice * 1.2f;
+    } else {
+        bestPrice = bestPrice * 1.1f;
+    }
 }
 
 /*" | Alphas :";

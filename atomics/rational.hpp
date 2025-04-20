@@ -39,7 +39,9 @@ void updateUtilityRational(float &utility, int subastadoID, std::vector<Alphas>&
     });
     if (it != alphas.end()) {
         float alphaActual = it->alpha;
-        utility *= pow(0.1 + win, alphaActual);  // (1+1)^alpha
+        double resultado = pow(0.1 + win, alphaActual);
+        resultado = round(resultado * 1000.0) / 1000.0;
+        utility *= resultado;
     }
 }
 
