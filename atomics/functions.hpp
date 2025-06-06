@@ -9,18 +9,20 @@
 #include <algorithm>
 #include <numeric>
 #include <math.h>
+#include <cmath>
 
-struct Alphas
-{
-    int id;
-    float alpha;
-};
+// Función para redondear a n cifras significativas
+float roundToSignificantFigures(float num, int n) {
+    if (num == 0.0f) return 0.0f;
+    float d = std::ceil(std::log10(std::fabs(num)));
+    int power = n - static_cast<int>(d);
+    float magnitude = std::pow(10.0f, power);
+    float shifted = std::round(num * magnitude);
+    float result = shifted/magnitude;
 
-struct ReservePrice
-{
-    int id;
-    float price;
-};
+    if (std::fabs(result) < 1e-4f) return 0.0f;
+    return result;
+}
 
 unsigned int getSharedSeed() {  //Semilla para alphas iguales en racional y afectivo
     static unsigned int seed = std::random_device{}(); // se evalúa solo una vez
@@ -42,14 +44,27 @@ std::vector<int> getRandomProducts()
     return sharedNumbers;
 }
 
+struct Alphas
+{
+    int id;
+    float alpha;
+};
+
+struct ReservePrice
+{
+    int id;
+    float price;
+};
+
 std::vector<Alphas> generateRandomAlphas() {
     std::random_device rd;
-    std::mt19937 gen(rd());  //cambiar a gen(rd()) para aleatorizar entre instancias 
-    std::uniform_real_distribution<float> dis(0.0, 1.0);
+    std::mt19937 gen(getSharedSeed()); 
+    //std::mt19937 gen(rd()); 
+    std::uniform_real_distribution<float> dis(0.10, 0.99);
     std::vector<Alphas> alphas(100); // Crear un vector de 100 elementos
     for (int i = 0; i < 100; ++i) {
         alphas[i].id = i + 1; // ID del 1 al 100
-        alphas[i].alpha = dis(gen); // Número aleatorio entre 0 y 1
+        alphas[i].alpha = roundToSignificantFigures(dis(gen),2); // dos cifras decimales
     }
     return alphas; // Retornar el vector
 }
@@ -76,7 +91,7 @@ vector<ReservePrice> generateReservePrices(const std::vector<Alphas>& alphas, co
     return reservePrices;
 }
 
-float generateUtility(const std::vector<Alphas>& alphas, const std::vector<int>& ids) {
+float maxUtility(const std::vector<Alphas>& alphas, const std::vector<int>& ids) {
     std::vector<float> selectedAlphas;       
     float utility = 1.0f; // inicializamos en 1 porque es un producto
     for (int id : ids) {
@@ -88,11 +103,11 @@ float generateUtility(const std::vector<Alphas>& alphas, const std::vector<int>&
         }
     }
     for (float alpha : selectedAlphas) {
-        utility *= pow(1.0f, alpha); // potencia con base 1
+        utility *= pow(2.0f, alpha); // potencia con base 1
+        //utility += alpha;
     }
-    return utility;
+    return roundToSignificantFigures(utility,2);
 }
-
 
 bool waitingNextProduct()
 {
@@ -109,25 +124,37 @@ float updateMoneySpent(float buyPrice, float moneySpent)
     return moneySpent + buyPrice;
 }
 
-// Actualizar frustración del agente afectivo
-float updateFrustration(float winner, int clientID, float frustration)
+float normalize(float value, float minVal, float maxVal)
 {
-    return (winner == clientID) ? std::max(0.0f, frustration - 1) : frustration + 1;
+    return (value - minVal) / (maxVal - minVal);
+}
+/*
+float updateFrustration(float winner, int clientID, float frustration){
+    frustration = (winner == clientID) 
+        ? std::max(0.0f, frustration - 1.0f) 
+        : std::min(10.0f, frustration + 1.0f);
+    return frustration;
+}*/
+
+float updateFrustration(float winner, int clientID, float frustration){
+    if(winner==clientID){
+        frustration = std::max(0.0f, frustration - 1.0f);
+    }
+    else{
+        frustration = 10.0f;
+    }
+    return frustration;
 }
 
-// Actualizar ansiedad del agente afectivo
-float updateAnxiety(float anxiety, float sum)
+float resetAnxiety(float anxiety){
+    anxiety = 0;
+    return anxiety;
+}
+// Actualizar ansiedad del agente afectivo y devolver valor normalizado
+float updateAnxiety(float anxiety)
 {
-    if (sum > 0)
-    {
-        anxiety = anxiety + 1;
-        return anxiety;
-    }
-    else
-    {
-        anxiety = 0;
-        return anxiety;
-    }
+    anxiety = std::min(10.0f, anxiety + 1.0f); 
+    return anxiety;
 }
 
 bool getDecision(float bestPrice, const std::vector<ReservePrice> &reservePrices, int productID)
@@ -147,18 +174,31 @@ float scaleAlphaForUtility(float alpha, float alphaMax = 10.0f) {
 }
 
 void updateBestPrice(float& initialPrice, float& bestPrice) {
-    if (initialPrice < 10.0f) {
+    if (bestPrice < 10.0f) {
         bestPrice = bestPrice * 1.3f;
-    } else if (initialPrice <= 100.0f) {
+    } else if (bestPrice <= 100.0f) {
         bestPrice = bestPrice * 1.2f;
     } else {
         bestPrice = bestPrice * 1.1f;
     }
+    bestPrice = roundToSignificantFigures(bestPrice, 4);
 }
 
-/*" | Alphas :";
-for (const auto &alpha : i.alphas){
-    os << "[ ID Product N°" << alpha.id << " : " << alpha.alpha << " ] ";
-}*/
+float generateUtility(const std::vector<Alphas>& alphas, const std::vector<int>& ids) {
+    std::vector<float> selectedAlphas;       
+    float utility = 1.0f; // inicializamos en 1 porque es una productoria
+    for (int id : ids) {
+        for (const auto& alpha : alphas) {
+            if (alpha.id == id) {
+                selectedAlphas.push_back(alpha.alpha);
+                break;
+            }
+        }
+    }
+    for (float alpha : selectedAlphas) {
+        utility *= pow(1.0f, alpha); // potencia con base 1
+    }
+    return utility;
+}
 
 #endif // COMMON_HPP

@@ -1,5 +1,6 @@
 import os
 import re
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -11,11 +12,11 @@ archivos = sorted(glob(os.path.join(ruta_archivos, "ABP_output_state_*.csv")))
 
 # Ruta donde guardar resultados
 output_dir = os.path.join(ruta_archivos, "C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/graphics/CS1")
-os.makedirs(output_dir, exist_ok=True)  # ✅ Crear carpeta si no existe
+os.makedirs(output_dir, exist_ok=True)  # Crear carpeta si no existe
 
 datos = []
 
-# Patrones
+# Logs de Cadmium
 pat_reserva = re.compile(r"ReservePrice for Current Product: \[ ID Product N°\d+ : ([\d.]+) \]")
 pat_utilidad = re.compile(r"Utility: ([\d.]+)")
 pat_SP = re.compile(r"SP: (\d+)")
@@ -23,7 +24,6 @@ pat_SP = re.compile(r"SP: (\d+)")
 for archivo in archivos:
     with open(archivo, "r", encoding="utf-8") as f:
         lines = [line.strip() for line in f if line.strip()]
-    
     timestamp = ""
     reserva_afectivo = None
     reserva_racional = None
@@ -57,22 +57,34 @@ for archivo in archivos:
                 reserva_racional = float(res_match.group(1))
         
         if all(x is not None for x in [timestamp, reserva_afectivo, reserva_racional, utilidad_afectivo, utilidad_racional, SP]):
-            if 1 <= SP <= 10:
                 datos.append({
+                    "archivo": os.path.basename(archivo),
                     "SP": SP,
                     "reserva_afectivo": reserva_afectivo,
                     "reserva_racional": reserva_racional,
                     "utilidad_afectivo": utilidad_afectivo,
                     "utilidad_racional": utilidad_racional,
                 })
-            reserva_afectivo = reserva_racional = utilidad_afectivo = utilidad_racional = SP = None
+                reserva_afectivo = reserva_racional = utilidad_afectivo = utilidad_racional = SP = None
 
 # Crear DataFrame
 df = pd.DataFrame(datos)
-
+#df = df[(df["utilidad_afectivo"] <= 1.0) & (df["utilidad_racional"] <= 1.0)]
 # ✅ Guardar dataset como CSV
 df.to_csv(os.path.join(output_dir, "dataset_final.csv"), index=False)
 
+
+max_ua_idx = df["utilidad_afectivo"].idxmax()
+max_ur_idx = df["utilidad_racional"].idxmax()
+
+print("📈 Máxima utilidad afectivo:", df.loc[max_ua_idx, "utilidad_afectivo"])
+print("🔎 En archivo:", df.loc[max_ua_idx, "archivo"])
+
+print("📈 Máxima utilidad racional:", df.loc[max_ur_idx, "utilidad_racional"])
+print("🔎 En archivo:", df.loc[max_ur_idx, "archivo"])
+
+
+#'''
 # ---------------------- GRAFICOS ----------------------
 sns.set(style="whitegrid")
 
@@ -91,7 +103,7 @@ plt.xlabel("Subasta del Producto")
 plt.ylabel("Precio de Reserva")
 plt.legend(title="Agente")
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "precio_reserva_por_sp.png"))  # ✅ Guardar en carpeta
+plt.savefig(os.path.join(output_dir, "precio_reserva_boxplot.png"))  # ✅ Guardar en carpeta
 # plt.show()  # ❌ Desactivado
 
 # ---- Utilidad por SP ----
@@ -109,7 +121,7 @@ plt.xlabel("Subasta del Producto")
 plt.ylabel("Utilidad")
 plt.legend(title="Agente")
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "utilidad_por_sp.png"))  # ✅
+plt.savefig(os.path.join(output_dir, "utilidad_boxplot.png"))  # ✅
 # plt.show()
 
 # ---- Precio de Reserva con Media y Desviación ----
@@ -135,8 +147,7 @@ plt.ylabel("Precio de Reserva")
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "media_con_sombra.png"))  # ✅
-# plt.show()
+plt.savefig(os.path.join(output_dir, "precio_reserva_barras.png"))  # ✅
 
 # ---- Utilidad con Media y Desviación ----
 utilidad_afectiva_mean = df.groupby('SP')['utilidad_afectivo'].mean()
@@ -154,6 +165,7 @@ plt.fill_between(sp, utilidad_afectiva_mean - utilidad_afectiva_std, utilidad_af
 plt.plot(sp, utilidad_racional_mean, label='Racional', color='orange')
 plt.fill_between(sp, utilidad_racional_mean - utilidad_racional_std, utilidad_racional_mean + utilidad_racional_std, color='orange', alpha=0.2)
 
+
 plt.title("Utilidad por Producto (Media ± Desviación Estándar)")
 plt.xlabel("Subasta del Producto")
 plt.ylabel("Utilidad")
@@ -161,5 +173,5 @@ plt.legend()
 plt.grid(True)
 plt.xticks(sp)
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "utilidad_con_sombra.png"))  # ✅
-# plt.show()
+plt.savefig(os.path.join(output_dir, "utilidad_barras.png"))  
+#''' 

@@ -33,7 +33,7 @@ using TIME = NDTime;
 float generateBudget()
 {
     static std::mt19937 rng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
-    std::uniform_real_distribution<float> dist(250.0f, 800.0f);
+    std::uniform_real_distribution<float> dist(600.0f, 700.0f);   //Precios caso 1: 700-800; caso 2: 1600-1700; caso 3: 1600-1700
     return dist(rng);
 }
 
@@ -71,12 +71,12 @@ int main(int argc, char **argv)
 
     std::string run_id = argv[2]; // Número de ejecución
 
-    string messages_filename = "../casos_de_estudio/caso_de_estudio_2/messages/ABP_output_messages_" + run_id + ".csv";
-    string state_filename = "../casos_de_estudio/caso_de_estudio_2/states/ABP_output_state_" + run_id + ".csv";
+    string messages_filename = "../casos_de_estudio/caso_de_estudio_1/messages/ABP_output_messages_" + run_id + ".csv";
+    string state_filename = "../casos_de_estudio/caso_de_estudio_1/states/ABP_output_state_" + run_id + ".csv";
 
     // Parámetros configurables
-    int num_affective_clients = 5;
-    int num_rational_clients = 5;
+    int num_affective_clients = 1;
+    int num_rational_clients = 1;
 
     /****** Input Reader atomic model instantiation *******************/
     string input = argv[1];

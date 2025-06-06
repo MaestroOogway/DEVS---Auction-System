@@ -6,13 +6,11 @@ import seaborn as sns
 from glob import glob
 
 # ------------------ CONFIGURACIÓN ------------------
-
 # Ruta de salida
 output_dir = "C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/graphics/CS2"
 os.makedirs(output_dir, exist_ok=True)
 
 # ------------------ CARGAR DATOS ------------------
-
 # Ruta de archivos de entrada
 ruta_archivos = "C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/casos_de_estudio/caso_de_estudio_2/states"
 archivos = sorted(glob(os.path.join(ruta_archivos, "ABP_output_state_*.csv")))
@@ -46,11 +44,11 @@ for archivo in archivos:
             res_match = pat_reserva.search(line)
             if util_match and res_match and SP is not None:
                 datos.append({
+                    "SP": SP,
                     "Tipo": "Afectivo",
                     "ID_Agente": agent_id,
-                    "SP": SP,
+                    "Reserva": float(res_match.group(1)),
                     "Utilidad": float(util_match.group(1)),
-                    "Reserva": float(res_match.group(1))
                 })
 
         elif "State for model rational_" in line:
@@ -59,11 +57,11 @@ for archivo in archivos:
             res_match = pat_reserva.search(line)
             if util_match and res_match and SP is not None:
                 datos.append({
+                    "SP": SP,
                     "Tipo": "Racional",
                     "ID_Agente": agent_id,
-                    "SP": SP,
-                    "Utilidad": float(util_match.group(1)),
-                    "Reserva": float(res_match.group(1))
+                    "Reserva": float(res_match.group(1)),
+                    "Utilidad": float(util_match.group(1))
                 })
 
 # Crear DataFrame
@@ -85,7 +83,7 @@ plt.ylabel("Precio de Reserva")
 plt.legend(title="Tipo de Agente")
 plt.grid(True)
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "boxplot_precio_reserva.png"))
+plt.savefig(os.path.join(output_dir, "precio_reserva_boxplot.png"))
 plt.close()
 
 # Gráfico 2 - Utilidad
@@ -97,7 +95,7 @@ plt.ylabel("Utilidad")
 plt.legend(title="Tipo de Agente")
 plt.grid(True)
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "boxplot_utilidad.png"))
+plt.savefig(os.path.join(output_dir, "utilidad_boxplot.png"))
 plt.close()
 
 # Gráfico 3 - Media ± std Precio de Reserva
@@ -114,7 +112,7 @@ plt.legend()
 plt.grid(True)
 plt.xticks(ticks=sorted(df["SP"].unique()))
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "media_sombra_precio_reserva.png"))
+plt.savefig(os.path.join(output_dir, "precio_reserva_barra.png"))
 plt.close()
 
 # Gráfico 4 - Media ± std Utilidad
@@ -131,5 +129,5 @@ plt.legend()
 plt.grid(True)
 plt.xticks(ticks=sorted(df["SP"].unique()))
 plt.tight_layout()
-plt.savefig(os.path.join(output_dir, "media_sombra_utilidad.png"))
+plt.savefig(os.path.join(output_dir, "utilidad_barra.png"))
 plt.close()

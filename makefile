@@ -14,6 +14,9 @@ caso_de_estudio_1_states := $(shell mkdir -p ./casos_de_estudio/caso_de_estudio_
 caso_de_estudio_2 := $(shell mkdir -p ./casos_de_estudio/caso_de_estudio_2)
 caso_de_estudio_2_messages := $(shell mkdir -p ./casos_de_estudio/caso_de_estudio_2/messages)
 caso_de_estudio_2_states := $(shell mkdir -p ./casos_de_estudio/caso_de_estudio_2/states)
+caso_de_estudio_3 := $(shell mkdir -p ./casos_de_estudio/caso_de_estudio_3)
+caso_de_estudio_3_messages := $(shell mkdir -p ./casos_de_estudio/caso_de_estudio_3/messages)
+caso_de_estudio_3_states := $(shell mkdir -p ./casos_de_estudio/caso_de_estudio_3/states)
 
 # Compilar message.cpp
 message.o: data_structures/message.cpp

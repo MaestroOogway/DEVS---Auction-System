@@ -53,17 +53,14 @@ public:
             state.roundState = false;
             state.auctionState = false;
             state.products.erase(state.products.begin());
-            if (!state.products.empty())
-            { // Si quedan productos, reactivar el modelo
+            if (!state.products.empty()){ // Si quedan productos, reactivar el modelo
                 state.stageState = true;
             }
-            else
-            {
+            else{
                 state.stageState = false; // No quedan más productos, se termina el escenario.
             }
         }
-        else if (state.auctionState == false)
-        {
+        else if (state.auctionState == false){
             state.auctionState = true;
         }
         state.roundState = false;
@@ -79,19 +76,16 @@ public:
             state.stageState = true;
             auto messages = get_messages<typename Auctioneer_defs::in_initialIP>(mbs);
             state.products.insert(state.products.end(), messages.begin(), messages.end());  // Insertar productos recibidos
-            // Filtrar los 10 productos seleccionados aleatoriamente
-            std::vector<int> selectedProductIDs = getRandomProducts();
+            std::vector<int> selectedProductIDs = getRandomProducts();            // Filtrar los 10 productos seleccionados aleatoriamente
             std::vector<Message_initialIP_t> selectedProducts;
-            // Filtrar productos según los IDs seleccionados
-            for (const auto& product : state.products)
+            for (const auto& product : state.products)            // Filtrar productos según los IDs seleccionados
             {
                 if (std::find(selectedProductIDs.begin(), selectedProductIDs.end(), product.productID) != selectedProductIDs.end())
                 {
                     selectedProducts.push_back(product);  // Agregar el producto a la lista seleccionada
                 }
             }
-            // Asignar los productos seleccionados a la subasta
-            state.products = selectedProducts; 
+            state.products = selectedProducts;                                           
         }
         else if (!get_messages<typename Auctioneer_defs::in_bidOffer>(mbs).empty())
         {
@@ -100,24 +94,18 @@ public:
             auto messages = get_messages<typename Auctioneer_defs::in_bidOffer>(mbs);
             state.offerList.insert(state.offerList.end(), messages.begin(), messages.end());
             // Filtrar elementos con decision = 0
-            state.offerList.erase(
-                std::remove_if(state.offerList.begin(), state.offerList.end(),
-                               [](const auto &offer)
-                               { return offer.decision == 0; }),
+            state.offerList.erase(std::remove_if(state.offerList.begin(), state.offerList.end(),[](const auto &offer){return offer.decision == 0;}),
                 state.offerList.end());
-
             if (state.offerList.size() > 1){
                 if (state.offerList[0].productID != 0) {
                     state.roundState = true;
-                    state.products[0].bestPrice *= 1.4; // Aumentar el precio en un 10%
+                    updateBestPrice(state.products[0].initialPrice, state.products[0].bestPrice);
                     state.numberRound++;
                 }
                 else {
                     state.roundState = false;
                     state.numberRound = 0;
-                    if(state.SP == 10){
-                        state.SP = 10;
-                    }else{
+                    if (state.SP < getRandomProducts().size()) {
                         state.SP++;
                     }
                 }
