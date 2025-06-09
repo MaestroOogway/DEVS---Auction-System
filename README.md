@@ -15,9 +15,8 @@ Este repositorio contiene el modelo de sistema inteligente autónomo de compra b
 C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/
 │
 ├─ run_auction            # Ejecutable principal de la simulación
-├─ casos_de_estudio/      # Carpetas de salida numeradas (1, 2, 3)
-└─ graphics/              # Scripts Python para generar gráficos
-   └─ CS1.py              # Generador de gráficas a partir de registros
+├─ casos_de_estudio/casos_de_estudio_{n}/      # Carpetas de salida numeradas donde n = {1, 2, 3}
+
 ```
 
 # Ejecución de la simulación
@@ -43,7 +42,7 @@ C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/
    * **-a**: número de productos a subastar
    * **-pi**: presupuesto mínimo (cota inferior) de cada agente
    * **-ps**: presupuesto máximo (cota superior) de cada agente
-   * **-c**: carpeta de salida donde se almacenarán los registros (valores permitidos: 1, 2 o 3)
+   * **-c**: carpeta de salida donde se almacenarán los registros, esto es: casos_de_estudio/casos_de_estudio_{n} , donde n = {1,2,3}
 
 3. Ejemplo práctico:
 
@@ -51,31 +50,8 @@ C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/
    ./run_auction -t 5 -a 10 -pi 100 -ps 500 -c 2
    ```
 
-   Esto simula una subasta con 5 agentes, 10 productos, presupuestos entre 100 y 500, y guarda los registros en `casos_de_estudio/2/`.
+   Esto simula una subasta con 5 agentes, 10 productos, presupuestos entre 100 y 500, y guarda los registros en `casos_de_estudio/caso_de_estudio_2/`.
 
-# Visualización de resultados
-
-1. Cambia al directorio de gráficos:
-
-   ```bash
-   cd graphics
-   ```
-
-2. Ejecuta el script Python para generar las gráficas:
-
-   ```bash
-   python CS1.py -c <1|2|3>
-   ```
-
-   * **-c**: número de carpeta de resultados que usaste en la simulación.
-
-3. Ejemplo:
-
-   ```bash
-   python CS1.py -c 2
-   ```
-
-   Generará gráficos de barras y boxplots basados en los registros de la carpeta `casos_de_estudio/2/`.
 
 # Notas
 
