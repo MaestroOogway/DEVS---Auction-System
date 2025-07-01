@@ -94,8 +94,7 @@ public:
             auto messages = get_messages<typename Auctioneer_defs::in_bidOffer>(mbs);
             state.offerList.insert(state.offerList.end(), messages.begin(), messages.end());
             // Filtrar elementos con decision = 0
-            state.offerList.erase(std::remove_if(state.offerList.begin(), state.offerList.end(),[](const auto &offer){return offer.decision == 0;}),
-                state.offerList.end());
+            state.offerList.erase(std::remove_if(state.offerList.begin(), state.offerList.end(),[](const auto &offer){return offer.decision == 0;}), state.offerList.end());
             if (state.offerList.size() > 1){
                 if (state.offerList[0].productID != 0) {
                     state.roundState = true;

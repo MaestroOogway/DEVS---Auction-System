@@ -23,6 +23,8 @@
 #include <algorithm>
 #include <string>
 #include <random>
+#include <unistd.h>      // para getopt
+#include <cstdlib>       // para atoi, atof
 
 using namespace std;
 using namespace cadmium;
@@ -30,10 +32,10 @@ using namespace cadmium::basic_models::pdevs;
 
 using TIME = NDTime;
 
-float generateBudget()
+float generateBudget(float lower, float upper)
 {
     static std::mt19937 rng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
-    std::uniform_real_distribution<float> dist(600.0f, 700.0f);   //Precios caso 1: 700-800; caso 2: 1600-1700; caso 3: 1600-1700
+    std::uniform_real_distribution<float> dist(lower, upper);   //Precios caso 1: 700-800; caso 2: 1600-1700; caso 3: 1600-1700
     return dist(rng);
 }
 
@@ -60,26 +62,45 @@ public:
     InputReader_initialPI_t() = default;
     InputReader_initialPI_t(const char *file_path) : iestream_input<Message_initialIP_t, T>(file_path) {}
 };
-int main(int argc, char **argv)
-{
-    if (argc < 3)
-    {
-        cout << "Program used with wrong parameters. The program must be invoked as follow:";
-        cout << argv[0] << " path to the input file " << endl;
-        return 1;
+
+int main(int argc, char **argv) {
+
+    // 1) Valores por defecto o invalidos
+    int num_affective_clients = -1;
+    int num_rational_clients = -1;
+    float P_MIN = -1.0f;
+    float P_MAX = -1.0f;
+    int N_PRODUCTOS = -1.0f;
+    const std::string input_file = argv[11];
+    const std::string run_id = argv[12];
+    int dir_salida = 0;
+
+    // 2) Parseo de opciones
+    int opt;
+    while ((opt = getopt(argc, argv, "a:r:l:u:p:")) != -1) {
+        switch (opt) {
+            case 'a': num_affective_clients = std::atoi(optarg);      break;
+            case 'r': num_rational_clients = std::atoi(optarg);       break;
+            case 'l': P_MIN               = std::atof(optarg);       break;
+            case 'u': P_MAX               = std::atof(optarg);       break;
+            case 'p': N_PRODUCTOS         = std::atoi(optarg);       break;
+            default:
+                std::cerr << "Uso: " << argv[0]
+                          << " -a num_affectivos -r num_racionales -l Pmin -u Pmax -p num_productos path_input run_id\n";
+                return 1;
+        }
     }
 
-    std::string run_id = argv[2]; // Número de ejecución
+    //  Cálculo de directorio de salida
+    dir_salida = (num_affective_clients > 1 || num_rational_clients > 1) ? 2 : 1;
+    std::string base_dir = "../casos_de_estudio/caso_de_estudio_" + std::to_string(dir_salida);
 
-    string messages_filename = "../casos_de_estudio/caso_de_estudio_1/messages/ABP_output_messages_" + run_id + ".csv";
-    string state_filename = "../casos_de_estudio/caso_de_estudio_1/states/ABP_output_state_" + run_id + ".csv";
-
-    // Parámetros configurables
-    int num_affective_clients = 1;
-    int num_rational_clients = 1;
+    // Rutas de output 
+    std::string messages_filename = base_dir + "/messages/ABP_output_messages_" + run_id + ".csv";
+    std::string state_filename    = base_dir + "/states/ABP_output_state_"    + run_id + ".csv";
 
     /****** Input Reader atomic model instantiation *******************/
-    string input = argv[1];
+    string input = input_file;
     const char *i_input = input.c_str();
 
     shared_ptr<dynamic::modeling::model> input_reader = dynamic::translate::make_dynamic_atomic_model<InputReader_initialPI_t, TIME, const char *>("input_reader", move(i_input));
@@ -91,13 +112,13 @@ int main(int argc, char **argv)
 
     for (int i = 1; i <= num_affective_clients; i++)
     {
-        float randomBudget = generateBudget();
+        float randomBudget = generateBudget(P_MIN, P_MAX);
         affective_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Affective, TIME, int, float>("affective_" + to_string(i), move(i), move(randomBudget)));
     }
 
     for (int i = num_affective_clients + 1; i <= num_rational_clients + num_affective_clients; i++)
     {
-        float randomBudget = generateBudget();
+        float randomBudget = generateBudget(P_MIN, P_MAX);
         rational_clients.push_back(dynamic::translate::make_dynamic_atomic_model<Rational, TIME, int, float>("rational_" + to_string(i), move(i), move(randomBudget)));
     }
 

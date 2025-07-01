@@ -8,18 +8,17 @@
 #include <assert.h>
 #include <string>
 #include <random>
+#include <unordered_map>
 #include <iomanip> // necesario para std::fixed y std::setprecision
 #include "../data_structures/message.hpp"
 
 using namespace cadmium; using namespace std;
 
-std::set<int> subastadosA;
+std::set<int> subastadosA; //Memoria del cliente afectivo
 
-void updateUtilityA(float &utility, int subastadoID, std::vector<Alphas>& alphas, const std::vector<int>& productIDs, int win, float ansiedad, float frustracion) {
-    std::vector<int> remainingProductIDs;
-    std::vector<float> remainingAlphas;
-    float ansiedadNormalizada = normalize(ansiedad,0,10);
-    float frustracionNormalizada = normalize(frustracion,0,10);
+void updateUtilityA(Utility& utility, int subastadoID, vector<Alphas>& alphas, const vector<int>& productIDs, int win, Emotion& ansiedad, Emotion& frustracion) {
+    vector<int> remainingProductIDs;
+    vector<float> remainingAlphas;
     // Filtrar productos no subastados aún
     for (int id : productIDs) {
         if (subastadosA.find(id) == subastadosA.end()) {
@@ -36,29 +35,29 @@ void updateUtilityA(float &utility, int subastadoID, std::vector<Alphas>& alphas
         }
     }
     // Buscar el alpha del producto que se está subastando
-    auto it = std::find_if(alphas.begin(), alphas.end(), [subastadoID](const Alphas& a) {
+    auto it = find_if(alphas.begin(), alphas.end(), [subastadoID](const Alphas& a) {
         return a.id == subastadoID;
     });
 
     if (it != alphas.end()) {
         float alphaOriginal = it->alpha;
-        float alphaAdjusted = alphaOriginal * (1.0f + ansiedadNormalizada + frustracionNormalizada);
+        float alphaAdjusted = alphaOriginal * (1.0f + ansiedad.scaled + frustracion.scaled);
         float resultado;
-        float pesoA = 0.4f;
-        float pesoF = 0.6f;
-        float penalizacion = pesoA * ansiedadNormalizada + pesoF * frustracionNormalizada;
+        float pesoA = 0.3f;
+        float pesoF = 0.3f;
+        float penalizacion = pesoA * ansiedad.scaled + pesoF * frustracion.scaled;
         if (win == 1) {
         resultado = log(pow(1.0f + 1.0f, alphaAdjusted));  // log((1 + 1)^alpha)
         } else {
-        resultado = log(pow(1.0f + 0.0f, alphaAdjusted)) - penalizacion; // Lo anterior es equivalente a: resultado = 0 - penalizacion;
+        resultado = log(pow(1.0f + 0.0f, alphaAdjusted)) - penalizacion; //Equivalente a: resultado = 0 - penalizacion;
         }
-        utility = std::max(0.0f, utility + resultado);
+        utility.real = max(0.0f, utility.real + resultado);
     }
 }
 
-void updateReservePA(std::vector<ReservePrice>& reservePrices, const std::vector<Alphas>& alphas, const std::vector<int>& productIDs, float totalBudget, int subastadoID, float ansiedad, float frustracion) {
-    std::vector<int> remainingProductIDs;  // Calcular la nueva suma total de alphas (ajustando solo el del producto subastado)
-    std::unordered_map<int, float> alphaAdjustedMap;
+void updateReservePA(vector<ReservePrice>& reservePrices, const vector<Alphas>& alphas, const vector<int>& productIDs, float totalBudget, int subastadoID, Emotion& ansiedad, Emotion& frustracion) {
+    vector<int> remainingProductIDs;  // Calcular la nueva suma total de alphas (ajustando solo el del producto subastado)
+    unordered_map<int, float> alphaAdjustedMap;
     float totalAlpha = 0.0f;
     for (int id : productIDs) {
         if (subastadosA.find(id) == subastadosA.end()) {   // Filtrar productos restantes (excluyendo TODOS los productos ya subastados)
@@ -67,13 +66,13 @@ void updateReservePA(std::vector<ReservePrice>& reservePrices, const std::vector
     }
 
     for (int id : remainingProductIDs) {
-        auto it = std::find_if(alphas.begin(), alphas.end(), [id](const Alphas& a) {
+        auto it = find_if(alphas.begin(), alphas.end(), [id](const Alphas& a) {
             return a.id == id;
         });
 
         if (it != alphas.end()) {
             float adjustedAlpha = (id == subastadoID) ?
-                it->alpha * (1 + log10(1+ansiedad) + log10(1+frustracion)) :
+                it->alpha * (1 + ansiedad.scaled + frustracion.scaled) :
                 it->alpha;
 
             alphaAdjustedMap[id] = adjustedAlpha;
@@ -105,11 +104,12 @@ public:
     struct state_type {
         int idAgent, currentProductID;
         float totalBudget, moneySpent, currentBestPrice;
-        float utility, anxiety, frustration, scaledUtility;
         bool modelActive, decision, waitingNextProduct;
+        Emotion anxiety, frustration;
+        Utility utility;
         vector<Alphas> alphas;
         vector<ReservePrice> reservePrices;
-        vector<Message_finalResults_t> purschasedProducts;
+        vector<int> purschasedProducts;
     };
     state_type state;
     Affective() = default;
@@ -117,21 +117,20 @@ public:
         state.idAgent = id;
         state.totalBudget = budget;
         state.moneySpent = 0;
-        state.anxiety = 0;
-        state.frustration = 0;
+        state.anxiety.real = state.anxiety.scaled = 0;
+        state.frustration.real = state.frustration.scaled = 0;
         state.modelActive = false;
         state.decision = false;
         state.waitingNextProduct = false;
         state.purschasedProducts.clear();
         state.alphas = generateRandomAlphas(); // Inicialización del vector alpha en el constructor
-        state.utility = generateUtility(state.alphas, getRandomProducts());
-        state.scaledUtility = normalize(state.utility, 1.0f, maxUtility(state.alphas, getRandomProducts()));
+        state.utility.real = generateUtility(state.alphas, getRandomProducts());
+        state.utility.scaled = normalize(state.utility.real, 1.0f, maxUtility(state.alphas, getRandomProducts()));
         state.reservePrices = generateReservePrices(state.alphas, getRandomProducts(), state.totalBudget);
     }
     // funcion de transición interna
     void internal_transition(){
         if (state.waitingNextProduct){
-            state.scaledUtility = roundToSignificantFigures(std::min(1.0f, std::max(0.00f, normalize(state.utility, 1.0f, maxUtility(state.alphas, getRandomProducts() )))), 2);
             subastadosA.insert(state.currentProductID);
             state.waitingNextProduct = false;
         }
@@ -146,7 +145,7 @@ public:
             state.currentBestPrice = productInfo.initialPrice;
             updateReservePA(state.reservePrices, state.alphas, getRandomProducts(), state.totalBudget, state.currentProductID, state.anxiety, state.frustration);
             state.decision = getDecision(state.currentBestPrice, state.reservePrices, state.currentProductID);
-            state.anxiety = resetAnxiety(state.anxiety);
+            resetAnxiety(state.anxiety);
         }
         else if (!get_messages<typename Affective_defs::in_roundResult>(mbs).empty()){
             auto roundResult = get_messages<typename Affective_defs::in_roundResult>(mbs)[0];
@@ -158,15 +157,19 @@ public:
             if (finalResult.winnerID == state.idAgent){
                 state.totalBudget = updateTotalBudget(finalResult.bestPrice, state.totalBudget);
                 state.moneySpent = updateMoneySpent(finalResult.bestPrice, state.moneySpent);
-                state.purschasedProducts.push_back(finalResult);
+                state.purschasedProducts.push_back(1);
+            }
+            else{
+                state.purschasedProducts.push_back(0);
             }
             updateUtilityA(state.utility, state.currentProductID, state.alphas, getRandomProducts(), (finalResult.winnerID == state.idAgent), state.anxiety, state.frustration);
-            state.frustration = updateFrustration(finalResult.winnerID, state.idAgent, state.frustration);
+            state.utility.scaled = roundToSignificantFigures(min(1.0f, max(0.00f, normalize(state.utility.real, 1.0f, maxUtility(state.alphas, getRandomProducts() )))), 2);
+            updateFrustration(finalResult.winnerID, state.idAgent, state.frustration);
             state.waitingNextProduct = waitingNextProduct();
             state.decision = false;
         }
         if (state.decision){
-            state.anxiety = updateAnxiety(state.anxiety);
+            updateAnxiety(state.anxiety);
         }
     }
     // funcion de transiscion de confluencia, ejecuta la interna y luego la externa.
@@ -196,12 +199,19 @@ public:
         os << " IdAgent: " << i.idAgent
         << " | Wait Next Product: " << (i.waitingNextProduct ? "true" : "false")
         << " | TotalBudget: " << i.totalBudget
-        << " | Utility: " << i.scaledUtility
-        << " | Anxiety: " << i.anxiety
-        << " | Frustration: " << i.frustration
-        << " | Purschased: " << size(i.purschasedProducts)
-        << " | ReservePrice for Current Product: ";
-        for (const auto &reserve : i.reservePrices) {        // Buscar el precio de reserva del producto actual
+        << " | Utility: " << i.utility.scaled
+        << " | N: " << i.purschasedProducts.size()
+        << " | Anxiety: " << i.anxiety.scaled
+        << " | Frustration: " << i.frustration.scaled
+        << " | Purchased: [";
+        for (size_t idx = 0; idx < i.purschasedProducts.size(); ++idx) {
+            os << i.purschasedProducts[idx];
+            if (idx != i.purschasedProducts.size() - 1)
+                os << ", ";
+            }
+        os << "]";
+        os << " | ReservePrice for Current Product: ";
+        for (const auto &reserve : i.reservePrices) { // Buscar el precio de reserva del producto actual
             if (reserve.id == i.currentProductID) {  // Si es el producto actual
                 os << "[ ID Product N°" << reserve.id << " : " << reserve.price << " ] ";
                 break; // Rompemos el bucle para solo mostrar uno

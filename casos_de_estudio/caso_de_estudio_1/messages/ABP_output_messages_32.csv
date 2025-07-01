@@ -4,392 +4,742 @@
 00:00:00:000
 [cadmium::basic_models::pdevs::iestream_input_defs<Message_initialIP_t>::out: {1 UZARUS_Men's_Regular_Fit_Track_pants sports_&_fitness Football 23.99 23.99 3.3 epico 0, 2 Adidas_Unisex_Adult_X_SPEEDFLOW_Messi.3_TF_J_VICBLU/SHOPNK/Syello_Football_Shoe-2_Kids_UK_(FY6904) kids'_fashion Kids'_Shoes 67.19 67.19 5 mitico 0, 3 FEGSY_Resistance_Tube_Exercise_Bands_for_Stretching,_Workout,_and_Toning_for_Men,_and_Women_-_50_LBS sports_&_fitness All_Exercise_&_Fitness 11.99 11.99 3.9 epico 0, 4 Borges_Penne_Rigate_Durum_Wheat_Pasta,_500_grams beauty_&_health Health_&_Personal_Care 3.59 3.59 4.4 epico 0, 5 Wipro_Furniture_Fabric_Ergonomic_Office_Chairs_(Black) home_&_kitchen Furniture 172.8 172.8 4.2 legendario 0, 6 Treo_by_Milton_Borosilicate_Round_Storage_Jar,_1000_ml,_Transparent home_&_kitchen Kitchen_Storage_&_Containers 5.7 5.7 4.2 legendario 0, 7 PowerMax_Fitness_TDM-115S_2HP_(4HP_Peak)_Motorized_Treadmill_with_Free_Installation_Assistance,_Home_Use_&_Semi_Automatic_... sports_&_fitness Cardio_Equipment 738 738 3.9 epico 0, 8 Hopscotch_Baby_Girls_Cotton_And_Polyester_Cold_Shoulder_Sleeveless_Applique_Floral_Net_Party_Dresses_In_Pink kids'_fashion Baby_Fashion 23.03 23.03 3.3 legendario 0, 9 Blue_Nectar_Baby_Lotion_with_Ghee,_Roses,_Wheatgerm_Oil_for_Soft_Skin_(12_Herbs,_200_ml) toys_&_baby_products Baby_Bath,_Skin_&_Grooming 6.9 6.9 4.2 epico 0, 10 Zeya_Yellow_Gold_Flutter_Butterfly_Ring_for_Women accessories Gold_&_Diamond_Jewellery 161.8 161.8 5 mitico 0, 11 Roop_Nikhar_KUMKUM_BINDI_SPIRAL_BOOK_MULTI_MIX_SIZE-_SMALL beauty_&_health Make-up 7.2 7.2 4.5 comun 0, 12 Medigo®_Biodegradable_Paper_Drinking_Straws_for_Juices,_Shakes,_Smoothies,_Party_Supplies_Decorations,_Ultra_Long_(Random_... beauty_&_health Household_Supplies 5.99 5.99 3.5 raro 0, 13 Panasonic_SRWA18H(K)_660-Watt_Electric_Cooker,_White,_1.8_Liters appliances Kitchen_&_Home_Appliances 41.34 41.34 4 raro 0, 14 F_A_S_O_100%_Organic_Cotton_T-Shirt_for_Men_|_Regular_Fit_Casual_Mens_Tshirt|_Striped_Round_Neck_Half_Sleeve_Tees_for_Men... men's_clothing T-shirts_&_Polos 7.19 7.19 5 mitico 0, 15 Portable_Air_Conditioners_-_Mini_AC_Unit,_4000mAh_Rechargable_AC_with_Timing,_7_Colors_Night_Light_for_Camping_Car appliances Air_Conditioners 106.98 106.98 3.2 epico 0, 16 Cottington_Lane_Breathable_Mesh_Crib_Liner_-Detachable_Sandwich_Crib_Liner_Best_for_Your_Babys_Safety_(Four-Sided_Slatted... home_&_kitchen Bedroom_Linen 19.19 19.19 5 epico 0, 17 Bath_Guru_Soap_Dispenser_for_Bathroom_Wall_Mounted_ABS_Plastic_350_ML-_(_Black_&_Chrome_) home_&_kitchen Home_Improvement 11.99 11.99 4.3 mitico 0, 18 (Renewed)_Inalsa_Handy_Steam_600-Watt_Garment_Steamer_(White/Purple) home,_kitchen,_pets Refurbished_&_Open_Box 17.99 17.99 3.1 mitico 0, 19 Simon's_Sleepwell_Earplugs_(3_Pairs_Foam,_1_Pairs_Silicone_Earplugs) bags_&_luggage Travel_Accessories 3 3 3.3 comun 0, 20 Li-Ning_Ultra_III_Limited_Edition_Non-Marking_Cushion_Badminton_Shoe_(Navy,_Red,_10UK) men's_shoes Sports_Shoes 55.08 55.08 4.1 epico 0, 21 GIVA_AVNI_925_Oxidised_Silver_Mandala_Nose_Pin_|_Nose_Pin_For_Women_&_Girls_|_With_Certificate_of_Authenticity_and_925_Sta... accessories Fashion_&_Silver_Jewellery 11.98 11.98 3.2 comun 0, 22 Mommypure_Dewy_Love_Natural_Baby_Face_Cream_With_Cocoa_Butter_For_Deep_Moisturisation_|_Clean,_Natural_&_Nourishing_Protec... toys_&_baby_products Baby_Products 5.39 5.39 4.1 raro 0, 23 Imported_Bicycle_MTB_Bike_Rear_Mech_Derailleur_Hanger_Drop_Out_Adapter_5# sports_&_fitness Cycling 5.4 5.4 3.2 mitico 0, 24 Samarth_Deals_Led_Apple_Shape_Digital_Wrist_Watch_Kids_Unisex_School_Boys_Girls_Kids_Watch_-_1_PCS_(Multi-Color) kids'_fashion Kids'_Watches 5.99 5.99 4 comun 0, 25 NEUTON_Boom_Bostic_Truly_Wireless_Bluetooth_Surround_Sound_Speaker tv,_audio_&_cameras Speakers 11.99 11.99 5 comun 0, 26 Femme_Jam_925_Sterling_Silver_Bracelet_Adjustable_Pure_Sterling_Silver_Bracelet_with_a_92.5_Stamp_for_Women's_and_Girl's accessories Jewellery 26.39 26.39 5 comun 0, 27 Formula_1_613762_Carnauba_Paste_Wax_(340_g) car_&_motorbike Car_&_Bike_Care 9.54 9.54 4.3 epico 0, 28 FREDI_HD_PLUS_Mini_Security_IP_Camera_with_WiFi_Intelligence_Wireless_Charger tv,_audio_&_cameras Security_Cameras 69.59 69.59 1 raro 0, 29 VP_STORES_Portable_Toilet_Pop_up_Tent_Camping_Beach_Shower_Privacy_Dressing_Changing_Room_Outdoor_Backpack_Shelter_(Multi_... bags_&_luggage Rucksacks 39.59 39.59 5 epico 0, 30 CHILDCHIC_Eco-Friendly_Baby_Sipper/Water_Bottle_400ml_with_Straw_Children_Kettle_Drinkware_(Pink) toys_&_baby_products Nursing_&_Feeding 5.99 5.99 3.7 legendario 0, 31 Tommy_Hilfiger_Elegant_Unisex_Polyester_15_Inch_Laptop_Backpack_Navy+Red+Blue accessories Bags_&_Luggage 44.39 44.39 5 raro 0, 32 Top_Team_Wooden_Popular_Willow_Mini_Cricket_Bat_with_2_Sponge_Cartoon_Ball_for_Kids_2-4_Years_Pack_of_1. sports_&_fitness Cricket 4.79 4.79 3.2 raro 0, 33 Koel_by_Lavie_Women's_Myla_Wallet_(Ocher) accessories Handbags_&_Clutches 22.79 22.79 4 raro 0, 34 BENYAR_Business_Casual_Blue_Dial_Stainless_Steel_Date_Display_Analog_Watch_for_Men stores Amazon_Fashion 53.88 53.88 4.1 raro 0, 35 Himalayan_Organics_Plant_Based_Bone_Strength_Supplement_With_Vitamin_D3,C,K,Calcium,_Magnesium,_Zinc,_Iron_|_Promote_Joint... beauty_&_health Diet_&_Nutrition 14.1 14.1 4.3 legendario 0, 36 Lyse_Decor_Aluminum_Dome_3_Lights_Chandelier_Hanging_Pendant_Ceiling_Lights_Lamp,_40_Watts_(Round),_Black_and_Orange home_&_kitchen Indoor_Lighting 18 18 4 legendario 0, 37 Yellow_Bee_Bear_Detailed_Clogs_for_Boys,_Beige kids'_fashion Kids'_Fashion 9.95 9.95 5 mitico 0, 38 BIBA_womens_Salwar_Kurta_Dupatta women's_clothing Clothing 43.19 43.19 3.9 legendario 0, 39 Whirlpool_184_L_2_Star_Direct-Cool_Single_Door_Refrigerator_(205_WDE_CLS_2S_SAPPHIRE_BLUE-Z,_Sapphire_Blue,_Large_Vegetabl... appliances Refrigerators 184.8 184.8 4.2 epico 0, 40 CAPILANO_Honey,_500_g grocery_&_gourmet_foods All_Grocery_&_Gourmet_Foods 11.4 11.4 4.3 legendario 0, 41 Godrej_7_Kg_5_Star_Fully-Automatic_Top_Loading_Washing_Machine_(WTEON_700_AD_5.0_ROGR,_Grey,_Acu_Wash_Drum) appliances Washing_Machines 222 222 4.2 raro 0, 42 ABG_BOROSILICATE_GLASS_TEST_TUBE_WITH_RIM._18_X_150_MM._20_UNIT_IN_A_BOX. industrial_supplies Lab_&_Scientific 15.59 15.59 5 mitico 0, 43 BullrocK_Drop_Bang_Crash_Pad_for_Olympic_Weightlifting_Powerlifting_&_Dumbbell_Dropping_Silencer_Cushion_Platform_Pads_Flo... sports_&_fitness Fitness_Accessories 368.59 368.59 4.7 epico 0, 44 Kumkum_Saree_Shapewear_Peticote_for_Sarees_Versatile_Underskirt_for_Sarees_Lycra_Blended_Saree_Petticoat_Shapewear_for_Wom... women's_clothing Ethnic_Wear 25.2 25.2 3.5 raro 0, 45 LifeStride_Women's,_Brielle_Sandal women's_shoes Ballerinas 107.95 107.95 4.3 comun 0, 46 Neutriderm_Moisturising_Lotion_w/Vitamin_E_-_125_mL beauty_&_health Value_Bazaar 12 12 4.4 comun 0, 47 Wakytu_Dog_Travel_Bag,_Airline_Approved_Tote_Bag_for_Dogs_Cats_Pet's_Traveling_Accessories_Organizer,_Includes_Pet_Travel_... pet_supplies Dog_supplies 74.5 74.5 4.5 mitico 0, 48 DRITON_Combo_Pack_of_Pink_Dial_Digital_Watch_with_Pink_Sunglass_for_Girl's stores Women's_Fashion 14.39 14.39 4.1 comun 0, 49 Lana_Paws_Polyester_Googly_Eyes_Durable_Fabric_Dog_Collar_Belt_for_Large_Dogs_Pack_of_1,_Blue pet_supplies All_Pet_Supplies 6.6 6.6 4.3 epico 0, 50 TrustBasket_40_Cavity_Seedling_Cups_(Pack_of_10)_Plastic_Plants_Nursery_Seedlings_Starter_Cups/Seed_Germination_Tray_for_T... home_&_kitchen Garden_&_Outdoors 10.79 10.79 3.4 mitico 0, 51 LIEFDE_Stainless_Steel_DEEP_Mixing_Bowl-_2000_ML home_&_kitchen Kitchen_&_Dining 4.79 4.79 3.9 comun 0, 52 STANLEY_66-137_Digital_Detection_Tester_and_Screwdriver_(Black) industrial_supplies Test,_Measure_&_Inspect 1.91 1.91 3.8 raro 0, 53 SIR_CORBETT_Men's_Semicasual_2674_Black_Loafer_Slip_On_Shoes men's_shoes Casual_Shoes 39.95 39.95 2.5 mitico 0, 54 BENRO_T560_56.5_inches_Digital_SLR_Camera_Aluminium_Travel_Portable_Tripod_with_Carry_Bag_(Black) tv,_audio_&_cameras Camera_Accessories 35.88 35.88 4.4 epico 0, 55 PUSHKARAJ_INDUSTRIES_RAGI_MALT_-250g_-_PACK_OF_3_(KESHAR_PISTA_+_BERRIES_+_MANGO) grocery_&_gourmet_foods Snack_Foods 3.24 3.24 3.9 raro 0, 56 Luv_Lap_Galaxy_Baby_Stroller,_Pram_for_Baby_with_5_Point_Safety_Harness,_Spacious_Cushioned_seat_with_Multi_Level_seat_Rec... toys_&_baby_products Strollers_&_Prams 93.59 93.59 4.2 mitico 0, 57 ISEE_360_Racing_Auto_Hood_Die_Cut_Water_Resistance_Bumper_Sides_Windows_Car_Sticker_(29X9_cm) car_&_motorbike Car_Parts 1.91 1.91 3.7 raro 0, 58 TDTC_Stainless_Steel_Inflating_Pump_Needle_Pin_Nozzle_Soccer,_Basketball,_Football,_Volleyball|_Inflatable_air_Value_Adapt... sports_&_fitness All_Sports,_Fitness_&_Outdoors 4.19 4.19 5 raro 0, 59 Fun_with_Dots_&_Numbers_and_Colorful_Dots_&_Numbers_(Fun_with_Dots_&_Numbers) toys_&_baby_products STEM_Toys_Store 65.99 65.99 4.3 comun 0, 60 ASTRID_Backpack_With_Front_Pockets_For_Girls bags_&_luggage Backpacks 23.99 23.99 5 epico 0, 61 Flipco_Excellent_2_in_1_HAIR_Beauty_Set_Curler_and_Straightener_plus_curler_with_ceramic_plate beauty_&_health Personal_Care_Appliances 8.39 8.39 3 comun 0, 62 Vantrue_N2_Pro_1920x1080P_Uber_Dual_Dash_Cam_2.5K_1440P_Single_Front_Dashboard_Camera_with_Infrared_Night_Vision,_Sony_Sen... car_&_motorbike Car_Electronics 433.13 433.13 4.4 legendario 0, 63 Amazon_Basics_Bluetooth_5.0_Truly_Wireless_in_Ear_Earbuds,_Up_to_38_Hours_Playtime,_IPX-5_Rated,_Type-C_Charging_Case,_Tou... tv,_audio_&_cameras All_Electronics 35.99 35.99 3.4 legendario 0, 64 Omidazzle_Ultra_soft_Blender_Makeup_Sponge_Set_of_4_with_box_(Multicolor) beauty_&_health Beauty_&_Grooming 7.19 7.19 4 comun 0, 65 FINE_ARCH_Women_Canvas_Espadrilles women's_shoes Fashion_Sandals 17.99 17.99 1 legendario 0, 66 HK_Balloons_Smiley_Balloon_Printed_Face_Expression_Latex_Balloon_30_Pcs,_Yellow/Emoji_Balloon/Smiley_Balloon/Birthday_Deco... toys_&_baby_products Toys_&_Games 3.59 3.59 3.7 mitico 0, 67 Generic_LTT-0001_Multipurpose_Wood_Laptop_Table_with_Dock_Stand_&_Non-Slip_Legs_Foldable_and_Portable_Lapdesk_for_Study_&_... home_&_kitchen All_Home_&_Kitchen 15.59 15.59 3.7 raro 0, 68 Avene_Very_High_Protection_Fluid_SPF_50_-_1.7_Ounces_Liquid beauty_&_health Luxury_Beauty 22.06 22.06 4.1 mitico 0, 69 FLITE_Women_Slippers/Kohlapuri_Slippers_for_Ladies/Fashion_Slippers/Ethnic/Traditional_Slippers women's_shoes Shoes 5.99 5.99 5 epico 0, 70 SPELLWISH_Self-Adhesive_Heavy_Duty_Metal_Bathroom_Storage_Corner_Rack,_Shelf_Organizer,_Shampoo_Holder_for_Bathroom_Withou... home_&_kitchen Home_Storage 14.4 14.4 3.3 comun 0, 71 Stuthi_Arts_Brown_Decorative_Wall_Mirror_Decorative_Mirror_(Rectangle)_Size-_13.4_in._X_10_in_(Rectangular,Framed) home_&_kitchen Home_Décor 14.39 14.39 5 comun 0, 72 American_Tourister_Bounce_28_Ltrs_Grey_Casual_Backpack_(FR9_(0)_08_003) kids'_fashion School_Bags 26.16 26.16 4 epico 0, 73 REDTECH_Upgraded_Magnetic_Sports_Bluetooth_Wireless_Earphone_with_Immersive_Stereo_Sound_and_Hands_Free_Mic_Sports_Stereo_... tv,_audio_&_cameras Headphones 11.99 11.99 3.5 comun 0, 74 mj_capture_4-String_Acoustic_Guitar_Learning_Kids_Toy,_Brown_18"inch music Musical_Instruments_&_Professional_Audio 17.99 17.99 3.2 raro 0, 75 Titwah_Men's_Cross_Pockets_Regular_Fit_Stretchable_Denim_Jeans men's_clothing Jeans 35.99 35.99 5 raro 0, 76 Fastrack_Womens_33.7_mm_Glitch_Black_Dial_Leather_Analogue_Watch_-_6234NL01_(WFT6234NL01,_Not_assigned,_Not_assigned) accessories Watches 26.34 26.34 4.4 raro 0, 77 Nifty_Women's_Regular_Shorts women's_clothing Western_Wear 17.99 17.99 3.9 raro 0, 78 Teakwood_Genuine_Leather_Formal_Oxford_Office_Shoes_for_Mens(Brown1_6)_Brown men's_shoes Formal_Shoes 89.99 89.99 2 comun 0, 79 Amazon_Brand_-_Symbol_Men's_Printed_Boxers_(Pack_of_2) men's_clothing Innerwear 11.98 11.98 3.9 legendario 0, 80 Usha_Fontana_One_1270mm_Ceiling_Fan_with_Decorative_Lights_(Antique_Brass),_Black appliances Heating_&_Cooling_Appliances 110.4 110.4 3.8 mitico 0, 81 Xectes_Platform_Trolley_for_Heavy_Weight_Material_Goods_Carrying_Luggage_Cart_with_6_Wheels_&_1_Ropes_and_Brake_System_150... bags_&_luggage Suitcases_&_Trolley_Bags 57.59 57.59 4.6 raro 0, 82 ETI_Floor_Marking_Tape_48mmx25metres_Yellow_Black_Zebra industrial_supplies Industrial_&_Scientific_Supplies 2.39 2.39 4.1 legendario 0, 83 Benz_Scooty_(ISI_Certified)_Open_Face_Helmet_for_Men,_Women_(Blue_Matte) car_&_motorbike Motorbike_Accessories_&_Parts 9.48 9.48 3.7 legendario 0, 84 Unique_Ideas_New_Born_Baby_Multipurpose_Polyester_Diaper/Mother_Bag_with_Holder_Diaper_Changing_Multi_Compartment_(Red_Reg... toys_&_baby_products Diapers 15.59 15.59 4.1 legendario 0, 85 M_Medler_Gravity_Unisex_Vegan_Leather_Stylish_&_Spacious_35_Liters_Weekender_Travel_Duffle_Bag_(Grey) bags_&_luggage Travel_Duffles 47.99 47.99 3.3 legendario 0, 86 Thomas_&_Friends_Fisher-Price_Wooden_Railway,_James_Engine toys_&_baby_products International_Toy_Store 275.99 275.99 4.6 epico 0, 87 Pinklips_Shopping_Blackpink_Unisex_Cotton_Hoodies_for_Girls/Boys/Kids_(Black)-HUDDPINKSAB_03 kids'_fashion Kids'_Clothing 11.99 11.99 2 epico 0, 88 Amazon_Brand_-_Symactive_Neoprene_Coated_Fixed_Dumbbell_for_Gym_Exercises,_Set_of_2,_3_Kg,_Green sports_&_fitness Strength_Training 21.95 21.95 4.3 mitico 0, 89 Redlicchi_Women's_PU_Casual_Purse_Fashion_School_Leather_Backpack_Shoulder_Bag_Mini_Backpack_for_Women_&_Girls stores Fashion_Sales_&_Deals 11.99 11.99 3.3 raro 0, 90 CHAYAM_Herbal-Immunity_Boosting_Combo_|_Cinnamon_Green_Tea_with_Orange_Peel_+_Spiced_Turmeric_with_Ginger_and_Black_Peppe... grocery_&_gourmet_foods Coffee,_Tea_&_Beverages 6.36 6.36 5 comun 0, 91 SVS_Sunka_Voltage_Stabilizer™_(100%_Copper)_LED_TV_Upto_81cm_(32_Inch)_+_Set_Top_Box_or_DVD_Player,5_Years_Warranty. tv,_audio_&_cameras Televisions 22.8 22.8 4.5 epico 0, 92 STARQ_Car_Washer_Snow_Foam_Lance_Bottle_All_ST_Models_Compatible_Adjustable_1L_Set_Plus_Brass_Adapter appliances All_Appliances 59.99 59.99 3.9 mitico 0, 93 indoAmor_Silk_Decorative_Golden_Striped_Throw_Pillow_Cover_Bedroom_&_Living_Room_Cushion_Cover_Set_Sofa_(16X16_Inches),_Se... home_&_kitchen Home_Furnishing 13.19 13.19 4.2 raro 0, 94 Zion_Bags_Water_Proof_Mountain_Rucksack/Hiking/Trekking/Camping_Black sports_&_fitness Camping_&_Hiking 47.99 47.99 3.9 epico 0, 95 Woscher-_8702_Single_Cylinder_Portable_Foot_Pump_Air_Tyre_Inflator_with_Pressure_Gauge_for_Car_Tyres,_Bicycle_Tyres,_Bike_... car_&_motorbike Car_Accessories 22.78 22.78 4.7 comun 0, 96 King's_Closset_Plus_Size_Men_Spread_Collar_Blue_Full_Sleeves_Denim_Shirt men's_clothing Shirts 35.99 35.99 5 legendario 0, 97 Lucky_Brand_Womens_Erin_Leather_Closed_Toe_Ballet_Flats,_Black,_Size_8.5 stores The_Designer_Boutique 129.57 129.57 5 mitico 0, 98 Samsung_Galaxy_Buds_Live_True_Wireless_Earbuds,_Mystic_Black electronics Samsung_Official_Store 149.99 149.99 4.5 clasico 0, 99 Levi's_Men's_501_Original_Fit_Jeans,_Stonewash,_Size_32 clothing Levis_Store 59.5 59.5 4.7 autentico 0, 100 Instant_Pot_Duo_7-in-1_Electric_Pressure_Cooker,_6Qt home Instant_Brands_Outlet 89 89 4.8 versatil 0}] generated by model input_reader
 00:00:05:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {7 PowerMax_Fitness_TDM-115S_2HP_(4HP_Peak)_Motorized_Treadmill_with_Free_Installation_Assistance,_Home_Use_&_Semi_Automatic_... sports_&_fitness Cardio_Equipment 738 738 3.9 epico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {8 Hopscotch_Baby_Girls_Cotton_And_Polyester_Cold_Shoulder_Sleeveless_Applique_Floral_Net_Party_Dresses_In_Pink kids'_fashion Baby_Fashion 23.03 23.03 3.3 legendario 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:00:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 7 Price Proposal: 0 Decision:0}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 7 Price Proposal: 0 Decision:0}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 23.03 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 23.03 Decision:1}] generated by model rational_2
 00:00:15:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 7 WinnerID: 0 Best Price: 738 Initial Price: 738 N° Round: 1}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 27.64 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:00:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 27.64 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 27.64 Decision:1}] generated by model rational_2
 00:00:25:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {15 Portable_Air_Conditioners_-_Mini_AC_Unit,_4000mAh_Rechargable_AC_with_Timing,_7_Colors_Night_Light_for_Camping_Car appliances Air_Conditioners 106.98 106.98 3.2 epico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 33.17 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:00:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 15 Price Proposal: 106.98 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 15 Price Proposal: 0 Decision:0}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 33.17 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 33.17 Decision:1}] generated by model rational_2
 00:00:35:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 15 WinnerID: 1 Best Price: 106.98 Initial Price: 106.98 N° Round: 1}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 39.8 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:00:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 39.8 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 39.8 Decision:1}] generated by model rational_2
 00:00:45:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {20 Li-Ning_Ultra_III_Limited_Edition_Non-Marking_Cushion_Badminton_Shoe_(Navy,_Red,_10UK) men's_shoes Sports_Shoes 55.08 55.08 4.1 epico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 47.76 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:00:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 20 Price Proposal: 55.08 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 20 Price Proposal: 55.08 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 47.76 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 47.76 Decision:1}] generated by model rational_2
 00:00:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 20 Best Price: 66.1 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 57.31 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:01:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 20 Price Proposal: 66.1 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 20 Price Proposal: 66.1 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 57.31 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 57.31 Decision:1}] generated by model rational_2
 00:01:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 20 Best Price: 79.32 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 68.77 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:01:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 20 Price Proposal: 79.32 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 20 Price Proposal: 79.32 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 68.77 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 68.77 Decision:1}] generated by model rational_2
 00:01:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 20 Best Price: 95.18 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 82.52 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:01:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 20 Price Proposal: 95.18 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 20 Price Proposal: 95.18 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 82.52 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 82.52 Decision:1}] generated by model rational_2
 00:01:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 20 Best Price: 114.2 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 99.02 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:01:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 20 Price Proposal: 114.2 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 20 Price Proposal: 114.2 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 99.02 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 99.02 Decision:1}] generated by model rational_2
 00:01:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 20 Best Price: 125.6 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 8 Best Price: 118.8 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:01:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 20 Price Proposal: 125.6 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 20 Price Proposal: 125.6 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 8 Price Proposal: 118.8 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 8 Price Proposal: 0 Decision:0}] generated by model rational_2
 00:01:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 20 Best Price: 138.2 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 8 WinnerID: 1 Best Price: 118.8 Initial Price: 23.03 N° Round: 10}] generated by model auctioneer_model
 00:01:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 20 Price Proposal: 138.2 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 20 Price Proposal: 0 Decision:0}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
 00:01:55:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 20 WinnerID: 1 Best Price: 138.2 Initial Price: 55.08 N° Round: 7}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {37 Yellow_Bee_Bear_Detailed_Clogs_for_Boys,_Beige kids'_fashion Kids'_Fashion 9.95 9.95 5 mitico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:02:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 9.95 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 9.95 Decision:1}] generated by model rational_2
 00:02:05:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {35 Himalayan_Organics_Plant_Based_Bone_Strength_Supplement_With_Vitamin_D3,C,K,Calcium,_Magnesium,_Zinc,_Iron_|_Promote_Joint... beauty_&_health Diet_&_Nutrition 14.1 14.1 4.3 legendario 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 12.94 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:02:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 14.1 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 14.1 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 12.94 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 12.94 Decision:1}] generated by model rational_2
 00:02:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 16.92 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 15.53 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:02:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 16.92 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 16.92 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 15.53 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 15.53 Decision:1}] generated by model rational_2
 00:02:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 20.3 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 18.64 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:02:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 20.3 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 20.3 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 18.64 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 18.64 Decision:1}] generated by model rational_2
 00:02:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 24.36 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 22.37 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:02:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 24.36 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 24.36 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 22.37 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 22.37 Decision:1}] generated by model rational_2
 00:02:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 29.23 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 26.84 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:02:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 29.23 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 29.23 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 26.84 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 26.84 Decision:1}] generated by model rational_2
 00:02:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 35.08 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 32.21 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:03:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 35.08 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 35.08 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 32.21 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 32.21 Decision:1}] generated by model rational_2
 00:03:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 42.1 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 38.65 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:03:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 42.1 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 42.1 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 38.65 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 38.65 Decision:1}] generated by model rational_2
 00:03:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 50.52 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 46.38 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:03:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 50.52 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 50.52 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 46.38 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 46.38 Decision:1}] generated by model rational_2
 00:03:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 60.62 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 55.66 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:03:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 60.62 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 60.62 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 55.66 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 55.66 Decision:1}] generated by model rational_2
 00:03:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 72.74 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 66.79 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:03:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 72.74 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 72.74 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 66.79 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 66.79 Decision:1}] generated by model rational_2
 00:03:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 87.29 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 80.15 N° Round: 11}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:03:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 87.29 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 87.29 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 80.15 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 80.15 Decision:1}] generated by model rational_2
 00:03:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 104.7 N° Round: 11}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 96.18 N° Round: 12}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:04:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 104.7 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 104.7 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 96.18 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 96.18 Decision:1}] generated by model rational_2
 00:04:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 115.2 N° Round: 12}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 115.4 N° Round: 13}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:04:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 115.2 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 115.2 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 115.4 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 115.4 Decision:1}] generated by model rational_2
 00:04:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 126.7 N° Round: 13}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 126.9 N° Round: 14}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:04:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 126.7 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 126.7 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 126.9 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 126.9 Decision:1}] generated by model rational_2
 00:04:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 139.4 N° Round: 14}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 37 Best Price: 139.6 N° Round: 15}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:04:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 139.4 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 139.4 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 37 Price Proposal: 139.6 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 37 Price Proposal: 0 Decision:0}] generated by model rational_2
 00:04:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 153.3 N° Round: 15}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 37 WinnerID: 1 Best Price: 139.6 Initial Price: 9.95 N° Round: 16}] generated by model auctioneer_model
 00:04:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 153.3 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 153.3 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
 00:04:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 168.6 N° Round: 16}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {52 STANLEY_66-137_Digital_Detection_Tester_and_Screwdriver_(Black) industrial_supplies Test,_Measure_&_Inspect 1.91 1.91 3.8 raro 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:04:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 168.6 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 168.6 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 1.91 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 1.91 Decision:1}] generated by model rational_2
 00:04:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 35 Best Price: 185.5 N° Round: 17}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 2.483 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:05:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 35 Price Proposal: 185.5 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 35 Price Proposal: 0 Decision:0}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 2.483 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 2.483 Decision:1}] generated by model rational_2
 00:05:05:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 35 WinnerID: 1 Best Price: 185.5 Initial Price: 14.1 N° Round: 18}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 3.228 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:05:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 3.228 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 3.228 Decision:1}] generated by model rational_2
 00:05:15:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {80 Usha_Fontana_One_1270mm_Ceiling_Fan_with_Decorative_Lights_(Antique_Brass),_Black appliances Heating_&_Cooling_Appliances 110.4 110.4 3.8 mitico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 4.196 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:05:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 80 Price Proposal: 110.4 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 80 Price Proposal: 110.4 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 4.196 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 4.196 Decision:1}] generated by model rational_2
 00:05:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 80 Best Price: 121.4 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 5.455 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:05:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 80 Price Proposal: 0 Decision:0}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 80 Price Proposal: 121.4 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 5.455 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 5.455 Decision:1}] generated by model rational_2
 00:05:35:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 80 WinnerID: 2 Best Price: 121.4 Initial Price: 110.4 N° Round: 2}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 7.092 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:05:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 7.092 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 7.092 Decision:1}] generated by model rational_2
 00:05:45:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {83 Benz_Scooty_(ISI_Certified)_Open_Face_Helmet_for_Men,_Women_(Blue_Matte) car_&_motorbike Motorbike_Accessories_&_Parts 9.48 9.48 3.7 legendario 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 9.22 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:05:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 9.48 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 9.48 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 9.22 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 9.22 Decision:1}] generated by model rational_2
 00:05:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 12.32 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 11.99 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:06:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 12.32 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 12.32 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 11.99 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 11.99 Decision:1}] generated by model rational_2
 00:06:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 14.78 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 14.39 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:06:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 14.78 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 14.78 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 14.39 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 14.39 Decision:1}] generated by model rational_2
 00:06:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 17.74 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 17.27 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:06:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 17.74 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 17.74 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 17.27 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 17.27 Decision:1}] generated by model rational_2
 00:06:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 21.29 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 20.72 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:06:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 21.29 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 21.29 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 20.72 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 20.72 Decision:1}] generated by model rational_2
 00:06:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 25.55 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 24.86 N° Round: 11}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:06:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 25.55 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 25.55 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 24.86 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 24.86 Decision:1}] generated by model rational_2
 00:06:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 30.66 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 29.83 N° Round: 12}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:06:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 30.66 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 30.66 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 29.83 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 29.83 Decision:1}] generated by model rational_2
 00:06:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 36.79 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 35.8 N° Round: 13}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:07:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 36.79 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 36.79 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 35.8 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 35.8 Decision:1}] generated by model rational_2
 00:07:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 44.15 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 42.96 N° Round: 14}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:07:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 44.15 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 44.15 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 42.96 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 42.96 Decision:1}] generated by model rational_2
 00:07:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 52.98 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 51.55 N° Round: 15}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:07:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 52.98 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 52.98 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 51.55 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 51.55 Decision:1}] generated by model rational_2
 00:07:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 83 Best Price: 63.58 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 61.86 N° Round: 16}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:07:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 83 Price Proposal: 0 Decision:0}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 83 Price Proposal: 63.58 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 61.86 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 61.86 Decision:1}] generated by model rational_2
 00:07:35:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 83 WinnerID: 2 Best Price: 63.58 Initial Price: 9.48 N° Round: 11}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 74.23 N° Round: 17}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:07:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 74.23 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 74.23 Decision:1}] generated by model rational_2
 00:07:45:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {92 STARQ_Car_Washer_Snow_Foam_Lance_Bottle_All_ST_Models_Compatible_Adjustable_1L_Set_Plus_Brass_Adapter appliances All_Appliances 59.99 59.99 3.9 mitico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 89.08 N° Round: 18}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:07:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 92 Price Proposal: 59.99 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 92 Price Proposal: 59.99 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 89.08 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 89.08 Decision:1}] generated by model rational_2
 00:07:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 92 Best Price: 71.99 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 106.9 N° Round: 19}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:08:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 92 Price Proposal: 71.99 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 92 Price Proposal: 71.99 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 106.9 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 106.9 Decision:1}] generated by model rational_2
 00:08:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 92 Best Price: 86.39 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 117.6 N° Round: 20}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:08:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 92 Price Proposal: 86.39 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 92 Price Proposal: 86.39 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 117.6 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 117.6 Decision:1}] generated by model rational_2
 00:08:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 92 Best Price: 103.7 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 52 Best Price: 129.4 N° Round: 21}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:08:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 92 Price Proposal: 0 Decision:0}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 92 Price Proposal: 0 Decision:0}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 52 Price Proposal: 129.4 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 52 Price Proposal: 0 Decision:0}] generated by model rational_2
 00:08:25:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 92 WinnerID: 0 Best Price: 103.7 Initial Price: 59.99 N° Round: 4}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 52 WinnerID: 1 Best Price: 129.4 Initial Price: 1.91 N° Round: 22}] generated by model auctioneer_model
 00:08:30:000
 [Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
 [Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
 00:08:35:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {95 Woscher-_8702_Single_Cylinder_Portable_Foot_Pump_Air_Tyre_Inflator_with_Pressure_Gauge_for_Car_Tyres,_Bicycle_Tyres,_Bike_... car_&_motorbike Car_Accessories 22.78 22.78 4.7 comun 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {60 ASTRID_Backpack_With_Front_Pockets_For_Girls bags_&_luggage Backpacks 23.99 23.99 5 epico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:08:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 22.78 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 22.78 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 23.99 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 23.99 Decision:1}] generated by model rational_2
 00:08:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 27.34 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 28.79 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:08:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 27.34 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 27.34 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 28.79 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 28.79 Decision:1}] generated by model rational_2
 00:08:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 32.81 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 34.55 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:09:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 32.81 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 32.81 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 34.55 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 34.55 Decision:1}] generated by model rational_2
 00:09:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 39.37 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 41.46 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:09:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 39.37 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 39.37 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 41.46 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 41.46 Decision:1}] generated by model rational_2
 00:09:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 47.24 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 49.75 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:09:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 47.24 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 47.24 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 49.75 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 49.75 Decision:1}] generated by model rational_2
 00:09:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 56.69 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 59.7 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:09:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 56.69 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 56.69 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 59.7 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 59.7 Decision:1}] generated by model rational_2
 00:09:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 68.03 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 71.64 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:09:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 68.03 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 68.03 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 71.64 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 71.64 Decision:1}] generated by model rational_2
 00:09:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 81.64 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 85.97 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:09:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 81.64 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 81.64 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 85.97 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 85.97 Decision:1}] generated by model rational_2
 00:09:55:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 97.97 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 103.2 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:10:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 97.97 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 97.97 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 103.2 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 103.2 Decision:1}] generated by model rational_2
 00:10:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 117.6 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 113.5 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:10:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 117.6 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 117.6 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 113.5 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 113.5 Decision:1}] generated by model rational_2
 00:10:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 129.4 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 124.9 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:10:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 129.4 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 129.4 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 124.9 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 124.9 Decision:1}] generated by model rational_2
 00:10:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 142.3 N° Round: 11}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 137.4 N° Round: 11}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:10:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 142.3 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 142.3 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 137.4 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 137.4 Decision:1}] generated by model rational_2
 00:10:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 95 Best Price: 156.5 N° Round: 12}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 151.1 N° Round: 12}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:10:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 95 Price Proposal: 0 Decision:0}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 95 Price Proposal: 156.5 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 151.1 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 151.1 Decision:1}] generated by model rational_2
 00:10:45:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 95 WinnerID: 2 Best Price: 156.5 Initial Price: 22.78 N° Round: 13}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 60 Best Price: 166.2 N° Round: 13}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:10:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 60 Price Proposal: 0 Decision:0}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 60 Price Proposal: 0 Decision:0}] generated by model rational_2
 00:10:55:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {97 Lucky_Brand_Womens_Erin_Leather_Closed_Toe_Ballet_Flats,_Black,_Size_8.5 stores The_Designer_Boutique 129.57 129.57 5 mitico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 60 WinnerID: 0 Best Price: 166.2 Initial Price: 23.99 N° Round: 14}] generated by model auctioneer_model
 00:11:00:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 97 Price Proposal: 129.57 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 97 Price Proposal: 129.57 Decision:1}] generated by model rational_2
-00:11:05:000
-[Auctioneer_defs::out_roundResult: { ProductID: 97 Best Price: 142.5 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
-00:11:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 97 Price Proposal: 142.5 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 97 Price Proposal: 142.5 Decision:1}] generated by model rational_2
-00:11:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 97 Best Price: 156.8 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
-00:11:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 97 Price Proposal: 156.8 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 97 Price Proposal: 156.8 Decision:1}] generated by model rational_2
-00:11:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 97 Best Price: 172.5 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
-00:11:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 97 Price Proposal: 172.5 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 97 Price Proposal: 172.5 Decision:1}] generated by model rational_2
-00:11:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 97 Best Price: 189.8 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
-00:11:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 97 Price Proposal: 189.8 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 97 Price Proposal: 189.8 Decision:1}] generated by model rational_2
-00:11:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 97 Best Price: 208.8 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
-00:11:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 97 Price Proposal: 0 Decision:0}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 97 Price Proposal: 208.8 Decision:1}] generated by model rational_2
-00:11:55:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 97 WinnerID: 2 Best Price: 208.8 Initial Price: 129.57 N° Round: 6}] generated by model auctioneer_model
-00:12:00:000
 [Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
 [Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+00:11:05:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {66 HK_Balloons_Smiley_Balloon_Printed_Face_Expression_Latex_Balloon_30_Pcs,_Yellow/Emoji_Balloon/Smiley_Balloon/Birthday_Deco... toys_&_baby_products Toys_&_Games 3.59 3.59 3.7 mitico 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:11:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 3.59 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 3.59 Decision:1}] generated by model rational_2
+00:11:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 4.667 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:11:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 4.667 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 4.667 Decision:1}] generated by model rational_2
+00:11:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 6.067 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:11:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 6.067 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 6.067 Decision:1}] generated by model rational_2
+00:11:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 7.887 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:11:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 7.887 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 7.887 Decision:1}] generated by model rational_2
+00:11:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 10.25 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:11:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 10.25 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 10.25 Decision:1}] generated by model rational_2
+00:11:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 12.3 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:12:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 12.3 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 12.3 Decision:1}] generated by model rational_2
 00:12:05:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {100 Instant_Pot_Duo_7-in-1_Electric_Pressure_Cooker,_6Qt home Instant_Brands_Outlet 89 89 4.8 versatil 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 14.76 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:12:10:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 100 Price Proposal: 89 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 100 Price Proposal: 89 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 14.76 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 14.76 Decision:1}] generated by model rational_2
 00:12:15:000
-[Auctioneer_defs::out_roundResult: { ProductID: 100 Best Price: 106.8 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 17.71 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:12:20:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 100 Price Proposal: 106.8 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 100 Price Proposal: 106.8 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 17.71 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 17.71 Decision:1}] generated by model rational_2
 00:12:25:000
-[Auctioneer_defs::out_roundResult: { ProductID: 100 Best Price: 117.5 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 21.25 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:12:30:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 100 Price Proposal: 117.5 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 100 Price Proposal: 117.5 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 21.25 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 21.25 Decision:1}] generated by model rational_2
 00:12:35:000
-[Auctioneer_defs::out_roundResult: { ProductID: 100 Best Price: 129.3 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 25.5 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:12:40:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 100 Price Proposal: 129.3 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 100 Price Proposal: 129.3 Decision:1}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 25.5 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 25.5 Decision:1}] generated by model rational_2
 00:12:45:000
-[Auctioneer_defs::out_roundResult: { ProductID: 100 Best Price: 142.2 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 30.6 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:12:50:000
-[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 100 Price Proposal: 142.2 Decision:1}] generated by model affective_1
-[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 100 Price Proposal: 0 Decision:0}] generated by model rational_2
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 30.6 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 30.6 Decision:1}] generated by model rational_2
 00:12:55:000
-[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 100 WinnerID: 1 Best Price: 142.2 Initial Price: 89 N° Round: 5}] generated by model auctioneer_model
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 36.72 N° Round: 11}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
 00:13:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 36.72 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 36.72 Decision:1}] generated by model rational_2
+00:13:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 44.06 N° Round: 12}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:13:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 44.06 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 44.06 Decision:1}] generated by model rational_2
+00:13:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 52.87 N° Round: 13}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:13:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 52.87 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 52.87 Decision:1}] generated by model rational_2
+00:13:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 63.44 N° Round: 14}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:13:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 63.44 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 63.44 Decision:1}] generated by model rational_2
+00:13:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 76.13 N° Round: 15}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:13:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 76.13 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 76.13 Decision:1}] generated by model rational_2
+00:13:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 91.36 N° Round: 16}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:13:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 91.36 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 91.36 Decision:1}] generated by model rational_2
+00:13:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 109.6 N° Round: 17}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:14:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 109.6 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 109.6 Decision:1}] generated by model rational_2
+00:14:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 120.6 N° Round: 18}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:14:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 120.6 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 120.6 Decision:1}] generated by model rational_2
+00:14:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 132.7 N° Round: 19}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:14:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 132.7 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 132.7 Decision:1}] generated by model rational_2
+00:14:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 146 N° Round: 20}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:14:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 146 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 146 Decision:1}] generated by model rational_2
+00:14:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 160.6 N° Round: 21}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:14:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 160.6 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 160.6 Decision:1}] generated by model rational_2
+00:14:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 176.7 N° Round: 22}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:14:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 176.7 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 176.7 Decision:1}] generated by model rational_2
+00:14:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 194.4 N° Round: 23}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:15:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 194.4 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 194.4 Decision:1}] generated by model rational_2
+00:15:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 66 Best Price: 213.8 N° Round: 24}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:15:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 66 Price Proposal: 213.8 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 66 Price Proposal: 0 Decision:0}] generated by model rational_2
+00:15:15:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 66 WinnerID: 1 Best Price: 213.8 Initial Price: 3.59 N° Round: 25}] generated by model auctioneer_model
+00:15:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+00:15:25:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {75 Titwah_Men's_Cross_Pockets_Regular_Fit_Stretchable_Denim_Jeans men's_clothing Jeans 35.99 35.99 5 raro 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:15:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 75 Price Proposal: 35.99 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 75 Price Proposal: 35.99 Decision:1}] generated by model rational_2
+00:15:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 75 Best Price: 43.19 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:15:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 75 Price Proposal: 43.19 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 75 Price Proposal: 43.19 Decision:1}] generated by model rational_2
+00:15:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 75 Best Price: 51.83 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:15:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 75 Price Proposal: 51.83 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 75 Price Proposal: 51.83 Decision:1}] generated by model rational_2
+00:15:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 75 Best Price: 62.2 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:16:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 75 Price Proposal: 0 Decision:0}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 75 Price Proposal: 62.2 Decision:1}] generated by model rational_2
+00:16:05:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 75 WinnerID: 2 Best Price: 62.2 Initial Price: 35.99 N° Round: 4}] generated by model auctioneer_model
+00:16:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+00:16:15:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {76 Fastrack_Womens_33.7_mm_Glitch_Black_Dial_Leather_Analogue_Watch_-_6234NL01_(WFT6234NL01,_Not_assigned,_Not_assigned) accessories Watches 26.34 26.34 4.4 raro 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:16:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 76 Price Proposal: 26.34 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 76 Price Proposal: 26.34 Decision:1}] generated by model rational_2
+00:16:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 76 Best Price: 31.61 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:16:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 76 Price Proposal: 31.61 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 76 Price Proposal: 31.61 Decision:1}] generated by model rational_2
+00:16:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 76 Best Price: 37.93 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:16:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 76 Price Proposal: 37.93 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 76 Price Proposal: 37.93 Decision:1}] generated by model rational_2
+00:16:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 76 Best Price: 45.52 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:16:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 76 Price Proposal: 45.52 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 76 Price Proposal: 45.52 Decision:1}] generated by model rational_2
+00:16:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 76 Best Price: 54.62 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:17:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 76 Price Proposal: 54.62 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 76 Price Proposal: 54.62 Decision:1}] generated by model rational_2
+00:17:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 76 Best Price: 65.54 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:17:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 76 Price Proposal: 65.54 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 76 Price Proposal: 65.54 Decision:1}] generated by model rational_2
+00:17:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 76 Best Price: 78.65 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:17:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 76 Price Proposal: 78.65 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 76 Price Proposal: 78.65 Decision:1}] generated by model rational_2
+00:17:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 76 Best Price: 94.38 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:17:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 76 Price Proposal: 0 Decision:0}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 76 Price Proposal: 94.38 Decision:1}] generated by model rational_2
+00:17:35:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 76 WinnerID: 2 Best Price: 94.38 Initial Price: 26.34 N° Round: 8}] generated by model auctioneer_model
+00:17:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+00:17:45:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {81 Xectes_Platform_Trolley_for_Heavy_Weight_Material_Goods_Carrying_Luggage_Cart_with_6_Wheels_&_1_Ropes_and_Brake_System_150... bags_&_luggage Suitcases_&_Trolley_Bags 57.59 57.59 4.6 raro 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:17:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 81 Price Proposal: 57.59 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 81 Price Proposal: 57.59 Decision:1}] generated by model rational_2
+00:17:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 81 Best Price: 69.11 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:18:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 81 Price Proposal: 69.11 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 81 Price Proposal: 69.11 Decision:1}] generated by model rational_2
+00:18:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 81 Best Price: 82.93 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:18:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 81 Price Proposal: 82.93 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 81 Price Proposal: 82.93 Decision:1}] generated by model rational_2
+00:18:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 81 Best Price: 99.52 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:18:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 81 Price Proposal: 99.52 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 81 Price Proposal: 99.52 Decision:1}] generated by model rational_2
+00:18:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 81 Best Price: 119.4 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:18:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 81 Price Proposal: 119.4 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 81 Price Proposal: 119.4 Decision:1}] generated by model rational_2
+00:18:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 81 Best Price: 131.3 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:18:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 81 Price Proposal: 0 Decision:0}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 81 Price Proposal: 131.3 Decision:1}] generated by model rational_2
+00:18:45:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 81 WinnerID: 2 Best Price: 131.3 Initial Price: 57.59 N° Round: 6}] generated by model auctioneer_model
+00:18:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+00:18:55:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {89 Redlicchi_Women's_PU_Casual_Purse_Fashion_School_Leather_Backpack_Shoulder_Bag_Mini_Backpack_for_Women_&_Girls stores Fashion_Sales_&_Deals 11.99 11.99 3.3 raro 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:19:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 11.99 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 11.99 Decision:1}] generated by model rational_2
+00:19:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 14.39 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:19:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 14.39 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 14.39 Decision:1}] generated by model rational_2
+00:19:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 17.27 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:19:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 17.27 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 17.27 Decision:1}] generated by model rational_2
+00:19:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 20.72 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:19:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 20.72 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 20.72 Decision:1}] generated by model rational_2
+00:19:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 24.86 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:19:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 24.86 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 24.86 Decision:1}] generated by model rational_2
+00:19:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 29.83 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:19:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 29.83 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 29.83 Decision:1}] generated by model rational_2
+00:19:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 35.8 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:20:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 35.8 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 35.8 Decision:1}] generated by model rational_2
+00:20:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 42.96 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:20:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 42.96 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 42.96 Decision:1}] generated by model rational_2
+00:20:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 51.55 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:20:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 51.55 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 51.55 Decision:1}] generated by model rational_2
+00:20:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 61.86 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:20:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 61.86 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 61.86 Decision:1}] generated by model rational_2
+00:20:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 74.23 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:20:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 74.23 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 74.23 Decision:1}] generated by model rational_2
+00:20:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 89 Best Price: 89.08 N° Round: 11}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:20:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 89 Price Proposal: 0 Decision:0}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 89 Price Proposal: 89.08 Decision:1}] generated by model rational_2
+00:20:55:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 89 WinnerID: 2 Best Price: 89.08 Initial Price: 11.99 N° Round: 12}] generated by model auctioneer_model
+00:21:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
+00:21:05:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {90 CHAYAM_Herbal-Immunity_Boosting_Combo_|_Cinnamon_Green_Tea_with_Orange_Peel_+_Spiced_Turmeric_with_Ginger_and_Black_Peppe... grocery_&_gourmet_foods Coffee,_Tea_&_Beverages 6.36 6.36 5 comun 0}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:21:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 6.36 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 6.36 Decision:1}] generated by model rational_2
+00:21:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 8.268 N° Round: 1}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:21:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 8.268 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 8.268 Decision:1}] generated by model rational_2
+00:21:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 10.75 N° Round: 2}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:21:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 10.75 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 10.75 Decision:1}] generated by model rational_2
+00:21:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 12.9 N° Round: 3}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:21:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 12.9 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 12.9 Decision:1}] generated by model rational_2
+00:21:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 15.48 N° Round: 4}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:21:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 15.48 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 15.48 Decision:1}] generated by model rational_2
+00:21:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 18.58 N° Round: 5}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:22:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 18.58 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 18.58 Decision:1}] generated by model rational_2
+00:22:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 22.3 N° Round: 6}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:22:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 22.3 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 22.3 Decision:1}] generated by model rational_2
+00:22:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 26.76 N° Round: 7}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:22:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 26.76 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 26.76 Decision:1}] generated by model rational_2
+00:22:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 32.11 N° Round: 8}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:22:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 32.11 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 32.11 Decision:1}] generated by model rational_2
+00:22:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 38.53 N° Round: 9}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:22:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 38.53 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 38.53 Decision:1}] generated by model rational_2
+00:22:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 46.24 N° Round: 10}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:22:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 46.24 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 46.24 Decision:1}] generated by model rational_2
+00:22:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 55.49 N° Round: 11}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:23:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 55.49 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 55.49 Decision:1}] generated by model rational_2
+00:23:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 66.59 N° Round: 12}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:23:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 66.59 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 66.59 Decision:1}] generated by model rational_2
+00:23:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 79.91 N° Round: 13}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:23:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 79.91 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 79.91 Decision:1}] generated by model rational_2
+00:23:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 95.89 N° Round: 14}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:23:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 95.89 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 95.89 Decision:1}] generated by model rational_2
+00:23:35:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 115.1 N° Round: 15}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:23:40:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 115.1 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 115.1 Decision:1}] generated by model rational_2
+00:23:45:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 126.6 N° Round: 16}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:23:50:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 126.6 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 126.6 Decision:1}] generated by model rational_2
+00:23:55:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 139.3 N° Round: 17}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:24:00:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 139.3 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 139.3 Decision:1}] generated by model rational_2
+00:24:05:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 153.2 N° Round: 18}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:24:10:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 153.2 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 153.2 Decision:1}] generated by model rational_2
+00:24:15:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 168.5 N° Round: 19}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:24:20:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 168.5 Decision:1}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 168.5 Decision:1}] generated by model rational_2
+00:24:25:000
+[Auctioneer_defs::out_roundResult: { ProductID: 90 Best Price: 185.4 N° Round: 20}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: {}] generated by model auctioneer_model
+00:24:30:000
+[Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 90 Price Proposal: 0 Decision:0}] generated by model affective_1
+[Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 90 Price Proposal: 185.4 Decision:1}] generated by model rational_2
+00:24:35:000
+[Auctioneer_defs::out_roundResult: {}, Auctioneer_defs::out_initialIP: {}, Auctioneer_defs::out_finalResult: { ProductID: 90 WinnerID: 2 Best Price: 185.4 Initial Price: 6.36 N° Round: 21}] generated by model auctioneer_model
+00:24:40:000
 [Affective_defs::out_bidOffer: { ClientID: 1 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model affective_1
 [Rational_defs::out_bidOffer: { ClientID: 2 ProductID: 0 Price Proposal: 0 Decision:1}] generated by model rational_2
