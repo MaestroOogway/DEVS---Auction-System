@@ -43,8 +43,8 @@ void updateUtilityA(Utility& utility, int subastadoID, vector<Alphas>& alphas, c
         float alphaOriginal = it->alpha;
         float alphaAdjusted = alphaOriginal * (1.0f + ansiedad.scaled + frustracion.scaled);
         float resultado;
-        float pesoA = 0.3f;
-        float pesoF = 0.3f;
+        float pesoA = 0.4f;
+        float pesoF = 0.4f;
         float penalizacion = pesoA * ansiedad.scaled + pesoF * frustracion.scaled;
         if (win == 1) {
         resultado = log(pow(1.0f + 1.0f, alphaAdjusted));  // log((1 + 1)^alpha)
@@ -72,7 +72,7 @@ void updateReservePA(vector<ReservePrice>& reservePrices, const vector<Alphas>& 
 
         if (it != alphas.end()) {
             float adjustedAlpha = (id == subastadoID) ?
-                it->alpha * (1 + ansiedad.scaled + frustracion.scaled) :
+                it->alpha * (1.0 + ansiedad.scaled + frustracion.scaled) :
                 it->alpha;
 
             alphaAdjustedMap[id] = adjustedAlpha;

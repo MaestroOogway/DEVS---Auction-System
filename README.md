@@ -16,7 +16,7 @@ C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/
 │
 ├─ run_auction.sh              # Ejecutable principal de la simulación
 ├─ casos_de_estudio/
-│   ├─ caso_de_estudio_{n}/    # Carpetas de salida numeradas donde n = {1, 2, 3}
+│   ├─ caso_de_estudio_{n}/    # Carpetas de salida numeradas donde n = {1, 2}
 │       ├─ messages/           # Registros de mensajes intercambiados
 │       └─ states/             # Registros de estados de los agentes
 ```
@@ -32,22 +32,21 @@ cd "C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System"
 ### 2. Ejecutar el simulador
 
 ```bash
-./run_auction -a <número de agentes afectivos> -r <número de agentes racionales> -l <presupuesto mínimo> -h <presupuesto máximo> -p <cantidad de productos> 
+./run_auction -a <número de agentes afectivos> -r <número de agentes racionales> -l <presupuesto mínimo> -h <presupuesto máximo>
 ```
 
 * **-a**: número de agentes afectivos en la subasta
 * **-r**: número de agentes racionales en la subasta
 * **-l**: presupuesto mínimo (cota inferior) de cada agente
 * **-h**: presupuesto máximo (cota superior) de cada agente
-* **-p**: número de productos a subastar
 
 ### 3. Ejemplo práctico
 
 ```bash
-./run_auction -a 5 -r 10 -n 10 -l 100 -h 500 -p 10
+./run_auction -a 5 -r 10 -n 10 -l 100 -h 500
 ```
 
-Esto simula una subasta con 5 agentes afectivos, 10 agentes racionales y 10 productos, con presupuestos entre 100 y 500, y guarda los registros en `casos_de_estudio/caso_de_estudio_2/`.
+Esto simula una subasta con 5 agentes afectivos, 10 agentes racionales, con presupuestos entre 100 y 500, y guarda los registros en `casos_de_estudio/caso_de_estudio_2/`.
 
 ## Visualización de resultados de simulación
 

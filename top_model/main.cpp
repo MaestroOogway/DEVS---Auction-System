@@ -20,7 +20,6 @@
 // C++ headers
 #include <iostream>
 #include <chrono>
-#include <algorithm>
 #include <string>
 #include <random>
 #include <unistd.h>      // para getopt
@@ -29,7 +28,6 @@
 using namespace std;
 using namespace cadmium;
 using namespace cadmium::basic_models::pdevs;
-
 using TIME = NDTime;
 
 float generateBudget(float lower, float upper)
@@ -70,9 +68,8 @@ int main(int argc, char **argv) {
     int num_rational_clients = -1;
     float P_MIN = -1.0f;
     float P_MAX = -1.0f;
-    int N_PRODUCTOS = -1.0f;
-    const std::string input_file = argv[11];
-    const std::string run_id = argv[12];
+    const std::string input_file = argv[9];
+    const std::string run_id = argv[10];
     int dir_salida = 0;
 
     // 2) Parseo de opciones
@@ -83,10 +80,9 @@ int main(int argc, char **argv) {
             case 'r': num_rational_clients = std::atoi(optarg);       break;
             case 'l': P_MIN               = std::atof(optarg);       break;
             case 'u': P_MAX               = std::atof(optarg);       break;
-            case 'p': N_PRODUCTOS         = std::atoi(optarg);       break;
             default:
                 std::cerr << "Uso: " << argv[0]
-                          << " -a num_affectivos -r num_racionales -l Pmin -u Pmax -p num_productos path_input run_id\n";
+                          << " -a num_affectivos -r num_racionales -l Pmin -u Pmax path_input run_id\n";
                 return 1;
         }
     }

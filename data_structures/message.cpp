@@ -18,7 +18,6 @@ ostream& operator<<(ostream& os, const Message_initialIP_t& msg) {
      << msg.initialPrice << " "
      << msg.bestPrice << " "
      << msg.ranking << " " 
-     << msg.status << " "
      << msg.sold;
   return os;
 }
@@ -35,7 +34,6 @@ istream& operator>> (istream& is, Message_initialIP_t& msg) {
   is >> msg.initialPrice;
   is >> msg.bestPrice;
   is >> msg.ranking;
-  is >> msg.status;
   is >> msg.sold;
 
   return is;

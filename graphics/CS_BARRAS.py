@@ -6,10 +6,10 @@ from glob import glob
 
 # ===========  A) CONFIGURACIÓN DE RUTAS  ===========
 
-ruta_estados = "C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/casos_de_estudio/caso_de_estudio_1/states"
+ruta_estados = "C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/casos_de_estudio/caso_de_estudio_2/states"
 archivos = sorted(glob(os.path.join(ruta_estados, "ABP_output_state_*.csv")))
 
-output_dir = "C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/graphics/CS1"
+output_dir = "C:/Cadmium-Simulation-Environment/DEVS-Models/Auction System/graphics/CS2"
 os.makedirs(output_dir, exist_ok=True)
 
 # ===========  B) PATRÓN GENERICo para Extraer Purchased (ajusta 25 a tu nº de productos)  ===========
@@ -94,11 +94,11 @@ plt.figure(figsize=(12,6))
 plt.bar(indices - ancho/2, compras_afectivo, width=ancho, label="Afectivo", edgecolor="black")
 plt.bar(indices + ancho/2, compras_racional,  width=ancho, label="Racional",  edgecolor="black")
 
-plt.xticks(indices, productos, rotation=45)
+plt.xticks(indices, productos)
 plt.xlabel("Producto")
-plt.ylabel("Veces comprado (suma de todos los agentes)")
-plt.title("Compras por Producto: Agentes Afectivos vs Racionales (n agentes)")
-plt.legend()
+plt.ylabel("Veces comprado")
+plt.title("Barras Dual de la Cantidad de Compras por Producto Subastado")
+plt.legend(title="Agente")
 plt.tight_layout()
 
 img_path = os.path.join(output_dir, "barras_cantidad_compras.png")

@@ -70,8 +70,8 @@ struct Emotion {
 
 vector<Alphas> generateRandomAlphas() {
     random_device rd;
-    mt19937 gen(getSharedSeed()); 
-    //mt19937 gen(rd()); 
+    //mt19937 gen(getSharedSeed()); 
+    mt19937 gen(rd()); 
     uniform_real_distribution<float> dis(0.10, 0.99);
     vector<Alphas> alphas(100); // Crear un vector de 100 elementos
     for (int i = 0; i < 100; ++i) {
@@ -104,8 +104,8 @@ vector<ReservePrice> generateReservePrices(const vector<Alphas>& alphas, const v
 }
 
 float maxUtility(const vector<Alphas>& alphas, const vector<int>& ids) {
-    vector<float> selectedAlphas;       
-    float utility = 1.0f; // inicializamos en 1 porque es un producto
+    vector<float> selectedAlphas;
+    //Filtrar los alphas que coinciden con los ids
     for (int id : ids) {
         for (const auto& alpha : alphas) {
             if (alpha.id == id) {
@@ -114,11 +114,13 @@ float maxUtility(const vector<Alphas>& alphas, const vector<int>& ids) {
             }
         }
     }
+    //Calcular utilidad
+    float utility = 1.0f;
     for (float alpha : selectedAlphas) {
-        utility *= pow(2.0f, alpha); // potencia con base 1
-        //utility += alpha;
+        utility *= pow(2.0f, alpha);
     }
-    return roundToSignificantFigures(utility,2);
+
+    return roundToSignificantFigures(utility, 2);
 }
 
 bool waitingNextProduct()
@@ -141,26 +143,41 @@ float normalize(float value, float minVal, float maxVal)
     return (value - minVal) / (maxVal - minVal);
 }
 
-void updateFrustration(float winner, int clientID, Emotion& frustration){
-    if(winner==clientID){
-        frustration.real = max(0.0f, frustration.real - 1.0f);
-    }
-    else{
-        frustration.real = 10.0f;
-    }
-    frustration.scaled = normalize(frustration.real, 0, 10);
-}
-
 void resetAnxiety(Emotion& anxiety){
     anxiety.real = 0;
     anxiety.scaled = 0;
 }
 
+
+static std::random_device rd;
+static std::mt19937 gen(rd());
+static std::uniform_real_distribution<float> randInc(1.0f,   1.5f); 
+static std::uniform_real_distribution<float> randDec(0.3f,   0.5f); 
+
+void updateFrustration(float winner, int clientID, Emotion& frustration) {
+    const float MAX_F = 10.0f; //llevar a 10 para caso 1
+
+    if (winner == clientID) {
+        float dec   = randDec(gen);
+        frustration.real = std::max(0.0f, (frustration.real - dec * 1.5f));
+    } else {
+        float inc   = randInc(gen);
+        frustration.real = std::min(MAX_F, (frustration.real + inc * 1.5f));
+    }
+
+    frustration.scaled = roundToSignificantFigures(normalize(frustration.real, 0, MAX_F),3);
+}
+
+
 void updateAnxiety(Emotion& anxiety)
 {
-    anxiety.real = min(20.0f, anxiety.real + 1.0f);
-    anxiety.scaled = normalize(anxiety.real, 0, 20);
+    const float MAX_A = 10.0f; //llevar a 10 para caso 1
+    uniform_real_distribution<float> dis(1.0f, 1.5f);
+    float factor = dis(gen);  // factor aleatorio entre 1 y 2
+    anxiety.real = min(MAX_A, anxiety.real + factor);
+    anxiety.scaled = normalize(anxiety.real, 0, MAX_A);
 }
+
 
 bool getDecision(float bestPrice, const vector<ReservePrice> &reservePrices, int productID)
 {

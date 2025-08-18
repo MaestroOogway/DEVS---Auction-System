@@ -1,0 +1,3 @@
+Tipo,Reserva_min,Reserva_max,Reserva_mean,Reserva_std,Utilidad_min,Utilidad_max,Utilidad_mean,Utilidad_std,Ansiedad_min,Ansiedad_max,Ansiedad_mean,Ansiedad_std,Frustracion_min,Frustracion_max,Frustracion_mean,Frustracion_std
+Afectivo,31.0,1250.0,455.4156239164772,227.8486904041515,0.0,0.18,0.015518010555919405,0.022247403552648252,0.0,1.0,0.8607075020611011,0.26213199191001174,0.0,1.0,0.5356960839080017,0.3229592399116628
+Racional,33.2,1800.0,470.5951149978811,382.7029084356621,0.0,0.27,0.014713574373001503,0.024762310529740972,,,,,,,,

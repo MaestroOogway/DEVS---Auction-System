@@ -15,8 +15,8 @@ struct Message_initialIP_t
 {
 
   Message_initialIP_t() {}
-  Message_initialIP_t(int i_productID, string s_name, string s_category, string s_subcategory, float i_initialPrice, float i_bestPrice, float f_ranking, string s_status, bool b_sold)
-      : productID(i_productID), name(s_name), category(s_category), subcategory(s_subcategory), initialPrice(i_initialPrice), bestPrice(i_bestPrice), ranking(f_ranking), status(s_status), sold(b_sold) {}
+  Message_initialIP_t(int i_productID, string s_name, string s_category, string s_subcategory, float i_initialPrice, float i_bestPrice, float f_ranking, bool b_sold)
+      : productID(i_productID), name(s_name), category(s_category), subcategory(s_subcategory), initialPrice(i_initialPrice), bestPrice(i_bestPrice), ranking(f_ranking), sold(b_sold) {}
 
   int productID;
   string name;
@@ -25,7 +25,6 @@ struct Message_initialIP_t
   float initialPrice;
   float bestPrice;
   float ranking;
-  string status;
   bool sold;
 };
 

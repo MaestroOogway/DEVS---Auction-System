@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-# Valores por defecto
 EJECUCIONES=100
 PRODUCTOS="../input_data/initial_product_information_test.txt"
 
 usage() {
-  echo "Uso: $0 -a num_afectivos -r num_racionales -l presupuesto_min -u presupuesto_max -p num_productos"
+  echo "Uso: $0 -a num_afectivos -r num_racionales -l presupuesto_min -u presupuesto_max"
   exit 1
 }
 
@@ -15,13 +14,12 @@ while getopts ":a:r:l:u:p:" opt; do
     r) N_RACIONALES="$OPTARG" ;;
     l) P_MIN="$OPTARG" ;;
     u) P_MAX="$OPTARG" ;;
-    p) N_PRODUCTOS="$OPTARG" ;;
     *) usage ;;
   esac
 done
 
 # Verifico que todos los flags obligatorios estén presentes
-if [ -z "$N_AFECTIVOS" ] || [ -z "$N_RACIONALES" ] || [ -z "$P_MIN" ] || [ -z "$P_MAX" ] || [ -z "$N_PRODUCTOS" ]; then
+if [ -z "$N_AFECTIVOS" ] || [ -z "$N_RACIONALES" ] || [ -z "$P_MIN" ] || [ -z "$P_MAX" ]; then
   echo "Faltan parámetros obligatorios."
   usage
 fi
@@ -37,7 +35,6 @@ echo "  Afectivos:          $N_AFECTIVOS"
 echo "  Racionales:         $N_RACIONALES"
 echo "  Presupuesto mínimo: $P_MIN"
 echo "  Presupuesto máximo: $P_MAX"
-echo "  Cantidad de productos : $N_PRODUCTOS"
 echo "Se realizarán $EJECUCIONES iteraciones..."
 echo "Directorio de salida: ../casos_de_estudio/caso_de_estudio_$numero_salida"
 
@@ -62,7 +59,6 @@ for ((i=1; i<=EJECUCIONES; i++)); do
     -r "$N_RACIONALES" \
     -l "$P_MIN" \
     -u "$P_MAX" \
-    -p "$N_PRODUCTOS" \
     "$PRODUCTOS" \
     "$i"
 done
