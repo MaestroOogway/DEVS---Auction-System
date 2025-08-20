@@ -82,13 +82,6 @@ python CS_BARRAS.py
 * Asegúrate de tener instaladas las dependencias de Python:
 
   ```bash
-  pip install pandas matplotlib
+  pip install pandas matplotlib, seaborn, glob
   ```
-* Para cualquier duda o reporte de bugs, abre un issue en el repositorio.
 
-
-  ```bash
-  cd "Auction System"
-  ```
-* Asegúrate de tener instaladas las dependencias de Python: `pip install pandas matplotlib`
-* Para cualquier duda o reporte de bugs, abre un issue en el repositorio.
