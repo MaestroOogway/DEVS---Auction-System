@@ -33,7 +33,7 @@ using TIME = NDTime;
 float generateBudget(float lower, float upper)
 {
     static std::mt19937 rng(std::chrono::high_resolution_clock::now().time_since_epoch().count());
-    std::uniform_real_distribution<float> dist(lower, upper);   //Precios caso 1: 700-800; caso 2: 1600-1700; caso 3: 1600-1700
+    std::uniform_real_distribution<float> dist(lower, upper);   //Presupuestos-> caso 1: 700-800; caso 2: 1600-1700;
     return dist(rng);
 }
 
@@ -63,7 +63,7 @@ public:
 
 int main(int argc, char **argv) {
 
-    // 1) Valores por defecto o invalidos
+    // 1) Valores por defecto 
     int num_affective_clients = -1;
     int num_rational_clients = -1;
     float P_MIN = -1.0f;

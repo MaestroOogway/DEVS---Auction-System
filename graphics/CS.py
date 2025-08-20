@@ -66,7 +66,7 @@ for archivo in archivos:
                     "Frustracion": float(m_f.group(1)),  # Solo afectivos
                 })
 
-        # Racionales (sin ansiedad)
+        # Racionales
         if "State for model rational_" in line:
             id_agent = int(re.search(r"rational_(\d+)", line).group(1))
             m_u = pat_utilidad.search(line)
